@@ -1,0 +1,6 @@
+.progressBar {
+	display: inline-block;
+	width:20%;	
+	float:right;
+	color:#fff;
+}

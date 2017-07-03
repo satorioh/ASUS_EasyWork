@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="blue">
+    <ion-title>ASUS EasyWork</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-border>
+
+    <ion-list-header>
+      应用
+    </ion-list-header>
+
+    <ion-item (tap)="callApp($event,'skypeBus')" id="skypeBus" data-android="com.microsoft.office.lync15">
+      <ion-icon name='logo-skype' item-left color="skype"></ion-icon>
+      Skype for Business
+      <progress max="100" value="" class="progressBar"></progress>
+    </ion-item>
+
+    <ion-item (tap)="callApp($event,'eForms')" id="eForms" data-android="com.asusit.ap5.asusitmobileportal">
+      <ion-icon name='paper' item-left color="asus"></ion-icon>
+      eForms
+      <progress max="100" value="" class="progressBar"></progress>
+    </ion-item>
+
+    <ion-item (tap)="callApp($event,'vpn')" id="vpn" data-android="com.fortinet.forticlient_vpn">
+      <ion-icon name='globe' item-left color="vpn"></ion-icon>
+      FortiClient VPN
+      <progress max="100" value="" class="progressBar"></progress>
+    </ion-item>
+
+
+  </ion-list>
+
+
+</ion-content>
+
