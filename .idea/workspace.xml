@@ -2,85 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6832cb09-8e9b-46a1-984e-8485ca828545" name="Default" comment="first commit">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ionic.config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-hdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-ldpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-mdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-xhdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-xxhdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-xxxhdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-hdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-ldpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-mdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-xhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxxhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-hdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-ldpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-mdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-xhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxxhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-50@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-72@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-76@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-83.5@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/icon/icon@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-568h@2x~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-667h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-736h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape-736h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape@~ipadpro.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait@~ipadpro.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default@2x~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/splash.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/app.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/app.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icon/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/declarations.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/about/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/about/about.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/about/about.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/contact/contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/contact/contact.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/contact/contact.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/home/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/home/home.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/home/home.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/tabs/tabs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/tabs/tabs.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/service-worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/theme/variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tslint.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/assets/img/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/assets/img/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/assets/img/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-hdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-hdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-hdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-mdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-mdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-mdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-xhdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-xhdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-xhdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-xxhdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-xxhdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-xxhdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-xxxhdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-xxxhdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/mipmap-xxxhdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/skype-icon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icon/res/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-hdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-hdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-hdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-mdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-mdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-mdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-xhdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-xhdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-xhdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-xxhdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-xxhdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-xxhdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-xxxhdpi/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-xxxhdpi/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/mipmap-xxxhdpi/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/skype-icon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/icon/res/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/img/e-form-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/img/skype-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/img/vpn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/appData.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/old" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/appDetail/appDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/appDetail/appDetail.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/appDetail/appDetail.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/home/eForms.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/home/eForms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/home/skypeBus.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/home/skypeBus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/home/vpn.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/home/vpn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.html" afterPath="$PROJECT_DIR$/src/pages/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.scss" afterPath="$PROJECT_DIR$/src/pages/home/home.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.ts" afterPath="$PROJECT_DIR$/src/pages/home/home.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="$PROJECT_DIR$/www/build/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -94,7 +88,105 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="skypeBus.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/home/skypeBus.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="1" column="52" lean-forward="true" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skypeBus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/home/skypeBus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="old" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/old">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appDetail.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/appDetail/appDetail.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appDetail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/appDetail/appDetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appData.service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/appData.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="46" />
+              <folding>
+                <element signature="e#287#1215#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+                <element signature="e#281#330#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,6 +194,30 @@
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/pages/home/appItem.component.ts" />
+        <option value="$PROJECT_DIR$/src/pages/home/appItem.html" />
+        <option value="$PROJECT_DIR$/src/pages/home/eForms.component.ts" />
+        <option value="$PROJECT_DIR$/src/pages/home/vpn.component.ts" />
+        <option value="$PROJECT_DIR$/src/old.ts" />
+        <option value="$PROJECT_DIR$/src/old" />
+        <option value="$PROJECT_DIR$/src/pages/home/home.ts" />
+        <option value="$PROJECT_DIR$/src/pages/home/home.html" />
+        <option value="$PROJECT_DIR$/src/pages/home/home.scss" />
+        <option value="$PROJECT_DIR$/src/pages/home/eForms.html" />
+        <option value="$PROJECT_DIR$/src/pages/home/vpn.html" />
+        <option value="$PROJECT_DIR$/src/pages/home/skypeBus.html" />
+        <option value="$PROJECT_DIR$/src/pages/home/skypeBus.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/pages/appDetail/appDetail.html" />
+        <option value="$PROJECT_DIR$/src/app/appData.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/pages/appDetail/appDetail.ts" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -118,7 +234,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="width" value="1932" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -137,7 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -160,7 +276,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -174,7 +290,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASUS EasyWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASUS EasyWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASUS EasyWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASUS EasyWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appDetail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASUS EasyWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASUS EasyWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -192,15 +370,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -220,7 +394,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,6 +403,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\work\ASUS EasyWork\src\pages" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -281,6 +461,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -317,6 +503,9 @@
       <workItem from="1498810047157" duration="1053000" />
       <workItem from="1499053800234" duration="875000" />
       <workItem from="1499056727746" duration="2953000" />
+      <workItem from="1499063524443" duration="2663000" />
+      <workItem from="1499908275903" duration="14264000" />
+      <workItem from="1499994914851" duration="20177000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1499057351338</created>
@@ -329,33 +518,59 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4881000" />
+    <option name="totallyTimeSpent" value="41985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15376458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.50422835" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49577168" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38958097" sideWeight="0.49577168" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -374,11 +589,78 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/appDetail/appDetail.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/appDetail/appDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/appData.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -389,18 +671,209 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/platforms.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/contact/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/contact/contact.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/tabs/tabs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/tabs/tabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/about/about.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/about/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/vpn.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="132">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="363">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/map.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/eForms.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/eForms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/vpn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#281#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/old">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/skypeBus.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="52" lean-forward="true" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/skypeBus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/appDetail/appDetail.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/appDetail/appDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/appData.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="46" />
+          <folding>
+            <element signature="e#287#1215#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

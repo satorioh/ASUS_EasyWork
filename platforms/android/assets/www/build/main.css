@@ -35068,8 +35068,3 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
-
-page-home .progressBar {
-  width: 20%;
-  float: right;
-}

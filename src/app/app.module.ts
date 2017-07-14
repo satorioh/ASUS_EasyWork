@@ -2,11 +2,17 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+// import { NavController } from 'ionic-angular';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { AppDetail } from '../pages/appDetail/appDetail';
+import { APPDATA } from './appData.service';
+import { SkypeBus } from '../pages/home/skypeBus.component';
+import { eForms } from '../pages/home/eForms.component';
+import { VPN } from '../pages/home/vpn.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +29,11 @@ import { FileOpener } from '@ionic-native/file-opener';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AppDetail,
+    SkypeBus,
+    eForms,
+    VPN
   ],
   imports: [
     BrowserModule,
@@ -35,17 +45,19 @@ import { FileOpener } from '@ionic-native/file-opener';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AppDetail
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    AppAvailability, 
-    Device , 
-    Transfer,  
+    AppAvailability,
+    Device,
+    Transfer,
     TransferObject,
     File,
     FileOpener,
+    APPDATA,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
