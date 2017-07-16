@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { APPDATA } from '../../app/appData.service';
+import { AppDataService } from '../../app/appData.service';
 
 @Component({
   selector: 'vpn',
   templateUrl: 'vpn.html'
 })
 
-export class VPN {
-  constructor(private appData:APPDATA){
+export class VpnComponent {
+  constructor(private appData:AppDataService){
 
   }
 }

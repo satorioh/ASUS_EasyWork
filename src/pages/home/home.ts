@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import { AppDataService } from '../../app/appData.service';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html',
+  templateUrl: 'home.html'
 })
-export class HomePage {
-
-  constructor() {
+export class HomePageComponent{
+  appDatas:any[] = [];
+  constructor(private appData:AppDataService) {
+    this.appDatas = appData.appArr;
   }
+
 }
 

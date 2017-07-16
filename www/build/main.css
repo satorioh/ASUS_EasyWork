@@ -35068,3 +35068,12 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
+
+page-home ul {
+  margin: 0;
+  padding: 0;
+}
+
+page-home li {
+  list-style: none;
+}

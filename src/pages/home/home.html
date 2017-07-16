@@ -10,10 +10,11 @@
     <ion-list-header>
       应用
     </ion-list-header>
-    <skypebus></skypebus>
-    <eforms></eforms>
-    <vpn></vpn>
-
+    <ul>
+      <li *ngFor="let app of appDatas">
+        <app-item [app]="app"></app-item>
+      </li>
+    </ul>
   </ion-list>
 
 
