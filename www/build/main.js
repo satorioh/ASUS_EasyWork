@@ -57188,7 +57188,7 @@ var AppDataService = (function () {
                 version: '1.2.1',
                 icon: 'assets/img/e-form-icon.png',
                 corp: 'ASUSTeK COMPUTER INC.',
-                info: '华硕内部应用之eForms，可用此eForms快速快速签核表单/假单'
+                info: '华硕内部应用之eForms，可用此eForms快速签核表单/假单'
             },
             {
                 id: 3,
@@ -106210,12 +106210,20 @@ var AppItemComponent = (function () {
         this.navCtrl = navCtrl;
         this.app = {};
     }
-    // @Output() toDetailPage = new EventEmitter<any>();
-    // note = 'EventEmitter test';
     AppItemComponent.prototype.goToDetailPage = function (e) {
-        // this.toDetailPage.emit(this.note);
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__appDetail_appDetail__["a" /* AppDetailComponent */], this.app);
-        //console.log(this.app);
+    };
+    AppItemComponent.prototype.callApp = function (e) {
+        console.log("test");
+    };
+    AppItemComponent.prototype.ionViewCanLeave = function (e) {
+        if (e.target.nodeName == "SPAN") {
+            this.callApp(e);
+            return false;
+        }
+        else {
+            this.goToDetailPage(e);
+        }
     };
     return AppItemComponent;
 }());
@@ -106225,11 +106233,12 @@ __decorate([
 ], AppItemComponent.prototype, "app", void 0);
 AppItemComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'app-item',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/'<ion-item (click)="goToDetailPage($event)">\n  <ion-thumbnail item-left>\n    <img src={{app.icon}}>\n  </ion-thumbnail>\n  <h2>{{app.name}}</h2>\n  <p>{{app.corp}}</p>\n  <button ion-button item-right>View</button>\n</ion-item>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/
+        selector: 'app-item',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/'<ion-item (click)="ionViewCanLeave($event)">\n  <ion-thumbnail item-left>\n    <img src={{app.icon}}>\n  </ion-thumbnail>\n  <h2>{{app.name}}</h2>\n  <p>{{app.corp}}</p>\n  <button ion-button item-right>安装</button>\n</ion-item>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object])
 ], AppItemComponent);
 
+var _a;
 //# sourceMappingURL=appItem.component.js.map
 
 /***/ }),
@@ -115892,5 +115901,3 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 /***/ })
 /******/ ]);
 //# sourceMappingURL=main.js.map
-
-(function(w){var i=w.Ionic=w.Ionic||{};i.version='3.0.1';i.angular='4.0.0';i.ionicNative='^3.5.0';})(window);

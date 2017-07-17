@@ -11,11 +11,20 @@ export class AppItemComponent {
   constructor(public navCtrl: NavController){
   }
   @Input() app:any = {};
-  // @Output() toDetailPage = new EventEmitter<any>();
-  // note = 'EventEmitter test';
+
   goToDetailPage(e) {
-    // this.toDetailPage.emit(this.note);
     this.navCtrl.push(AppDetailComponent,this.app);
-    //console.log(this.app);
   }
+  callApp(e){
+    console.log("test");
+  }
+  ionViewCanLeave(e): boolean{
+    if(e.target.nodeName == "SPAN"){
+      this.callApp(e);
+      return false;
+    }else {
+      this.goToDetailPage(e);
+    }
+  }
+
 }
