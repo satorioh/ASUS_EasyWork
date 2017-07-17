@@ -1,11 +1,26 @@
 <ion-header>
   <ion-navbar color="blue" #nav>
     <ion-title>
-      App Detail Page
+      应用详情
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-item>
+    <ion-thumbnail class="detailPageIcon">
+      <img src={{ItemInfo.icon}}>
+    </ion-thumbnail>
+    <h2>{{ItemInfo.name}}</h2>
+
+    <!--<button ion-button item-right>View</button>-->
+  </ion-item>
+
+  <h6>应用描述</h6>
+  <p>{{ItemInfo.info}}</p>
+
+  <h6>其他信息</h6>
+  <p>开发者：{{ItemInfo.corp}}<br/>
+  版本：{{ItemInfo.version}}</p>
 
 </ion-content>
