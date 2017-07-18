@@ -1,8 +1,9 @@
-<ion-item (click)="ionViewCanLeave($event)">
+<ion-item (tap)="test()">
   <ion-thumbnail item-left>
     <img src={{app.icon}}>
   </ion-thumbnail>
   <h2>{{app.name}}</h2>
   <p>{{app.corp}}</p>
-  <button ion-button item-right>安装</button>
+  <button ion-button item-right (click)="callApp()">测试</button>
 </ion-item>
+<!--(click)="ionViewCanLeave($event)"-->
