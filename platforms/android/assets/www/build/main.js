@@ -57352,7 +57352,9 @@ var AppDataService = (function () {
                 version: '6.14.0.0',
                 icon: 'assets/img/skype-icon.png',
                 corp: 'Microsoft Corporation',
-                info: 'Skype for Business(原来的 Lync 2013)将Lync和Skype的强大功能扩展至常用的移动设备 – 在简单易用的单一界面中，你可以进行无线语音和视频通话、查看丰富的状态信息、传递即时消息、参加会议以及拨打电话。'
+                info: 'Skype for Business(原来的 Lync 2013)将Lync和Skype的强大功能扩展至常用的移动设备 – 在简单易用的单一界面中，你可以进行无线语音和视频通话、查看丰富的状态信息、传递即时消息、参加会议以及拨打电话。',
+                method: '',
+                buttonColor: 'blue'
             },
             {
                 id: 2,
@@ -57361,7 +57363,9 @@ var AppDataService = (function () {
                 version: '1.2.1',
                 icon: 'assets/img/e-form-icon.png',
                 corp: 'ASUSTeK COMPUTER INC.',
-                info: '华硕内部应用之eForms，可用此eForms快速签核表单/假单'
+                info: '华硕内部应用之eForms，可用此eForms快速签核表单/假单',
+                method: '',
+                buttonColor: 'blue'
             },
             {
                 id: 3,
@@ -57370,7 +57374,9 @@ var AppDataService = (function () {
                 version: '5.2.3',
                 icon: 'assets/img/vpn-icon.png',
                 corp: 'Fortinet',
-                info: 'This FortiClient VPN App allows you to create a secure Virtual Private Network (VPN) connection using IPSec or SSL VPN "Tunnel Mode" connections between your Android device and FortiGate. Your connection will be fully encrypted and all traffic will be sent over the secure tunnel.'
+                info: 'This FortiClient VPN App allows you to create a secure Virtual Private Network (VPN) connection using IPSec or SSL VPN "Tunnel Mode" connections between your Android device and FortiGate. Your connection will be fully encrypted and all traffic will be sent over the secure tunnel.',
+                method: '',
+                buttonColor: 'blue'
             }
         ];
         // this.navCtrl = navCtrl;
@@ -57411,7 +57417,7 @@ var AboutPageComponent = (function () {
 }());
 AboutPageComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\about\about.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\about\about.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\about\about.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\about\about.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], AboutPageComponent);
@@ -57447,7 +57453,7 @@ var AppDetailComponent = (function () {
 }());
 AppDetailComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'app-detail',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/'<ion-header>\n  <ion-navbar color="blue" #nav>\n    <ion-title>\n      应用详情\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-thumbnail class="detailPageIcon">\n      <img src={{ItemInfo.icon}}>\n    </ion-thumbnail>\n    <h2>{{ItemInfo.name}}</h2>\n\n    <!--<button ion-button item-right>View</button>-->\n  </ion-item>\n\n  <h6>应用描述</h6>\n  <p>{{ItemInfo.info}}</p>\n\n  <h6>其他信息</h6>\n  <p>开发者：{{ItemInfo.corp}}<br/>\n  版本：{{ItemInfo.version}}</p>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/
+        selector: 'app-detail',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/'<ion-header>\n\n  <ion-navbar color="blue" #nav>\n\n    <ion-title>\n\n      应用详情\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-thumbnail class="detailPageIcon">\n\n      <img src={{ItemInfo.icon}}>\n\n    </ion-thumbnail>\n\n    <h2>{{ItemInfo.name}}</h2>\n\n\n\n    <!--<button ion-button item-right>View</button>-->\n\n  </ion-item>\n\n\n\n  <h6>应用描述</h6>\n\n  <p>{{ItemInfo.info}}</p>\n\n\n\n  <h6>其他信息</h6>\n\n  <p>开发者：{{ItemInfo.corp}}<br/>\n\n  版本：{{ItemInfo.version}}</p>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
 ], AppDetailComponent);
@@ -57481,7 +57487,7 @@ var ContactPageComponent = (function () {
 }());
 ContactPageComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  \n</ion-content>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  \n</ion-content>\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], ContactPageComponent);
@@ -57517,7 +57523,7 @@ var HomePageComponent = (function () {
 }());
 HomePageComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-title>ASUS EasyWork</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list no-border>\n\n\n\n    <ion-list-header>\n\n      应用\n\n    </ion-list-header>\n\n    <ul>\n\n      <li *ngFor="let app of appDatas">\n\n        <app-item [app]="app"></app-item>\n\n      </li>\n\n    </ul>\n\n  </ion-list>\n\n\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-title>ASUS EasyWork</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list no-border>\n\n    <ion-list-header>\n      应用\n    </ion-list-header>\n    <ul>\n      <li *ngFor="let app of appDatas">\n        <app-item [app]="app"></app-item>\n      </li>\n    </ul>\n  </ion-list>\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__app_appData_service__["a" /* AppDataService */]])
 ], HomePageComponent);
@@ -57556,7 +57562,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\tabs\tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="首页" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="关于" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="联系" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\tabs\tabs.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\tabs\tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="首页" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="关于" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="联系" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\tabs\tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
@@ -106177,7 +106183,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\app\app.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\app\app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
@@ -106215,53 +106221,74 @@ var AppItemComponent = (function () {
         this.device = device;
         this.appAvailability = appAvailability;
         this.app = {};
+        this.note = 'test';
     }
     AppItemComponent.prototype.goToDetailPage = function (e) {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__appDetail_appDetail__["a" /* AppDetailComponent */], this.app);
     };
-    AppItemComponent.prototype.callApp = function (e) {
-        var packageName;
-        var appName = this.app.name;
-        if (this.device.platform === 'Android') {
-            packageName = this.app.packageName;
-        }
-        else if (this.device.platform === 'iOS') {
-            packageName = 'twitter://';
-        }
-        /****************check if app has installed**************/
-        this.appAvailability.check(packageName)
+    AppItemComponent.prototype.ngOnInit = function () {
+        var appcopy = this.app;
+        this.appAvailability.check(this.app.packageName)
             .then(function () {
-            if (confirm('检测到您已安装' + appName + '，是否现在开启？')) {
-                window.startApp.set({ "package": packageName }).start();
-            }
-            else {
-                //user choose not open app
-            }
+            // console.log(' is available :)');
+            appcopy.method = "打开";
+            appcopy.buttonColor = "secondary";
         }, function () {
-            alert("not installed");
-            // if(confirm('您尚未安装'+appName+'，是否现在下载安装？')){
-            //
-            //   fileTransfer.onProgress((ProgressEvent) => {//download progress listener
-            //     var percent =  ProgressEvent.loaded / ProgressEvent.total * 100;
-            //     percent = Math.round(percent);
-            //     fatherItem.getElementsByTagName('progress')[0].setAttribute('value',percent.toString());
-            //   });
-            //
-            //   fileTransfer.download(url, file.externalDataDirectory + packageName +'.apk',true)
-            //     .then((entry) => {
-            //       if(confirm(appName +'下载完成，是否立即安装？')){
-            //         var fileURL = entry.toURL();
-            //
-            //         file.checkFile(file.externalDataDirectory, packageName +'.apk').then((entry) =>{//download file exists
-            //           fileOpener.open(fileURL, 'application/vnd.android.package-archive')
-            //             .then((entry) => {}//open file success
-            //               ,(error) => {alert('开启安装包错误！');})//open file fail
-            //         },(error) => {alert('文件无法找到！');})//file.checkFile file not exist
-            //       }else{}//user choose not install app now
-            //     },(error) => {alert('下载出错！' + error.code);})//fileTransfer.download error
-            // } else {}//user choose not download app
+            // console.log(' is not available :(');
+            appcopy.method = "安装";
         });
-    }; //callApp event end
+    };
+    AppItemComponent.prototype.callApp = function (e) {
+        console.log(e.target);
+    };
+    // callApp(e){
+    //   let packageName;
+    //   let appName = this.app.name;
+    //   // let method = this.app.method;
+    //   if (this.device.platform === 'Android') {
+    //     packageName = this.app.packageName;
+    //   } else if (this.device.platform === 'iOS') {
+    //     packageName = 'twitter://';
+    //   }
+    //
+    //   /****************check if app has installed**************/
+    //   this.appAvailability.check(packageName)
+    //     .then(
+    //       function() {//app has installed
+    //         if(confirm('检测到您已安装'+appName+'，是否现在开启？')){
+    //           (window as any).startApp.set({"package":packageName}).start();
+    //         } else {
+    //           document.getElementsByTagName('button')[1].innerHTML = "安装";
+    //         }
+    //       },
+    //
+    //       function () {// not installed,start download app
+    //         alert("not installed");
+    //         return false
+    //         //document.getElementsByClassName('app-check')[1].textContent = "打开";
+    //         // if(confirm('您尚未安装'+appName+'，是否现在下载安装？')){
+    //         //
+    //         //   fileTransfer.onProgress((ProgressEvent) => {//download progress listener
+    //         //     var percent =  ProgressEvent.loaded / ProgressEvent.total * 100;
+    //         //     percent = Math.round(percent);
+    //         //     fatherItem.getElementsByTagName('progress')[0].setAttribute('value',percent.toString());
+    //         //   });
+    //         //
+    //         //   fileTransfer.download(url, file.externalDataDirectory + packageName +'.apk',true)
+    //         //     .then((entry) => {
+    //         //       if(confirm(appName +'下载完成，是否立即安装？')){
+    //         //         var fileURL = entry.toURL();
+    //         //
+    //         //         file.checkFile(file.externalDataDirectory, packageName +'.apk').then((entry) =>{//download file exists
+    //         //           fileOpener.open(fileURL, 'application/vnd.android.package-archive')
+    //         //             .then((entry) => {}//open file success
+    //         //               ,(error) => {alert('开启安装包错误！');})//open file fail
+    //         //         },(error) => {alert('文件无法找到！');})//file.checkFile file not exist
+    //         //       }else{}//user choose not install app now
+    //         //     },(error) => {alert('下载出错！' + error.code);})//fileTransfer.download error
+    //         // } else {}//user choose not download app
+    //       });
+    // }//callApp event end
     AppItemComponent.prototype.ionViewCanLeave = function (e) {
         if (e.target.nodeName == "SPAN") {
             this.callApp(e);
@@ -106279,7 +106306,7 @@ __decorate([
 ], AppItemComponent.prototype, "app", void 0);
 AppItemComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'app-item',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/'<ion-item (click)="callApp($event)">\n  <ion-thumbnail item-left>\n    <img src={{app.icon}}>\n  </ion-thumbnail>\n  <h2>{{app.name}}</h2>\n  <p>{{app.corp}}</p>\n  <button ion-button item-right>测试</button>\n</ion-item>\n<!--(click)="ionViewCanLeave($event)"-->\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/
+        selector: 'app-item',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\home\appItem.html"*/'<ion-item (click)="ionViewCanLeave($event)">\n  <ion-thumbnail item-left>\n    <img src={{app.icon}}>\n  </ion-thumbnail>\n  <h2>{{app.name}}</h2>\n  <p>{{app.corp}}</p>\n  <button ion-button item-right color={{app.buttonColor}}>{{app.method}}</button>\n</ion-item>\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\home\appItem.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_device__["a" /* Device */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_app_availability__["a" /* AppAvailability */]])
 ], AppItemComponent);

@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AppDetailComponent } from "../appDetail/appDetail";
 import { AppAvailability } from '@ionic-native/app-availability';
@@ -9,7 +9,7 @@ import { Device  } from '@ionic-native/device';
   templateUrl: 'appItem.html'
 })
 
-export class AppItemComponent {
+export class AppItemComponent implements OnInit{
   constructor(public navCtrl: NavController,private device: Device,private appAvailability: AppAvailability){
 
   }
@@ -21,22 +21,23 @@ note:string = 'test';
     this.navCtrl.push(AppDetailComponent,this.app);
   }
 
-  callApp(){
-    let newarr = this.app;
-    this.appAvailability.check(this.note)
-      .then(function() {  // Success callback
-          // console.log(' is available :)');
-        },
-        function() {  // Error callback
-          // console.log(' is not available :(');
-          newarr.method = "打开";
-        })
+  ngOnInit(){
+      let appcopy = this.app;
+      this.appAvailability.check(this.app.packageName)
+        .then(function() {  // Success callback
+            // console.log(' is available :)');
+            appcopy.method = "打开";
+            appcopy.buttonColor = "secondary";
+          },
+          function() {  // Error callback
+            // console.log(' is not available :(');
+            appcopy.method = "安装";
+          })
   }
 
-  test(){
-    console.log(this.app.method);
+  callApp(e){
+    console.log(e.target);
   }
-
   // callApp(e){
   //   let packageName;
   //   let appName = this.app.name;
@@ -86,13 +87,13 @@ note:string = 'test';
   //       });
   // }//callApp event end
 
-  // ionViewCanLeave(e): boolean{
-  //   if(e.target.nodeName == "SPAN"){
-  //     this.callApp(e);
-  //     return false;
-  //   }else {
-  //     this.goToDetailPage(e);
-  //   }
-  // }
+  ionViewCanLeave(e): boolean{
+    if(e.target.nodeName == "SPAN"){
+      this.callApp(e);
+      return false;
+    }else {
+      this.goToDetailPage(e);
+    }
+  }
 
 }

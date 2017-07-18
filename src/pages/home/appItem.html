@@ -1,9 +1,9 @@
-<ion-item (tap)="test()">
+<ion-item (click)="ionViewCanLeave($event)">
   <ion-thumbnail item-left>
     <img src={{app.icon}}>
   </ion-thumbnail>
   <h2>{{app.name}}</h2>
   <p>{{app.corp}}</p>
-  <button ion-button item-right (click)="callApp()">测试</button>
+  <progress-bar [progress]="loadProgress"></progress-bar>
+  <!--<button ion-button item-right outline color={{app.buttonColor}}>{{app.method}}</button>-->
 </ion-item>
-<!--(click)="ionViewCanLeave($event)"-->

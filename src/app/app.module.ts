@@ -10,8 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { AppDetailComponent } from '../pages/appDetail/appDetail';
 import { AppDataService } from './appData.service';
 import { AppItemComponent } from '../pages/home/appItem.component';
-// import { eFormsComponent } from '../pages/home/eForms.component';
-// import { VpnComponent } from '../pages/home/vpn.component';
+import { ProgressBarComponent } from './progressBar.component'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +29,8 @@ import { FileOpener } from '@ionic-native/file-opener';
     HomePageComponent,
     TabsPage,
     AppDetailComponent,
-    AppItemComponent
+    AppItemComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
