@@ -1,8 +1,12 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ViewChild} from '@angular/core';
+import { Transfer, TransferObject } from '@ionic-native/transfer';
+import { File } from '@ionic-native/file';
+import { FileOpener } from '@ionic-native/file-opener';
 import { NavController } from 'ionic-angular';
 import { AppDetailComponent } from "../appDetail/appDetail";
-import { AppAvailability } from '@ionic-native/app-availability';
-import { Device  } from '@ionic-native/device';
+//import { AppAvailability } from '@ionic-native/app-availability';
+//import { Device  } from '@ionic-native/device';
+import {ProgressBarComponent} from "../../app/progressBar.component";
 
 @Component({
   selector: 'app-item',
@@ -10,90 +14,62 @@ import { Device  } from '@ionic-native/device';
 })
 
 export class AppItemComponent implements OnInit{
-  constructor(public navCtrl: NavController,private device: Device,private appAvailability: AppAvailability){
+  constructor(public navCtrl: NavController,private transfer: Transfer, private file: File,private fileOpener: FileOpener){
 
   }
   @Input() app:any = {};
-note:string = 'test';
-
+  @ViewChild(ProgressBarComponent) progressBar:ProgressBarComponent
 
   goToDetailPage(e) {
     this.navCtrl.push(AppDetailComponent,this.app);
   }
-
   ngOnInit(){
-      let appcopy = this.app;
-      this.appAvailability.check(this.app.packageName)
-        .then(function() {  // Success callback
-            // console.log(' is available :)');
-            appcopy.method = "打开";
-            appcopy.buttonColor = "secondary";
-          },
-          function() {  // Error callback
-            // console.log(' is not available :(');
-            appcopy.method = "安装";
-          })
+    this.app.buttonColor = this.progressBar.app.buttonColor;
   }
-
   callApp(e){
-    console.log(e.target);
+    alert(e.target.textContent.replace(/^\s+|\s+$/g,""));
   }
-  // callApp(e){
-  //   let packageName;
-  //   let appName = this.app.name;
-  //   // let method = this.app.method;
-  //   if (this.device.platform === 'Android') {
-  //     packageName = this.app.packageName;
-  //   } else if (this.device.platform === 'iOS') {
-  //     packageName = 'twitter://';
-  //   }
-  //
-  //   /****************check if app has installed**************/
-  //   this.appAvailability.check(packageName)
-  //     .then(
-  //       function() {//app has installed
-  //         if(confirm('检测到您已安装'+appName+'，是否现在开启？')){
-  //           (window as any).startApp.set({"package":packageName}).start();
-  //         } else {
-  //           document.getElementsByTagName('button')[1].innerHTML = "安装";
-  //         }
-  //       },
-  //
-  //       function () {// not installed,start download app
-  //         alert("not installed");
-  //         return false
-  //         //document.getElementsByClassName('app-check')[1].textContent = "打开";
-  //         // if(confirm('您尚未安装'+appName+'，是否现在下载安装？')){
-  //         //
-  //         //   fileTransfer.onProgress((ProgressEvent) => {//download progress listener
-  //         //     var percent =  ProgressEvent.loaded / ProgressEvent.total * 100;
-  //         //     percent = Math.round(percent);
-  //         //     fatherItem.getElementsByTagName('progress')[0].setAttribute('value',percent.toString());
-  //         //   });
-  //         //
-  //         //   fileTransfer.download(url, file.externalDataDirectory + packageName +'.apk',true)
-  //         //     .then((entry) => {
-  //         //       if(confirm(appName +'下载完成，是否立即安装？')){
-  //         //         var fileURL = entry.toURL();
-  //         //
-  //         //         file.checkFile(file.externalDataDirectory, packageName +'.apk').then((entry) =>{//download file exists
-  //         //           fileOpener.open(fileURL, 'application/vnd.android.package-archive')
-  //         //             .then((entry) => {}//open file success
-  //         //               ,(error) => {alert('开启安装包错误！');})//open file fail
-  //         //         },(error) => {alert('文件无法找到！');})//file.checkFile file not exist
-  //         //       }else{}//user choose not install app now
-  //         //     },(error) => {alert('下载出错！' + error.code);})//fileTransfer.download error
-  //         // } else {}//user choose not download app
-  //       });
-  // }//callApp event end
+  startApp(){
+    (window as any).startApp.set({"package":this.app.packageName}).start();
+  }
+  downloadApp(e){
+    const fileTransfer: TransferObject = this.transfer.create();
+    const url = encodeURI('http://221.224.163.10:9443/temp/'+ this.app.packageName +'.apk')
+    let fileURL:string;
+    //this.progressBar.progress = 50;
+    fileTransfer.onProgress((ProgressEvent) => {//download progress listener
+      let percent =  ProgressEvent.loaded / ProgressEvent.total * 100;
+      percent = Math.round(percent);
+      console.log(e.target);
+    });
+
+    fileTransfer.download(url, this.file.externalDataDirectory + this.app.packageName +'.apk',true)
+      .then((entry) => {
+        if(confirm(this.app.name +'下载完成，是否立即安装？')){
+          fileURL = entry.toURL();
+
+          this.file.checkFile(this.file.externalDataDirectory, this.app.packageName +'.apk').then((entry) =>{//download file exists
+            this.fileOpener.open(fileURL, 'application/vnd.android.package-archive')
+              .then((entry) => {}//open file success
+                ,(error) => {alert('开启安装包错误！');})//open file fail
+          },(error) => {alert('文件无法找到！');})//file.checkFile file not exist
+        }else{}//user choose not install app now
+      },(error) => {alert('下载出错！' + error.code);})//fileTransfer.download error
+  }
 
   ionViewCanLeave(e): boolean{
-    if(e.target.nodeName == "SPAN"){
-      this.callApp(e);
+    let str = e.target.textContent.replace(/^\s+|\s+$/g,"");
+    if(str == "下载"){
+      // this.progressBar.app.buttonColor = "secondary";
+
+      this.downloadApp(e);
       return false;
-    }else {
+     }else if (str == "打开"){
+      this.startApp();
+      return false;
+    } else {
       this.goToDetailPage(e);
-    }
+     }
   }
 
 }

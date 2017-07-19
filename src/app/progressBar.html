@@ -1,5 +1,6 @@
 <div class="progress-outer">
-  <div class="progress-inner" [style.width]="progress + '%'">
-    {{progress}}%
+  <div class="progress-inner" [style.width]="progress + '%'" id={{app.buttonColor}} (tap)="test()">
+    {{app.method}}{{progress}}
   </div>
 </div>
+<!--{{progress}}%测试progress + '%'-->

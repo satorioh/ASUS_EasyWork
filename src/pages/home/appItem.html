@@ -4,6 +4,6 @@
   </ion-thumbnail>
   <h2>{{app.name}}</h2>
   <p>{{app.corp}}</p>
-  <progress-bar [progress]="loadProgress"></progress-bar>
-  <!--<button ion-button item-right outline color={{app.buttonColor}}>{{app.method}}</button>-->
+
+  <button ion-button item-right color={{app.buttonColor}}><progress-bar [app]="app" [progress]="loadProgress" item-right></progress-bar></button>
 </ion-item>
