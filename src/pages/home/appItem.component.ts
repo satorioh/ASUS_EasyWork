@@ -13,7 +13,7 @@ import {ProgressBarComponent} from "../../app/progressBar.component";
   templateUrl: 'appItem.html'
 })
 
-export class AppItemComponent implements OnInit{
+export class AppItemComponent {
   constructor(public navCtrl: NavController,private transfer: Transfer, private file: File,private fileOpener: FileOpener){
 
   }
@@ -23,24 +23,25 @@ export class AppItemComponent implements OnInit{
   goToDetailPage(e) {
     this.navCtrl.push(AppDetailComponent,this.app);
   }
-  ngOnInit(){
-    this.app.buttonColor = this.progressBar.app.buttonColor;
-  }
-  callApp(e){
-    alert(e.target.textContent.replace(/^\s+|\s+$/g,""));
-  }
+  // ngOnInit(){
+  //   this.app.buttonColor = this.progressBar.app.buttonColor;
+  // }
+  // callApp(e){
+  //   this.app.percent = 30;
+  // }
   startApp(){
     (window as any).startApp.set({"package":this.app.packageName}).start();
   }
   downloadApp(e){
+    console.log(e);
     const fileTransfer: TransferObject = this.transfer.create();
     const url = encodeURI('http://221.224.163.10:9443/temp/'+ this.app.packageName +'.apk')
     let fileURL:string;
-    //this.progressBar.progress = 50;
     fileTransfer.onProgress((ProgressEvent) => {//download progress listener
       let percent =  ProgressEvent.loaded / ProgressEvent.total * 100;
       percent = Math.round(percent);
-      console.log(e.target);
+      e.style.width = percent+"%";
+      e.textContent = percent+"%";
     });
 
     fileTransfer.download(url, this.file.externalDataDirectory + this.app.packageName +'.apk',true)
@@ -50,7 +51,7 @@ export class AppItemComponent implements OnInit{
 
           this.file.checkFile(this.file.externalDataDirectory, this.app.packageName +'.apk').then((entry) =>{//download file exists
             this.fileOpener.open(fileURL, 'application/vnd.android.package-archive')
-              .then((entry) => {}//open file success
+              .then((entry) => {e.textContent= "打开"}//open file success
                 ,(error) => {alert('开启安装包错误！');})//open file fail
           },(error) => {alert('文件无法找到！');})//file.checkFile file not exist
         }else{}//user choose not install app now
@@ -60,9 +61,9 @@ export class AppItemComponent implements OnInit{
   ionViewCanLeave(e): boolean{
     let str = e.target.textContent.replace(/^\s+|\s+$/g,"");
     if(str == "下载"){
-      // this.progressBar.app.buttonColor = "secondary";
+      this.progressBar.app.buttonColor = "secondary";
 
-      this.downloadApp(e);
+      this.downloadApp(e.target);
       return false;
      }else if (str == "打开"){
       this.startApp();

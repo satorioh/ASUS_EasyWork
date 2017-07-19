@@ -22,17 +22,16 @@ export class ProgressBarComponent implements OnInit{
         },
         function() {  // Error callback
           appcopy.method = "下载";
-          //appcopy.buttonColor = "secondary";
         })
   }
 
-  test(){
-    var pro = this.progress;
-    console.log(pro);
-    pro = 0;
-    setInterval(function () {
-      pro++;
-      console.log(pro);
-    },1000);
-  }
+  // test(){
+  //   var pro = this.progress;
+  //   console.log(pro);
+  //   pro = 0;
+  //   setInterval(function () {
+  //     pro++;
+  //     console.log(pro);
+  //   },1000);
+  // }
 }
