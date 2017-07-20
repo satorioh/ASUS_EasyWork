@@ -26625,15 +26625,23 @@ progress-bar .progress-outer {
 progress-bar .progress-inner {
   min-width: 1%;
   height: 100%;
-  line-height: 1;
   white-space: nowrap;
   overflow: hidden;
-  padding: 7px 0px;
   background-color: #488aff;
 }
 
 progress-bar #secondary {
   background-color: #32db64;
+}
+
+page-about .scroll-content {
+  padding: 0 !important;
+}
+
+page-about iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 app-detail ion-thumbnail.detailPageIcon img {
@@ -26651,6 +26659,18 @@ app-detail p {
 
 app-detail h6 {
   font-size: 1em;
+}
+
+app-detail button {
+  padding: 0 !important;
+}
+
+app-detail progress-bar {
+  width: 100%;
+}
+
+app-detail progress-bar .progress-inner {
+  line-height: 37px !important;
 }
 
 app-item .item-button {

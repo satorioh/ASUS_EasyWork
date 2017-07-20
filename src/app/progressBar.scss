@@ -10,26 +10,19 @@ progress-bar {
     padding: 0;
     text-align: center;
     background-color: transparent;
-    //border: 1px solid red;
-    //color: #fff;
-    //border-radius: 20px;
     background-color: map-get($colors, primary);
   }
 
   .progress-inner {
     min-width: 1%;
     height: 100%;
-    line-height: 1;
+    //line-height: 1;
     white-space: nowrap;
     overflow: hidden;
-    padding: 7px 0px;
-
-    //border:1px solid red;
-    //border-radius: 20px;
     background-color: map-get($colors, primary);
   }
   #secondary {
-    background-color: map-get($colors, secondary) ;
+    background-color: map-get($colors, secondary);
   }
 
 }

@@ -6,8 +6,8 @@ import { NavParams } from 'ionic-angular';
   templateUrl: 'appDetail.html'
 })
 export class AppDetailComponent{
-  constructor(private navParams: NavParams) {
-    //console.log(navParams.data);
-  }
+  constructor(
+    private navParams: NavParams
+  ) {}
   ItemInfo = this.navParams.data;
 }

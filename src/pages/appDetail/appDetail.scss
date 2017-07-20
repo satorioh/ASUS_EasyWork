@@ -12,4 +12,13 @@ app-detail {
   h6 {
     font-size:1em;
   }
+  button {
+    padding: 0 !important;
+  }
+  progress-bar {
+    width:100%;
+    .progress-inner{
+      line-height: 37px !important;
+    }
+  }
 }

@@ -254,6 +254,14 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.fileOpener2"
         ]
+    },
+    {
+        "id": "cordova-plugin-themeablebrowser.themeablebrowser",
+        "file": "plugins/cordova-plugin-themeablebrowser/www/themeablebrowser.js",
+        "pluginId": "cordova-plugin-themeablebrowser",
+        "clobbers": [
+            "cordova.ThemeableBrowser"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -271,7 +279,8 @@ module.exports.metadata =
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-file": "4.3.3",
     "cordova-plugin-file-transfer": "1.6.3",
-    "cordova-plugin-file-opener2": "2.0.15"
+    "cordova-plugin-file-opener2": "2.0.15",
+    "cordova-plugin-themeablebrowser": "0.2.17"
 };
 // BOTTOM OF METADATA
 });

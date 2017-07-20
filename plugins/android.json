@@ -42,6 +42,9 @@
         },
         "cordova-plugin-file-opener2": {
             "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
+        },
+        "cordova-plugin-themeablebrowser": {
+            "PACKAGE_NAME": "com.asus.easywork"
         }
     },
     "dependent_plugins": {

@@ -19,6 +19,8 @@ import { Device  } from '@ionic-native/device';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
+import { ThemeableBrowser} from '@ionic-native/themeable-browser';
+//import {SafeResourceUrl, DomSanitizer} from '@angular/platform-browser';
 
 
 @NgModule({
@@ -55,6 +57,7 @@ import { FileOpener } from '@ionic-native/file-opener';
     File,
     FileOpener,
     AppDataService,
+    ThemeableBrowser,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
