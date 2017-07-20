@@ -18,13 +18,13 @@ export  class AppDataService {
     },
       {
         id: 2,
-        name: 'eForms',
+        name: 'ASUS IT Mobile Portal',
         packageName: 'com.asusit.ap5.asusitmobileportal',
         version: '1.1.9',
         size:'5.8 MB',
         icon: 'assets/img/e-form-icon.png',
         corp: 'ASUSTeK COMPUTER INC.',
-        info: '华硕内部应用之eForms，可用此eForms快速签核表单/假单',
+        info: '本APP是華碩員工專屬，提供MIS所開發的各項免費應用程式，可以幫助同仁在工作效率上、或生活便利性，利用您隨身的智慧手機，創造更優質的華碩科技生活！',
         method:'',
         buttonColor:'blue',
         percent:100

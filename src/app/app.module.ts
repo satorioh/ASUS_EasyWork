@@ -1,6 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { LoadingController } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPageComponent } from '../pages/about/about';
@@ -19,7 +20,7 @@ import { Device  } from '@ionic-native/device';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
-import { ThemeableBrowser} from '@ionic-native/themeable-browser';
+//import { ThemeableBrowser} from '@ionic-native/themeable-browser';
 //import {SafeResourceUrl, DomSanitizer} from '@angular/platform-browser';
 
 
@@ -57,7 +58,7 @@ import { ThemeableBrowser} from '@ionic-native/themeable-browser';
     File,
     FileOpener,
     AppDataService,
-    ThemeableBrowser,
+    LoadingController,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
