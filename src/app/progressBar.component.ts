@@ -1,6 +1,5 @@
 import { Component, Input,OnInit } from '@angular/core';
 import { AppAvailability } from '@ionic-native/app-availability';
-//import { Device  } from '@ionic-native/device';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
@@ -71,15 +70,15 @@ export class ProgressBarComponent implements OnInit {
                   e.textContent = "打开"
                 }//open file success
                 , (error) => {
-                  alert('开启安装包错误！');
+                  alert('开启安装包错误，请重新再试！');
                 })//open file fail
           }, (error) => {
-            alert('文件无法找到！');
+            alert('文件无法找到，请重新再试！');
           })//file.checkFile file not exist
         } else {
         }//user choose not install app now
       }, (error) => {
-        alert('下载出错！' + error.code);
+        alert('无可用网络连接！' + error.code);
       })//fileTransfer.download error
   }
 

@@ -1,5 +1,4 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
-// import { LoadingController } from 'ionic-angular';
+import {Component} from '@angular/core';
 import { AppDataService } from '../../app/appData.service';
 
 @Component({
@@ -9,22 +8,9 @@ import { AppDataService } from '../../app/appData.service';
 export class HomePageComponent{
   appDatas:any[] = [];
   constructor(
-    private appData:AppDataService,
-    // public loadingCtrl: LoadingController
+    private appData:AppDataService
   ) {
     this.appDatas = appData.appArr;
   }
-
-  // loader = this.loadingCtrl.create({
-  //     content: "载入中...",
-  //     duration: 3000
-  //   });
-  //
-  // ngOnInit(){
-  //   this.loader.present();
-  // }
-  // ngAfterViewInit(){
-  //   this.loader.dismiss();
-  // }
 }
 
