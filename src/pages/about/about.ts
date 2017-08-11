@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { NavController } from 'ionic-angular';
-import {SafeResourceUrl, DomSanitizer} from '@angular/platform-browser';
+import {DomSanitizer} from '@angular/platform-browser';
 import { LoadingController } from 'ionic-angular';
 
 @Component({
@@ -11,7 +10,6 @@ import { LoadingController } from 'ionic-angular';
 export class AboutPageComponent implements OnInit{
 
   constructor(
-    public navCtrl: NavController,
     public sanitizer: DomSanitizer,
     public loadingCtrl: LoadingController
   ) {}

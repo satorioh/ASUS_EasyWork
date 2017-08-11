@@ -1,4 +1,5 @@
 import { Component, Input,OnInit } from '@angular/core';
+import { Platform } from 'ionic-angular';
 import { AppAvailability } from '@ionic-native/app-availability';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
@@ -14,26 +15,27 @@ export class ProgressBarComponent implements OnInit {
   @Input() app: any = {};//从appItem.component的app对象导入
 
   constructor(private appAvailability: AppAvailability,
+              public platform: Platform,
               private transfer: Transfer,
               private file: File,
               private fileOpener: FileOpener
-  ) {
-  }
+  ) {}
 
   ngOnInit() {
-    //检查app是否已经安装
-    let appcopy = this.app;
-    this.appAvailability.check(this.app.packageName)
-      .then(function () {  // 已经安装则显示“打开”，并修改按钮颜色为绿色
-          appcopy.method = "打开";
-          appcopy.buttonColor = "secondary";
-        },
-        function () {  // 未安装则显示“下载”
-          appcopy.method = "下载";
-        });
-    //获取progress-bar的height值，并设置其line-height
-    this.setLineHeight("progress-inner");
-
+    this.platform.ready().then(() =>{
+      //检查app是否已经安装
+      let appcopy = this.app;
+      this.appAvailability.check(this.app.packageName)
+        .then(function () {  // 已经安装则显示“打开”，并修改按钮颜色为绿色
+            appcopy.method = "打开";
+            appcopy.buttonColor = "secondary";
+          },
+          function () {  // 未安装则显示“下载”
+            appcopy.method = "下载";
+          });
+      //获取progress-bar的height值，并设置其line-height
+      this.setLineHeight("progress-inner");
+    });
   }
   setLineHeight(element){
     let elementAll = document.getElementsByClassName(element);
