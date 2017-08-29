@@ -27575,6 +27575,12 @@ app-detail progress-bar .progress-inner {
   line-height: 37px !important;
 }
 
+page-contact baidu-map {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
 app-item .item-button {
   padding: 0 !important;
 }

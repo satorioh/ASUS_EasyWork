@@ -7,6 +7,7 @@
     <access origin="*" />
     <allow-navigation href="*" />
     <allow-navigation href="http://*/*" />
+  <allow-navigation href="https://*/*"/>
     <allow-navigation href="file://*/*" />
     <allow-intent href="*" />
     <allow-navigation href="http://ionic.local/*" />

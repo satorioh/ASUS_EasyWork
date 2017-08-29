@@ -12,8 +12,17 @@
         <provider android:authorities="com.ionicframework.asuseasywork901784.opener.provider" android:exported="false" android:grantUriPermissions="true" android:name="io.github.pwlin.cordova.plugins.fileopener2.FileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/opener_paths" />
         </provider>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote" />
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="8ahMsvwHAnp4ZFAfVZVg6mx9gMGdpN0A" />
     </application>
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 </manifest>

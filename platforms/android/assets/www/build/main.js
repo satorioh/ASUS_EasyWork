@@ -1,1 +1,763 @@
-webpackJsonp([0],{110:function(n,l){function t(n){return new Promise(function(l,t){t(new Error("Cannot find module '"+n+"'."))})}t.keys=function(){return[]},t.resolve=t,n.exports=t,t.id=110},113:function(n,l,t){"use strict";function e(n){return O._24(0,[(n()(),O._4(0,null,null,2,"ion-nav",[],null,null,null,D.b,D.a)),O._3(2187264,null,0,w.a,[[2,T.a],[2,L.a],M.a,R.a,j.a,O.k,O.y,O.E,O.j,F.f,N.a,[2,H.a],z.a,O.l],{root:[0,"root"]},null),O._20(3072,null,G.a,null,[w.a]),(n()(),O._23(null,["\n"]))],function(n,l){n(l,1,0,l.component.rootPage)},null)}function _(n){return Z._24(0,[(n()(),Z._4(0,null,null,12,"ion-tabs",[],null,null,null,$.b,$.a)),Z._3(2187264,null,0,W.a,[[2,Y.a],[2,q.a],J.a,Q.a,Z.k,X.a,Z.E,nn.a,ln.a],null,null),Z._20(3072,null,tn.a,null,[W.a]),(n()(),Z._23(0,["\n  "])),(n()(),Z._4(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","apps"],["tabTitle","应用"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,en.b,en.a)),Z._3(122880,null,0,_n.a,[W.a,J.a,Q.a,X.a,Z.k,Z.y,Z.E,Z.j,Z.h,on.f,un.a,[2,nn.a],an.a,Z.l],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(n()(),Z._23(0,["\n  "])),(n()(),Z._4(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","book"],["tabTitle","指南"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,en.b,en.a)),Z._3(122880,null,0,_n.a,[W.a,J.a,Q.a,X.a,Z.k,Z.y,Z.E,Z.j,Z.h,on.f,un.a,[2,nn.a],an.a,Z.l],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(n()(),Z._23(0,["\n  "])),(n()(),Z._4(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","construct"],["tabTitle","开发中"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,en.b,en.a)),Z._3(122880,null,0,_n.a,[W.a,J.a,Q.a,X.a,Z.k,Z.y,Z.E,Z.j,Z.h,on.f,un.a,[2,nn.a],an.a,Z.l],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(n()(),Z._23(0,["\n"])),(n()(),Z._23(null,["\n"]))],function(n,l){var t=l.component;n(l,5,0,t.tab1Root,"应用","apps");n(l,8,0,t.tab2Root,"指南","book");n(l,11,0,t.tab3Root,"开发中","construct")},function(n,l){n(l,4,0,Z._18(l,5)._tabId,Z._18(l,5)._btnId),n(l,7,0,Z._18(l,8)._tabId,Z._18(l,8)._btnId),n(l,10,0,Z._18(l,11)._tabId,Z._18(l,11)._btnId)})}function i(n){return cn._24(0,[(n()(),cn._4(0,null,null,4,"div",[["class","progress-outer"]],null,null,null,null,null)),(n()(),cn._23(null,["\n  "])),(n()(),cn._4(0,null,null,1,"div",[["class","progress-inner"]],[[8,"id",0]],[[null,"click"]],function(n,l,t){var e=!0,_=n.component;return"click"===l&&(e=!1!==_.callApp(t)&&e),e},null,null)),(n()(),cn._23(null,["\n    ","\n  "])),(n()(),cn._23(null,["\n"])),(n()(),cn._23(null,["\n"]))],null,function(n,l){var t=l.component;n(l,2,0,cn._8(1,"",t.app.buttonColor,"")),n(l,3,0,t.app.method)})}function o(n){return Pn._24(0,[Pn._21(201326592,1,{progressBar:0}),(n()(),Pn._4(0,null,null,23,"ion-item",[["class","item item-block"]],null,[[null,"click"]],function(n,l,t){var e=!0,_=n.component;return"click"===l&&(e=!1!==_.ionViewCanLeave(t)&&e),e},kn.b,kn.a)),Pn._3(548864,null,3,Sn.a,[En.a,An.a,Pn.k,Pn.E,[2,Cn.a]],null,null),Pn._21(167772160,2,{contentLabel:0}),Pn._21(301989888,3,{_buttons:1}),Pn._21(301989888,4,{_icons:1}),Pn._3(8192,null,0,In.a,[],null,null),(n()(),Pn._23(2,["\n  "])),(n()(),Pn._4(0,null,0,4,"ion-thumbnail",[["item-left",""]],null,null,null,null,null)),Pn._3(8192,null,0,vn.a,[],null,null),(n()(),Pn._23(null,["\n    "])),(n()(),Pn._4(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(n()(),Pn._23(null,["\n  "])),(n()(),Pn._23(2,["\n  "])),(n()(),Pn._4(0,null,2,1,"h2",[],null,null,null,null,null)),(n()(),Pn._23(null,["",""])),(n()(),Pn._23(2,["\n  "])),(n()(),Pn._4(0,null,2,1,"p",[],null,null,null,null,null)),(n()(),Pn._23(null,["",""])),(n()(),Pn._23(2,["\n\n  "])),(n()(),Pn._4(0,null,4,3,"button",[["ion-button",""],["item-right",""]],null,null,null,On.b,On.a)),Pn._3(548864,[[3,4]],0,Dn.a,[[8,""],An.a,Pn.k,Pn.E],null,null),(n()(),Pn._4(0,null,0,1,"progress-bar",[["item-right",""]],null,null,null,i,yn)),Pn._3(57344,[[1,4]],0,A,[wn.a,Tn.a,Ln.a,Mn.a,Rn.a],{app:[0,"app"]},null),(n()(),Pn._23(2,["\n"])),(n()(),Pn._23(null,["\n"])),(n()(),Pn._23(null,["\n"]))],function(n,l){n(l,23,0,l.component.app)},function(n,l){var t=l.component;n(l,11,0,Pn._8(1,"",t.app.icon,"")),n(l,15,0,t.app.name),n(l,18,0,t.app.corp)})}function u(n){return Hn._24(0,[(n()(),Hn._4(0,null,null,4,"li",[],null,null,null,null,null)),(n()(),Hn._23(null,["\n        "])),(n()(),Hn._4(0,null,null,1,"app-item",[],null,null,null,o,Nn)),Hn._3(24576,null,0,C,[zn.a],{app:[0,"app"]},null),(n()(),Hn._23(null,["\n      "]))],function(n,l){n(l,3,0,l.context.$implicit)},null)}function a(n){return Hn._24(0,[(n()(),Hn._4(0,null,null,10,"ion-header",[],null,null,null,null,null)),Hn._3(8192,null,0,Gn.a,[Un.a,Hn.k,Hn.E,[2,Bn.a]],null,null),(n()(),Hn._23(null,["\n  "])),(n()(),Hn._4(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","blue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,Vn.b,Vn.a)),Hn._3(24576,null,0,xn.a,[Kn.a,[2,Bn.a],[2,zn.a],Un.a,Hn.k,Hn.E],{color:[0,"color"]},null),(n()(),Hn._23(3,["\n    "])),(n()(),Hn._4(0,null,3,2,"ion-title",[],null,null,null,Zn.b,Zn.a)),Hn._3(24576,null,0,$n.a,[Un.a,Hn.k,Hn.E,[2,Wn.a],[2,xn.a]],null,null),(n()(),Hn._23(0,["ASUS EasyWork"])),(n()(),Hn._23(3,["\n  "])),(n()(),Hn._23(null,["\n"])),(n()(),Hn._23(null,["\n\n"])),(n()(),Hn._4(0,null,null,20,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Yn.b,Yn.a)),Hn._3(2187264,null,0,qn.a,[Un.a,Jn.a,Qn.a,Hn.k,Hn.E,Kn.a,Xn.a,Hn.y,[2,Bn.a],[2,zn.a]],null,null),(n()(),Hn._23(1,["\n  "])),(n()(),Hn._4(0,null,1,16,"ion-list",[["no-border",""]],null,null,null,null,null)),Hn._3(8192,null,0,nl.a,[Un.a,Hn.k,Hn.E,Jn.a,ll.f,Qn.a],null,null),(n()(),Hn._23(null,["\n\n    "])),(n()(),Hn._4(0,null,null,6,"ion-list-header",[["class","item"]],null,null,null,tl.b,tl.a)),Hn._3(548864,null,3,el.a,[_l.a,Un.a,Hn.k,Hn.E,[2,il.a]],null,null),Hn._21(167772160,1,{contentLabel:0}),Hn._21(301989888,2,{_buttons:1}),Hn._21(301989888,3,{_icons:1}),Hn._3(8192,null,0,ol.a,[Un.a,Hn.E,Hn.k,[8,null]],null,null),(n()(),Hn._23(2,["\n      应用\n    "])),(n()(),Hn._23(null,["\n    "])),(n()(),Hn._4(0,null,null,4,"ul",[],null,null,null,null,null)),(n()(),Hn._23(null,["\n      "])),(n()(),Hn._0(8388608,null,null,1,null,u)),Hn._3(401408,null,0,ul.g,[Hn.O,Hn.L,Hn.s],{ngForOf:[0,"ngForOf"]},null),(n()(),Hn._23(null,["\n    "])),(n()(),Hn._23(null,["\n  "])),(n()(),Hn._23(1,["\n\n\n"])),(n()(),Hn._23(null,["\n\n"]))],function(n,l){var t=l.component;n(l,4,0,"blue"),n(l,29,0,t.appDatas)},function(n,l){n(l,3,0,Hn._18(l,4)._hidden,Hn._18(l,4)._sbPadding),n(l,12,0,Hn._18(l,13).statusbarPadding,Hn._18(l,13)._hasRefresher)})}function r(n){return pl._24(0,[(n()(),pl._4(0,null,null,10,"ion-header",[],null,null,null,null,null)),pl._3(8192,null,0,cl.a,[hl.a,pl.k,pl.E,[2,fl.a]],null,null),(n()(),pl._23(null,["\n  "])),(n()(),pl._4(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","blue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,bl.b,bl.a)),pl._3(24576,null,0,dl.a,[gl.a,[2,fl.a],[2,ml.a],hl.a,pl.k,pl.E],{color:[0,"color"]},null),(n()(),pl._23(3,["\n    "])),(n()(),pl._4(0,null,3,2,"ion-title",[],null,null,null,yl.b,yl.a)),pl._3(24576,null,0,Pl.a,[hl.a,pl.k,pl.E,[2,kl.a],[2,dl.a]],null,null),(n()(),pl._23(0,["\n      ASUS EasyWork\n    "])),(n()(),pl._23(3,["\n  "])),(n()(),pl._23(null,["\n"])),(n()(),pl._23(null,["\n\n"])),(n()(),pl._4(0,null,null,4,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Sl.b,Sl.a)),pl._3(2187264,null,0,El.a,[hl.a,Al.a,Cl.a,pl.k,pl.E,gl.a,Il.a,pl.y,[2,fl.a],[2,ml.a]],null,null),(n()(),pl._23(1,["\n  "])),(n()(),pl._4(0,null,1,0,"iframe",[["frameborder","0"]],[[8,"src",5]],null,null,null,null)),(n()(),pl._23(1,["\n"])),(n()(),pl._23(null,["\n"]))],function(n,l){n(l,4,0,"blue")},function(n,l){var t=l.component;n(l,3,0,pl._18(l,4)._hidden,pl._18(l,4)._sbPadding),n(l,12,0,pl._18(l,13).statusbarPadding,pl._18(l,13)._hasRefresher),n(l,15,0,t.manualUrl())})}function s(n){return Ll._24(0,[(n()(),Ll._4(0,null,null,10,"ion-header",[],null,null,null,null,null)),Ll._3(8192,null,0,Ml.a,[Rl.a,Ll.k,Ll.E,[2,jl.a]],null,null),(n()(),Ll._23(null,["\n  "])),(n()(),Ll._4(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","blue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,Fl.b,Fl.a)),Ll._3(24576,null,0,Nl.a,[Hl.a,[2,jl.a],[2,zl.a],Rl.a,Ll.k,Ll.E],{color:[0,"color"]},null),(n()(),Ll._23(3,["\n    "])),(n()(),Ll._4(0,null,3,2,"ion-title",[],null,null,null,Gl.b,Gl.a)),Ll._3(24576,null,0,Ul.a,[Rl.a,Ll.k,Ll.E,[2,Bl.a],[2,Nl.a]],null,null),(n()(),Ll._23(0,["\n      Contact\n    "])),(n()(),Ll._23(3,["\n  "])),(n()(),Ll._23(null,["\n"])),(n()(),Ll._23(null,["\n\n"])),(n()(),Ll._4(0,null,null,5,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Vl.b,Vl.a)),Ll._3(2187264,null,0,xl.a,[Rl.a,Kl.a,Zl.a,Ll.k,Ll.E,Hl.a,$l.a,Ll.y,[2,jl.a],[2,zl.a]],null,null),(n()(),Ll._23(1,["\n  "])),(n()(),Ll._4(0,null,1,1,"h3",[],null,null,null,null,null)),(n()(),Ll._23(null,["新功能开发中，敬请期待！"])),(n()(),Ll._23(1,["\n"])),(n()(),Ll._23(null,["\n"]))],function(n,l){n(l,4,0,"blue")},function(n,l){n(l,3,0,Ll._18(l,4)._hidden,Ll._18(l,4)._sbPadding),n(l,12,0,Ll._18(l,13).statusbarPadding,Ll._18(l,13)._hasRefresher)})}function p(n){return Jl._24(0,[(n()(),Jl._4(0,null,null,4,"ion-slide",[],null,null,null,Ql.b,Ql.a)),Jl._3(90112,null,0,Xl.a,[Jl.k,Jl.E,nt.a],null,null),(n()(),Jl._23(0,["\n    "])),(n()(),Jl._4(0,null,0,0,"img",[["class","slide-image"]],[[8,"src",4]],null,null,null,null)),(n()(),Jl._23(0,["\n  "]))],null,function(n,l){n(l,3,0,l.context.$implicit)})}function c(n){return Jl._24(0,[(n()(),Jl._4(0,null,null,5,"ion-slides",[["pager",""]],null,null,null,lt.b,lt.a)),Jl._3(614400,null,0,nt.a,[tt.a,et.a,Jl.y,[2,_t.a],Jl.k,Jl.E],{pager:[0,"pager"]},null),(n()(),Jl._23(0,["\n  "])),(n()(),Jl._0(8388608,null,0,1,null,p)),Jl._3(401408,null,0,it.g,[Jl.O,Jl.L,Jl.s],{ngForOf:[0,"ngForOf"]},null),(n()(),Jl._23(0,["\n"])),(n()(),Jl._23(null,["\n"]))],function(n,l){var t=l.component;n(l,1,0,""),n(l,4,0,t.slides.slideImg)},null)}function h(n){return at._24(0,[(n()(),at._4(0,null,null,10,"ion-header",[],null,null,null,null,null)),at._3(8192,null,0,rt.a,[st.a,at.k,at.E,[2,pt.a]],null,null),(n()(),at._23(null,["\n  "])),(n()(),at._4(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","blue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,ct.b,ct.a)),at._3(24576,[["nav",4]],0,ht.a,[ft.a,[2,pt.a],[2,bt.a],st.a,at.k,at.E],{color:[0,"color"]},null),(n()(),at._23(3,["\n    "])),(n()(),at._4(0,null,3,2,"ion-title",[],null,null,null,dt.b,dt.a)),at._3(24576,null,0,gt.a,[st.a,at.k,at.E,[2,mt.a],[2,ht.a]],null,null),(n()(),at._23(0,["\n      应用详情\n    "])),(n()(),at._23(3,["\n  "])),(n()(),at._23(null,["\n"])),(n()(),at._23(null,["\n\n"])),(n()(),at._4(0,null,null,47,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,yt.b,yt.a)),at._3(2187264,null,0,Pt.a,[st.a,kt.a,St.a,at.k,at.E,ft.a,Et.a,at.y,[2,pt.a],[2,bt.a]],null,null),(n()(),at._23(1,["\n  "])),(n()(),at._4(0,null,1,16,"ion-item",[["class","item item-block"]],null,null,null,At.b,At.a)),at._3(548864,null,3,Ct.a,[It.a,st.a,at.k,at.E,[2,vt.a]],null,null),at._21(167772160,1,{contentLabel:0}),at._21(301989888,2,{_buttons:1}),at._21(301989888,3,{_icons:1}),at._3(8192,null,0,Ot.a,[],null,null),(n()(),at._23(2,["\n    "])),(n()(),at._4(0,null,2,4,"ion-thumbnail",[["class","detailPageIcon"]],null,null,null,null,null)),at._3(8192,null,0,Dt.a,[],null,null),(n()(),at._23(null,["\n      "])),(n()(),at._4(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(n()(),at._23(null,["\n    "])),(n()(),at._23(2,["\n    "])),(n()(),at._4(0,null,2,1,"h2",[],null,null,null,null,null)),(n()(),at._23(null,["",""])),(n()(),at._23(2,["\n\n    "])),(n()(),at._23(2,["\n  "])),(n()(),at._23(1,["\n  "])),(n()(),at._4(0,null,1,1,"h6",[],null,null,null,null,null)),(n()(),at._23(null,["配置演示"])),(n()(),at._23(1,["\n  "])),(n()(),at._4(0,null,1,1,"slide-show",[],null,null,null,c,ut)),at._3(24576,null,0,I,[],{slides:[0,"slides"]},null),(n()(),at._23(1,["\n  "])),(n()(),at._4(0,null,1,1,"h6",[],null,null,null,null,null)),(n()(),at._23(null,["应用描述"])),(n()(),at._23(1,["\n  "])),(n()(),at._4(0,null,1,1,"p",[],null,null,null,null,null)),(n()(),at._23(null,["",""])),(n()(),at._23(1,["\n\n  "])),(n()(),at._4(0,null,1,1,"h6",[],null,null,null,null,null)),(n()(),at._23(null,["其他信息"])),(n()(),at._23(1,["\n  "])),(n()(),at._4(0,null,1,5,"p",[],null,null,null,null,null)),(n()(),at._23(null,["开发者：",""])),(n()(),at._4(0,null,null,0,"br",[],null,null,null,null,null)),(n()(),at._23(null,["\n  版本：",""])),(n()(),at._4(0,null,null,0,"br",[],null,null,null,null,null)),(n()(),at._23(null,["\n  大小：",""])),(n()(),at._23(1,["\n\n  "])),(n()(),at._4(0,null,1,3,"button",[["block",""],["ion-button",""]],null,null,null,wt.b,wt.a)),at._3(548864,null,0,Tt.a,[[8,""],st.a,at.k,at.E],{block:[0,"block"]},null),(n()(),at._4(0,null,0,1,"progress-bar",[],null,null,null,i,yn)),at._3(57344,null,0,A,[Lt.a,kt.a,Mt.a,Rt.a,jt.a],{app:[0,"app"]},null),(n()(),at._23(1,["\n"])),(n()(),at._23(null,["\n"]))],function(n,l){var t=l.component;n(l,4,0,"blue"),n(l,37,0,t.ItemInfo);n(l,56,0,""),n(l,58,0,t.ItemInfo)},function(n,l){var t=l.component;n(l,3,0,at._18(l,4)._hidden,at._18(l,4)._sbPadding),n(l,12,0,at._18(l,13).statusbarPadding,at._18(l,13)._hasRefresher),n(l,25,0,at._8(1,"",t.ItemInfo.icon,"")),n(l,29,0,t.ItemInfo.name),n(l,43,0,t.ItemInfo.info),n(l,49,0,t.ItemInfo.corp),n(l,51,0,t.ItemInfo.version),n(l,53,0,t.ItemInfo.size)})}Object.defineProperty(l,"__esModule",{value:!0});t(0),t(16),t(18);var f=function(){function n(n,l){this.sanitizer=n,this.loadingCtrl=l,this.loader=this.loadingCtrl.create({content:"载入中...",duration:1500})}return n.prototype.manualUrl=function(){return this.sanitizer.bypassSecurityTrustResourceUrl("http://appservice.asus.com/app_userguide/index.html")},n.prototype.ngOnInit=function(){this.loader.present()},n}(),b=(t(0),t(18),function(){return function(n){this.navCtrl=n}}()),d=t(0),g=this&&this.__decorate||function(n,l,t,e){var _,i=arguments.length,o=i<3?l:null===e?e=Object.getOwnPropertyDescriptor(l,t):e;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)o=Reflect.decorate(n,l,t,e);else for(var u=n.length-1;u>=0;u--)(_=n[u])&&(o=(i<3?_(o):i>3?_(l,t,o):_(l,t))||o);return i>3&&o&&Object.defineProperty(l,t,o),o},m=this&&this.__metadata||function(n,l){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(n,l)},y=function(){return function(){this.appArr=[{id:1,name:"Skype for Business",packageName:"com.microsoft.office.lync15",version:"6.16.0.6",size:"41.4 MB",icon:"assets/img/icon/skype-icon.png",corp:"Microsoft Corporation",info:"Skype for Business(原来的 Lync 2013)将Lync和Skype的强大功能扩展至常用的移动设备 – 在简单易用的单一界面中，你可以进行无线语音和视频通话、查看丰富的状态信息、传递即时消息、参加会议以及拨打电话。",method:"",buttonColor:"blue",percent:100,slideImg:["assets/img/slide/skype_1.png","assets/img/slide/skype_2.png","assets/img/slide/skype_3.png","assets/img/slide/skype_4.png","assets/img/slide/skype_5.png","assets/img/slide/skype_6.png"]},{id:2,name:"ASUS IT Mobile Portal",packageName:"com.asusit.ap5.asusitmobileportal",version:"1.1.9",size:"5.8 MB",icon:"assets/img/icon/e-form-icon.png",corp:"ASUSTeK COMPUTER INC.",info:"本APP是華碩員工專屬，提供MIS所開發的各項免費應用程式，可以幫助同仁在工作效率上、或生活便利性，利用您隨身的智慧手機，創造更優質的華碩科技生活！",method:"",buttonColor:"blue",percent:100,slideImg:["assets/img/slide/asusitmobile_1.png","assets/img/slide/asusitmobile_2.png","assets/img/slide/asusitmobile_3.png","assets/img/slide/asusitmobile_4.png"]},{id:3,name:"Outlook",packageName:"com.microsoft.office.outlook",version:"2.1.219",size:"37.0 MB",icon:"assets/img/icon/outlook-icon.png",corp:"Microsoft Corporation",info:"快来体验 Android 版 Outlook，这个应用可帮助数百万用户在一个便利位置连接他们的所有电子邮件帐户、日历和文件。Android 版 Outlook 经过重新设计，让你能够在一个功能强大的收件箱执行更多操作。想要先查看最重要的邮件就到“重点”收件箱，该收件箱将重要邮件放在最上方。点击几下就可以在电子邮件和日历之间进行切换，方便你安排下一个会议或共享你的空闲时间。你也可以从文件列表中选择一个文档，再将其无缝附加到电子邮件中。",method:"",buttonColor:"blue",percent:100,slideImg:["assets/img/slide/outlook_1.png","assets/img/slide/outlook_2.png","assets/img/slide/outlook_3.png","assets/img/slide/outlook_4.png","assets/img/slide/outlook_5.png","assets/img/slide/outlook_6.png"]},{id:4,name:"VPN",packageName:"com.blazasoft.vpn",version:"1.1",size:"156 KB",icon:"assets/img/icon/vpn-icon.png",corp:"BlazaSoft",info:"This application is a single-tap shortcut to the VPN Settings menu. There are no ads, permissions or unnecessary features, nor will there be in the future.You can use it to access the VPN Settings menu right from your home screen, with a single tap.",method:"",buttonColor:"blue",percent:100,slideImg:["assets/img/slide/vpn_1.png","assets/img/slide/vpn_2.png","assets/img/slide/vpn_3.png","assets/img/slide/vpn_4.png","assets/img/slide/vpn_5.png"]}]}}();y=g([Object(d.p)(),m("design:paramtypes",[])],y);t(0);var P=function(){return function(n){this.appData=n,this.appDatas=[],this.appDatas=n.appArr}}(),k=(t(0),function(){return function(){this.tab1Root=P,this.tab2Root=f,this.tab3Root=b}}()),S=(t(0),t(18),t(60),t(61),function(){return function(n,l,t){this.rootPage=k,n.ready().then(function(){l.styleDefault(),t.hide()})}}()),E=(t(0),t(18),function(){return function(n){this.navParams=n,this.ItemInfo=this.navParams.data}}()),A=(t(0),t(18),t(37),t(38),t(39),t(40),function(){function n(n,l,t,e,_){this.appAvailability=n,this.platform=l,this.transfer=t,this.file=e,this.fileOpener=_,this.app={}}return n.prototype.ngOnInit=function(){var n=this;this.platform.ready().then(function(){var l=n.app;n.appAvailability.check(n.app.packageName).then(function(){l.method="打开",l.buttonColor="secondary"},function(){l.method="下载"}),n.setLineHeight("progress-inner")})},n.prototype.setLineHeight=function(n){for(var l=document.getElementsByClassName(n),t=window.getComputedStyle(l[0],null).height,e=0,_=l.length;e<_;e++)l[e].style.lineHeight=t},n.prototype.startApp=function(){window.startApp.set({package:this.app.packageName}).start()},n.prototype.downloadApp=function(n){var l,t=this,e=this.transfer.create(),_=encodeURI("http://221.224.163.10:9443/temp/"+this.app.packageName+".apk");e.onProgress(function(l){var t=l.loaded/l.total*100;t=Math.round(t),n.style.width=t+"%",n.textContent=t+"%"}),e.download(_,this.file.externalDataDirectory+this.app.packageName+".apk",!0).then(function(e){confirm(t.app.name+"下载完成，是否立即安装？")&&(l=e.toURL(),t.file.checkFile(t.file.externalDataDirectory,t.app.packageName+".apk").then(function(e){t.fileOpener.open(l,"application/vnd.android.package-archive").then(function(l){n.textContent="打开"},function(n){alert("开启安装包错误，请重新再试！")})},function(n){alert("文件无法找到，请重新再试！")}))},function(n){alert("无可用网络连接！"+n.code)})},n.prototype.callApp=function(n){var l=n.target.textContent.replace(/^\s+|\s+$/g,"");"下载"==l?(this.app.buttonColor="secondary",this.downloadApp(n.target)):"打开"==l&&this.startApp()},n}()),C=(t(0),t(18),function(){function n(n){this.navCtrl=n,this.app={}}return n.prototype.goToDetailPage=function(n){this.navCtrl.push(E,this.app)},n.prototype.ionViewCanLeave=function(n){var l=n.target.textContent.replace(/^\s+|\s+$/g,"");return"下载"!=l&&("打开"!=l&&void this.goToDetailPage(n))},n}()),I=(t(0),function(){return function(){this.slides={}}}()),v=(t(0),t(16),t(18),t(60),t(61),t(37),t(112),t(38),t(39),t(40),function(){return function(){}}()),O=t(0),D=t(143),w=t(52),T=t(5),L=t(9),M=t(4),R=t(1),j=t(3),F=t(8),N=t(15),H=t(12),z=t(6),G=t(23),U=t(60),B=t(61),V=[],x=O._2({encapsulation:2,styles:V,data:{}}),K=O._1("ng-component",S,function(n){return O._24(0,[(n()(),O._4(0,null,null,1,"ng-component",[],null,null,null,e,x)),O._3(24576,null,0,S,[j.a,U.a,B.a],null,null)],null,null)},{},{},[]),Z=t(0),$=t(144),W=t(35),Y=t(9),q=t(5),J=t(4),Q=t(1),X=t(3),nn=t(12),ln=t(13),tn=t(23),en=t(145),_n=t(56),on=t(8),un=t(15),an=t(6),rn=[],sn=Z._2({encapsulation:2,styles:rn,data:{}}),pn=Z._1("ng-component",k,function(n){return Z._24(0,[(n()(),Z._4(0,null,null,1,"ng-component",[],null,null,null,_,sn)),Z._3(24576,null,0,k,[],null,null)],null,null)},{},{},[]),cn=t(0),hn=t(37),fn=t(3),bn=t(38),dn=t(39),gn=t(40),mn=[],yn=cn._2({encapsulation:2,styles:mn,data:{}}),Pn=(cn._1("progress-bar",A,function(n){return cn._24(0,[(n()(),cn._4(0,null,null,1,"progress-bar",[],null,null,null,i,yn)),cn._3(57344,null,0,A,[hn.a,fn.a,bn.a,dn.a,gn.a],null,null)],function(n,l){n(l,1,0)},null)},{progress:"progress",app:"app"},{},[]),t(0)),kn=t(85),Sn=t(33),En=t(22),An=t(1),Cn=t(26),In=t(49),vn=t(59),On=t(86),Dn=t(25),wn=t(37),Tn=t(3),Ln=t(38),Mn=t(39),Rn=t(40),jn=t(9),Fn=[],Nn=Pn._2({encapsulation:2,styles:Fn,data:{}}),Hn=(Pn._1("app-item",C,function(n){return Pn._24(0,[(n()(),Pn._4(0,null,null,1,"app-item",[],null,null,null,o,Nn)),Pn._3(24576,null,0,C,[jn.a],null,null)],null,null)},{app:"app"},{},[]),t(0)),zn=t(9),Gn=t(36),Un=t(1),Bn=t(5),Vn=t(62),xn=t(17),Kn=t(4),Zn=t(63),$n=t(27),Wn=t(24),Yn=t(64),qn=t(21),Jn=t(3),Qn=t(6),Xn=t(13),nl=t(77),ll=t(8),tl=t(85),el=t(33),_l=t(22),il=t(26),ol=t(78),ul=t(11),al=[],rl=Hn._2({encapsulation:2,styles:al,data:{}}),sl=Hn._1("page-home",P,function(n){return Hn._24(0,[(n()(),Hn._4(0,null,null,1,"page-home",[],null,null,null,a,rl)),Hn._3(24576,null,0,P,[y],null,null)],null,null)},{},{},[]),pl=t(0),cl=t(36),hl=t(1),fl=t(5),bl=t(62),dl=t(17),gl=t(4),ml=t(9),yl=t(63),Pl=t(27),kl=t(24),Sl=t(64),El=t(21),Al=t(3),Cl=t(6),Il=t(13),vl=t(16),Ol=t(51),Dl=[],wl=pl._2({encapsulation:2,styles:Dl,data:{}}),Tl=pl._1("page-about",f,function(n){return pl._24(0,[(n()(),pl._4(0,null,null,1,"page-about",[],null,null,null,r,wl)),pl._3(57344,null,0,f,[vl.c,Ol.a],null,null)],function(n,l){n(l,1,0)},null)},{},{},[]),Ll=t(0),Ml=t(36),Rl=t(1),jl=t(5),Fl=t(62),Nl=t(17),Hl=t(4),zl=t(9),Gl=t(63),Ul=t(27),Bl=t(24),Vl=t(64),xl=t(21),Kl=t(3),Zl=t(6),$l=t(13),Wl=[],Yl=Ll._2({encapsulation:2,styles:Wl,data:{}}),ql=Ll._1("page-contact",b,function(n){return Ll._24(0,[(n()(),Ll._4(0,null,null,1,"page-contact",[],null,null,null,s,Yl)),Ll._3(24576,null,0,b,[zl.a],null,null)],null,null)},{},{},[]),Jl=t(0),Ql=t(146),Xl=t(54),nt=t(34),lt=t(147),tt=t(1),et=t(3),_t=t(5),it=t(11),ot=[],ut=Jl._2({encapsulation:2,styles:ot,data:{}}),at=(Jl._1("slide-show",I,function(n){return Jl._24(0,[(n()(),Jl._4(0,null,null,1,"slide-show",[],null,null,null,c,ut)),Jl._3(24576,null,0,I,[],null,null)],null,null)},{slides:"slides"},{},[]),t(0)),rt=t(36),st=t(1),pt=t(5),ct=t(62),ht=t(17),ft=t(4),bt=t(9),dt=t(63),gt=t(27),mt=t(24),yt=t(64),Pt=t(21),kt=t(3),St=t(6),Et=t(13),At=t(85),Ct=t(33),It=t(22),vt=t(26),Ot=t(49),Dt=t(59),wt=t(86),Tt=t(25),Lt=t(37),Mt=t(38),Rt=t(39),jt=t(40),Ft=t(31),Nt=[],Ht=at._2({encapsulation:2,styles:Nt,data:{}}),zt=at._1("app-detail",E,function(n){return at._24(0,[(n()(),at._4(0,null,null,1,"app-detail",[],null,null,null,h,Ht)),at._3(24576,null,0,E,[Ft.a],null,null)],null,null)},{},{},[]),Gt=t(0),Ut=t(11),Bt=t(106),Vt=t(6),xt=t(43),Kt=t(4),Zt=t(8),$t=t(84),Wt=t(16),Yt=t(108),qt=t(107),Jt=t(83),Qt=t(80),Xt=t(22),ne=t(53),le=t(13),te=t(51),ee=t(79),_e=t(15),ie=t(60),oe=t(61),ue=t(37),ae=t(112),re=t(38),se=t(39),pe=t(40),ce=t(141),he=t(142),fe=t(44),be=t(12),de=t(81),ge=t(3),me=t(1),ye=t(109),Pe=t(82),ke=t(42),Se=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,l){n.__proto__=l}||function(n,l){for(var t in l)l.hasOwnProperty(t)&&(n[t]=l[t])};return function(l,t){function e(){this.constructor=l}n(l,t),l.prototype=null===t?Object.create(t):(e.prototype=t.prototype,new e)}}(),Ee=function(n){function l(l){return n.call(this,l,[ce.a,he.a,K,pn,sl,Tl,ql,zt],[ce.a])||this}return Se(l,n),Object.defineProperty(l.prototype,"_LOCALE_ID_25",{get:function(){return null==this.__LOCALE_ID_25&&(this.__LOCALE_ID_25=Gt._16(this.parent.get(Gt.u,null))),this.__LOCALE_ID_25},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_NgLocalization_26",{get:function(){return null==this.__NgLocalization_26&&(this.__NgLocalization_26=new Ut.i(this._LOCALE_ID_25)),this.__NgLocalization_26},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_APP_ID_27",{get:function(){return null==this.__APP_ID_27&&(this.__APP_ID_27=Gt._6()),this.__APP_ID_27},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_IterableDiffers_28",{get:function(){return null==this.__IterableDiffers_28&&(this.__IterableDiffers_28=Gt._12()),this.__IterableDiffers_28},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_KeyValueDiffers_29",{get:function(){return null==this.__KeyValueDiffers_29&&(this.__KeyValueDiffers_29=Gt._14()),this.__KeyValueDiffers_29},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_DomSanitizer_30",{get:function(){return null==this.__DomSanitizer_30&&(this.__DomSanitizer_30=new Wt.s(this.parent.get(Wt.b))),this.__DomSanitizer_30},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Sanitizer_31",{get:function(){return null==this.__Sanitizer_31&&(this.__Sanitizer_31=this._DomSanitizer_30),this.__Sanitizer_31},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_HAMMER_GESTURE_CONFIG_32",{get:function(){return null==this.__HAMMER_GESTURE_CONFIG_32&&(this.__HAMMER_GESTURE_CONFIG_32=new Jt.a),this.__HAMMER_GESTURE_CONFIG_32},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_EVENT_MANAGER_PLUGINS_33",{get:function(){return null==this.__EVENT_MANAGER_PLUGINS_33&&(this.__EVENT_MANAGER_PLUGINS_33=[new Wt.l(this.parent.get(Wt.b)),new Wt.p(this.parent.get(Wt.b)),new Wt.o(this.parent.get(Wt.b),this._HAMMER_GESTURE_CONFIG_32)]),this.__EVENT_MANAGER_PLUGINS_33},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_EventManager_34",{get:function(){return null==this.__EventManager_34&&(this.__EventManager_34=new Wt.e(this._EVENT_MANAGER_PLUGINS_33,this.parent.get(Gt.y))),this.__EventManager_34},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_ɵDomSharedStylesHost_35",{get:function(){return null==this.__ɵDomSharedStylesHost_35&&(this.__ɵDomSharedStylesHost_35=new Wt.n(this.parent.get(Wt.b))),this.__ɵDomSharedStylesHost_35},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_ɵDomRendererFactory2_36",{get:function(){return null==this.__ɵDomRendererFactory2_36&&(this.__ɵDomRendererFactory2_36=new Wt.m(this._EventManager_34,this._ɵDomSharedStylesHost_35)),this.__ɵDomRendererFactory2_36},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_RendererFactory2_37",{get:function(){return null==this.__RendererFactory2_37&&(this.__RendererFactory2_37=this._ɵDomRendererFactory2_36),this.__RendererFactory2_37},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_ɵSharedStylesHost_38",{get:function(){return null==this.__ɵSharedStylesHost_38&&(this.__ɵSharedStylesHost_38=this._ɵDomSharedStylesHost_35),this.__ɵSharedStylesHost_38},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Testability_39",{get:function(){return null==this.__Testability_39&&(this.__Testability_39=new Gt.M(this.parent.get(Gt.y))),this.__Testability_39},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Meta_40",{get:function(){return null==this.__Meta_40&&(this.__Meta_40=new Wt.h(this.parent.get(Wt.b))),this.__Meta_40},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Title_41",{get:function(){return null==this.__Title_41&&(this.__Title_41=new Wt.j(this.parent.get(Wt.b))),this.__Title_41},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_ɵi_42",{get:function(){return null==this.__ɵi_42&&(this.__ɵi_42=new Yt.e),this.__ɵi_42},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_FormBuilder_43",{get:function(){return null==this.__FormBuilder_43&&(this.__FormBuilder_43=new Yt.a),this.__FormBuilder_43},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Events_48",{get:function(){return null==this.__Events_48&&(this.__Events_48=new Qt.a),this.__Events_48},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Form_49",{get:function(){return null==this.__Form_49&&(this.__Form_49=new Xt.a),this.__Form_49},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Haptic_50",{get:function(){return null==this.__Haptic_50&&(this.__Haptic_50=new ne.a(this._Platform_4)),this.__Haptic_50},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Keyboard_51",{get:function(){return null==this.__Keyboard_51&&(this.__Keyboard_51=new le.a(this._Config_5,this._Platform_4,this.parent.get(Gt.y),this._DomController_6)),this.__Keyboard_51},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_LoadingController_52",{get:function(){return null==this.__LoadingController_52&&(this.__LoadingController_52=new te.a(this._App_8,this._Config_5)),this.__LoadingController_52},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_LocationStrategy_53",{get:function(){return null==this.__LocationStrategy_53&&(this.__LocationStrategy_53=qt.b(this.parent.get(Ut.m),this._APP_BASE_HREF_45,this._Config_5)),this.__LocationStrategy_53},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Location_54",{get:function(){return null==this.__Location_54&&(this.__Location_54=new Ut.d(this._LocationStrategy_53)),this.__Location_54},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_UrlSerializer_55",{get:function(){return null==this.__UrlSerializer_55&&(this.__UrlSerializer_55=fe.d(this._App_8,this._DeepLinkConfigToken_10)),this.__UrlSerializer_55},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_DeepLinker_56",{get:function(){return null==this.__DeepLinker_56&&(this.__DeepLinker_56=be.b(this._App_8,this._UrlSerializer_55,this._Location_54,this._ModuleLoader_13,this.componentFactoryResolver)),this.__DeepLinker_56},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_TapClick_60",{get:function(){return null==this.__TapClick_60&&(this.__TapClick_60=new ee.a(this._Config_5,this._Platform_4,this._DomController_6,this._App_8,this._GestureController_9)),this.__TapClick_60},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_TransitionController_62",{get:function(){return null==this.__TransitionController_62&&(this.__TransitionController_62=new _e.a(this._Platform_4,this._Config_5)),this.__TransitionController_62},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_StatusBar_63",{get:function(){return null==this.__StatusBar_63&&(this.__StatusBar_63=new ie.a),this.__StatusBar_63},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_SplashScreen_64",{get:function(){return null==this.__SplashScreen_64&&(this.__SplashScreen_64=new oe.a),this.__SplashScreen_64},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_AppAvailability_65",{get:function(){return null==this.__AppAvailability_65&&(this.__AppAvailability_65=new ue.a),this.__AppAvailability_65},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Device_66",{get:function(){return null==this.__Device_66&&(this.__Device_66=new ae.a),this.__Device_66},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_Transfer_67",{get:function(){return null==this.__Transfer_67&&(this.__Transfer_67=new re.a),this.__Transfer_67},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_TransferObject_68",{get:function(){return null==this.__TransferObject_68&&(this.__TransferObject_68=new re.b),this.__TransferObject_68},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_File_69",{get:function(){return null==this.__File_69&&(this.__File_69=new se.a),this.__File_69},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_FileOpener_70",{get:function(){return null==this.__FileOpener_70&&(this.__FileOpener_70=new pe.a),this.__FileOpener_70},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_AppDataService_71",{get:function(){return null==this.__AppDataService_71&&(this.__AppDataService_71=new y),this.__AppDataService_71},enumerable:!0,configurable:!0}),l.prototype.createInternal=function(){return this._CommonModule_0=new Ut.b,this._ErrorHandler_1=new Bt.a,this._ConfigToken_2=null,this._PlatformConfigToken_3=de.b(),this._Platform_4=ge.b(this.parent.get(Wt.b),this._PlatformConfigToken_3,this.parent.get(Gt.y)),this._Config_5=me.c(this._ConfigToken_2,this._Platform_4),this._DomController_6=new Vt.a(this._Platform_4),this._MenuController_7=new xt.a,this._App_8=new Kt.a(this._Config_5,this._Platform_4,this._MenuController_7),this._GestureController_9=new Zt.f(this._App_8),this._DeepLinkConfigToken_10=null,this._Compiler_11=new Gt.i,this._NgModuleLoader_12=new $t.a(this._Compiler_11),this._ModuleLoader_13=ye.c(this._NgModuleLoader_12,this),this._APP_INITIALIZER_14=[Gt._19,Wt.r(this.parent.get(Wt.i,null),this.parent.get(Gt.x,null)),Pe.a(this._Config_5),Qt.b(this._Platform_4,this._DomController_6),ee.b(this._Config_5,this._Platform_4,this._DomController_6,this._App_8,this._GestureController_9),ye.d(this._Config_5,this._DeepLinkConfigToken_10,this._ModuleLoader_13,this.parent.get(Gt.y))],this._ApplicationInitStatus_15=new Gt.d(this._APP_INITIALIZER_14),this._ɵf_16=new Gt._5(this.parent.get(Gt.y),this.parent.get(Gt.Y),this,this._ErrorHandler_1,this.componentFactoryResolver,this._ApplicationInitStatus_15),this._ApplicationRef_17=this._ɵf_16,this._ApplicationModule_18=new Gt.e(this._ApplicationRef_17),this._BrowserModule_19=new Wt.a(this.parent.get(Wt.a,null)),this._ɵba_20=new Yt.d,this._FormsModule_21=new Yt.b,this._ReactiveFormsModule_22=new Yt.c,this._IonicModule_23=new qt.a,this._AppModule_24=new v,this._AppRootToken_44=S,this._APP_BASE_HREF_45="/",this._AppModule_24},l.prototype.getInternal=function(n,l){return n===Ut.b?this._CommonModule_0:n===Gt.l?this._ErrorHandler_1:n===me.b?this._ConfigToken_2:n===de.a?this._PlatformConfigToken_3:n===ge.a?this._Platform_4:n===me.a?this._Config_5:n===Vt.a?this._DomController_6:n===xt.a?this._MenuController_7:n===Kt.a?this._App_8:n===Zt.f?this._GestureController_9:n===fe.a?this._DeepLinkConfigToken_10:n===Gt.i?this._Compiler_11:n===$t.a?this._NgModuleLoader_12:n===ye.b?this._ModuleLoader_13:n===Gt.c?this._APP_INITIALIZER_14:n===Gt.d?this._ApplicationInitStatus_15:n===Gt._5?this._ɵf_16:n===Gt.f?this._ApplicationRef_17:n===Gt.e?this._ApplicationModule_18:n===Wt.a?this._BrowserModule_19:n===Yt.d?this._ɵba_20:n===Yt.b?this._FormsModule_21:n===Yt.c?this._ReactiveFormsModule_22:n===qt.a?this._IonicModule_23:n===v?this._AppModule_24:n===Gt.u?this._LOCALE_ID_25:n===Ut.j?this._NgLocalization_26:n===Gt.b?this._APP_ID_27:n===Gt.s?this._IterableDiffers_28:n===Gt.t?this._KeyValueDiffers_29:n===Wt.c?this._DomSanitizer_30:n===Gt.H?this._Sanitizer_31:n===Wt.f?this._HAMMER_GESTURE_CONFIG_32:n===Wt.d?this._EVENT_MANAGER_PLUGINS_33:n===Wt.e?this._EventManager_34:n===Wt.n?this._ɵDomSharedStylesHost_35:n===Wt.m?this._ɵDomRendererFactory2_36:n===Gt.F?this._RendererFactory2_37:n===Wt.q?this._ɵSharedStylesHost_38:n===Gt.M?this._Testability_39:n===Wt.h?this._Meta_40:n===Wt.j?this._Title_41:n===Yt.e?this._ɵi_42:n===Yt.a?this._FormBuilder_43:n===ke.a?this._AppRootToken_44:n===Ut.a?this._APP_BASE_HREF_45:n===Qt.a?this._Events_48:n===Xt.a?this._Form_49:n===ne.a?this._Haptic_50:n===le.a?this._Keyboard_51:n===te.a?this._LoadingController_52:n===Ut.e?this._LocationStrategy_53:n===Ut.d?this._Location_54:n===fe.b?this._UrlSerializer_55:n===be.a?this._DeepLinker_56:n===ee.a?this._TapClick_60:n===_e.a?this._TransitionController_62:n===ie.a?this._StatusBar_63:n===oe.a?this._SplashScreen_64:n===ue.a?this._AppAvailability_65:n===ae.a?this._Device_66:n===re.a?this._Transfer_67:n===re.b?this._TransferObject_68:n===se.a?this._File_69:n===pe.a?this._FileOpener_70:n===y?this._AppDataService_71:l},l.prototype.destroyInternal=function(){this._ɵf_16.ngOnDestroy(),this.__ɵDomSharedStylesHost_35&&this._ɵDomSharedStylesHost_35.ngOnDestroy()},l}(Gt.Z),Ae=new Gt.v(Ee,v),Ce=t(16),Ie=t(0);Object(Ie.S)(),Object(Ce.k)().bootstrapModuleFactory(Ae)},94:function(n,l){function t(n){return new Promise(function(l,t){t(new Error("Cannot find module '"+n+"'."))})}t.keys=function(){return[]},t.resolve=t,n.exports=t,t.id=94}},[113]);
+webpackJsonp([0],{
+
+/***/ 108:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	return new Promise(function(resolve, reject) { reject(new Error("Cannot find module '" + req + "'.")); });
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 108;
+
+/***/ }),
+
+/***/ 149:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	return new Promise(function(resolve, reject) { reject(new Error("Cannot find module '" + req + "'.")); });
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 149;
+
+/***/ }),
+
+/***/ 192:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(196);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var TabsPage = (function () {
+    function TabsPage() {
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePageComponent */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__about_about__["a" /* AboutPageComponent */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPageComponent */];
+    }
+    return TabsPage;
+}());
+TabsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\tabs\tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="应用" tabIcon="apps"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="指南" tabIcon="book"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="地图" tabIcon="construct"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\tabs\tabs.html"*/
+    }),
+    __metadata("design:paramtypes", [])
+], TabsPage);
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 193:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AboutPageComponent = (function () {
+    function AboutPageComponent(sanitizer, loadingCtrl) {
+        this.sanitizer = sanitizer;
+        this.loadingCtrl = loadingCtrl;
+        this.loader = this.loadingCtrl.create({
+            content: "载入中...",
+            duration: 1500
+        });
+    }
+    AboutPageComponent.prototype.manualUrl = function () {
+        var dangerousUrl = 'http://appservice.asus.com/app_userguide/index.html';
+        return this.sanitizer.bypassSecurityTrustResourceUrl(dangerousUrl);
+    };
+    AboutPageComponent.prototype.ngOnInit = function () {
+        this.loader.present();
+    };
+    return AboutPageComponent;
+}());
+AboutPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'page-about',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-title>\n\n      ASUS EasyWork\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <iframe [src]="manualUrl()" frameborder="0"></iframe>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\about\about.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */],
+        __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* LoadingController */]])
+], AboutPageComponent);
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 194:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular2_baidu_map__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ContactPageComponent = (function () {
+    function ContactPageComponent(platform) {
+        this.platform = platform;
+    }
+    ContactPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.platform.ready().then(function () {
+            _this.opts = {
+                center: {
+                    longitude: 121.506191,
+                    latitude: 31.245554
+                },
+                zoom: 17,
+                markers: [{
+                        longitude: 121.506191,
+                        latitude: 31.245554,
+                        title: 'Where',
+                        content: 'Put description here',
+                        enableDragging: true
+                    }],
+                geolocationCtrl: {
+                    anchor: __WEBPACK_IMPORTED_MODULE_1_angular2_baidu_map__["b" /* ControlAnchor */].BMAP_ANCHOR_BOTTOM_RIGHT
+                },
+                scaleCtrl: {
+                    anchor: __WEBPACK_IMPORTED_MODULE_1_angular2_baidu_map__["b" /* ControlAnchor */].BMAP_ANCHOR_BOTTOM_LEFT
+                },
+                overviewCtrl: {
+                    isOpen: true
+                },
+                navCtrl: {
+                    type: __WEBPACK_IMPORTED_MODULE_1_angular2_baidu_map__["c" /* NavigationControlType */].BMAP_NAVIGATION_CONTROL_LARGE
+                }
+            };
+            _this.offlineOpts = {
+                retryInterval: 5000,
+                txt: 'NO-NETWORK'
+            };
+        });
+    };
+    ContactPageComponent.prototype.loadMap = function (map) {
+        console.log('map instance here', map);
+    };
+    ContactPageComponent.prototype.clickMarker = function (marker) {
+        console.log('The clicked marker is', marker);
+    };
+    ContactPageComponent.prototype.clickmap = function (e) {
+        console.log("Map clicked with coordinate: " + e.point.lng + ", " + e.point.lat);
+    };
+    return ContactPageComponent;
+}());
+ContactPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'page-contact',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/'<h1>Test Baidu-Map<h1>\n  <baidu-map ak="8ahMsvwHAnp4ZFAfVZVg6mx9gMGdpN0A" [options]="opts" [offline]="offlineOpts" (onMapLoaded)="loadMap($event)" (onMarkerClicked)="clickMarker($event)" (onClicked)="clickmap($event)" ></baidu-map>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* Platform */]])
+], ContactPageComponent);
+
+//# sourceMappingURL=contact.js.map
+
+/***/ }),
+
+/***/ 196:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_appData_service__ = __webpack_require__(197);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var HomePageComponent = (function () {
+    function HomePageComponent(appData) {
+        this.appData = appData;
+        this.appDatas = [];
+        this.appDatas = appData.appArr;
+    }
+    return HomePageComponent;
+}());
+HomePageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-title>ASUS EasyWork</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list no-border>\n\n\n\n    <ion-list-header>\n\n      应用\n\n    </ion-list-header>\n\n    <ul>\n\n      <li *ngFor="let app of appDatas">\n\n        <app-item [app]="app"></app-item>\n\n      </li>\n\n    </ul>\n\n  </ion-list>\n\n\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\home\home.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__app_appData_service__["a" /* AppDataService */]])
+], HomePageComponent);
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 197:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppDataService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AppDataService = (function () {
+    function AppDataService() {
+        this.appArr = [
+            {
+                id: 1,
+                name: 'Skype for Business',
+                packageName: 'com.microsoft.office.lync15',
+                version: '6.16.0.6',
+                size: '41.4 MB',
+                icon: 'assets/img/icon/skype-icon.png',
+                corp: 'Microsoft Corporation',
+                info: 'Skype for Business(原来的 Lync 2013)将Lync和Skype的强大功能扩展至常用的移动设备 – 在简单易用的单一界面中，你可以进行无线语音和视频通话、查看丰富的状态信息、传递即时消息、参加会议以及拨打电话。',
+                method: '',
+                buttonColor: 'blue',
+                percent: 100,
+                slideImg: ['assets/img/slide/skype_1.png', 'assets/img/slide/skype_2.png', 'assets/img/slide/skype_3.png', 'assets/img/slide/skype_4.png', 'assets/img/slide/skype_5.png', 'assets/img/slide/skype_6.png']
+            },
+            {
+                id: 2,
+                name: 'ASUS IT Mobile Portal',
+                packageName: 'com.asusit.ap5.asusitmobileportal',
+                version: '1.1.9',
+                size: '5.8 MB',
+                icon: 'assets/img/icon/e-form-icon.png',
+                corp: 'ASUSTeK COMPUTER INC.',
+                info: '本APP是華碩員工專屬，提供MIS所開發的各項免費應用程式，可以幫助同仁在工作效率上、或生活便利性，利用您隨身的智慧手機，創造更優質的華碩科技生活！',
+                method: '',
+                buttonColor: 'blue',
+                percent: 100,
+                slideImg: ['assets/img/slide/asusitmobile_1.png', 'assets/img/slide/asusitmobile_2.png', 'assets/img/slide/asusitmobile_3.png', 'assets/img/slide/asusitmobile_4.png']
+            },
+            {
+                id: 3,
+                name: 'Outlook',
+                packageName: 'com.microsoft.office.outlook',
+                version: '2.1.219',
+                size: '37.0 MB',
+                icon: 'assets/img/icon/outlook-icon.png',
+                corp: 'Microsoft Corporation',
+                info: '快来体验 Android 版 Outlook，这个应用可帮助数百万用户在一个便利位置连接他们的所有电子邮件帐户、日历和文件。Android 版 Outlook 经过重新设计，让你能够在一个功能强大的收件箱执行更多操作。想要先查看最重要的邮件就到“重点”收件箱，该收件箱将重要邮件放在最上方。点击几下就可以在电子邮件和日历之间进行切换，方便你安排下一个会议或共享你的空闲时间。你也可以从文件列表中选择一个文档，再将其无缝附加到电子邮件中。',
+                method: '',
+                buttonColor: 'blue',
+                percent: 100,
+                slideImg: ['assets/img/slide/outlook_1.png', 'assets/img/slide/outlook_2.png', 'assets/img/slide/outlook_3.png', 'assets/img/slide/outlook_4.png', 'assets/img/slide/outlook_5.png', 'assets/img/slide/outlook_6.png']
+            },
+            {
+                id: 4,
+                name: 'VPN',
+                packageName: 'com.blazasoft.vpn',
+                version: '1.1',
+                size: '156 KB',
+                icon: 'assets/img/icon/vpn-icon.png',
+                corp: 'BlazaSoft',
+                info: 'This application is a single-tap shortcut to the VPN Settings menu. There are no ads, permissions or unnecessary features, nor will there be in the future.You can use it to access the VPN Settings menu right from your home screen, with a single tap.',
+                method: '',
+                buttonColor: 'blue',
+                percent: 100,
+                slideImg: ['assets/img/slide/vpn_1.png', 'assets/img/slide/vpn_2.png', 'assets/img/slide/vpn_3.png', 'assets/img/slide/vpn_4.png', 'assets/img/slide/vpn_5.png']
+            }
+        ];
+    }
+    return AppDataService;
+}());
+AppDataService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+    __metadata("design:paramtypes", [])
+], AppDataService);
+
+//# sourceMappingURL=appData.service.js.map
+
+/***/ }),
+
+/***/ 198:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppDetailComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AppDetailComponent = (function () {
+    function AppDetailComponent(navParams) {
+        this.navParams = navParams;
+        this.ItemInfo = this.navParams.data;
+    }
+    return AppDetailComponent;
+}());
+AppDetailComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'app-detail',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/'<ion-header>\n\n  <ion-navbar color="blue" #nav>\n\n    <ion-title>\n\n      应用详情\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-thumbnail class="detailPageIcon">\n\n      <img src={{ItemInfo.icon}}>\n\n    </ion-thumbnail>\n\n    <h2>{{ItemInfo.name}}</h2>\n\n\n\n    <!--<button ion-button item-right>View</button>-->\n\n  </ion-item>\n\n  <h6>配置演示</h6>\n\n  <slide-show [slides]="ItemInfo"></slide-show>\n\n  <h6>应用描述</h6>\n\n  <p>{{ItemInfo.info}}</p>\n\n\n\n  <h6>其他信息</h6>\n\n  <p>开发者：{{ItemInfo.corp}}<br/>\n\n  版本：{{ItemInfo.version}}<br/>\n\n  大小：{{ItemInfo.size}}</p>\n\n\n\n  <button ion-button block><progress-bar [app]="ItemInfo"></progress-bar></button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+], AppDetailComponent);
+
+//# sourceMappingURL=appDetail.js.map
+
+/***/ }),
+
+/***/ 199:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgressBarComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_availability__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_transfer__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file_opener__ = __webpack_require__(203);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var ProgressBarComponent = (function () {
+    function ProgressBarComponent(appAvailability, platform, transfer, file, fileOpener) {
+        this.appAvailability = appAvailability;
+        this.platform = platform;
+        this.transfer = transfer;
+        this.file = file;
+        this.fileOpener = fileOpener;
+        this.app = {}; //从appItem.component的app对象导入
+    }
+    ProgressBarComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.platform.ready().then(function () {
+            //检查app是否已经安装
+            var appcopy = _this.app;
+            _this.appAvailability.check(_this.app.packageName)
+                .then(function () {
+                appcopy.method = "打开";
+                appcopy.buttonColor = "secondary";
+            }, function () {
+                appcopy.method = "下载";
+            });
+            //获取progress-bar的height值，并设置其line-height
+            _this.setLineHeight("progress-inner");
+        });
+    };
+    ProgressBarComponent.prototype.setLineHeight = function (element) {
+        var elementAll = document.getElementsByClassName(element);
+        var height = window.getComputedStyle(elementAll[0], null).height;
+        for (var i = 0, len = elementAll.length; i < len; i++) {
+            var target = elementAll[i];
+            target.style.lineHeight = height;
+        }
+    };
+    ProgressBarComponent.prototype.startApp = function () {
+        window.startApp.set({ "package": this.app.packageName }).start();
+    };
+    ProgressBarComponent.prototype.downloadApp = function (e) {
+        var _this = this;
+        //console.log(e);
+        var fileTransfer = this.transfer.create();
+        var url = encodeURI('http://221.224.163.10:9443/temp/' + this.app.packageName + '.apk');
+        var fileURL;
+        fileTransfer.onProgress(function (ProgressEvent) {
+            var percent = ProgressEvent.loaded / ProgressEvent.total * 100;
+            percent = Math.round(percent);
+            e.style.width = percent + "%";
+            e.textContent = percent + "%";
+        });
+        fileTransfer.download(url, this.file.externalDataDirectory + this.app.packageName + '.apk', true)
+            .then(function (entry) {
+            if (confirm(_this.app.name + '下载完成，是否立即安装？')) {
+                fileURL = entry.toURL();
+                _this.file.checkFile(_this.file.externalDataDirectory, _this.app.packageName + '.apk').then(function (entry) {
+                    _this.fileOpener.open(fileURL, 'application/vnd.android.package-archive')
+                        .then(function (entry) {
+                        e.textContent = "打开";
+                    } //open file success
+                    , function (error) {
+                        alert('开启安装包错误，请重新再试！');
+                    }); //open file fail
+                }, function (error) {
+                    alert('文件无法找到，请重新再试！');
+                }); //file.checkFile file not exist
+            }
+            else {
+            } //user choose not install app now
+        }, function (error) {
+            alert('无可用网络连接！' + error.code);
+        }); //fileTransfer.download error
+    };
+    //检测点击的按钮，分别调用对应的函数
+    ProgressBarComponent.prototype.callApp = function (e) {
+        var str = e.target.textContent.replace(/^\s+|\s+$/g, "");
+        if (str == "下载") {
+            this.app.buttonColor = "secondary";
+            this.downloadApp(e.target);
+        }
+        else if (str == "打开") {
+            this.startApp();
+        }
+    };
+    return ProgressBarComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+    __metadata("design:type", Object)
+], ProgressBarComponent.prototype, "progress", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+    __metadata("design:type", Object)
+], ProgressBarComponent.prototype, "app", void 0);
+ProgressBarComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'progress-bar',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\app\progressBar.html"*/'<div class="progress-outer">\n\n  <div class="progress-inner" id={{app.buttonColor}} (click)="callApp($event)">\n\n    {{app.method}}\n\n  </div>\n\n</div>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\app\progressBar.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_app_availability__["a" /* AppAvailability */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */],
+        __WEBPACK_IMPORTED_MODULE_3__ionic_native_transfer__["a" /* Transfer */],
+        __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__["a" /* File */],
+        __WEBPACK_IMPORTED_MODULE_5__ionic_native_file_opener__["a" /* FileOpener */]])
+], ProgressBarComponent);
+
+//# sourceMappingURL=progressBar.component.js.map
+
+/***/ }),
+
+/***/ 204:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(222);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 222:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_appDetail_appDetail__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__appData_service__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_appItem_component__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__progressBar_component__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__slideShow_component__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_app_availability__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_device__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_transfer__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_file__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_file_opener__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angular2_baidu_map__ = __webpack_require__(195);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+//核心组件
+
+
+
+
+
+//自定义组件
+
+
+
+
+
+
+
+
+
+//第三方组件
+
+
+
+
+
+
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePageComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_appDetail_appDetail__["a" /* AppDetailComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_home_appItem_component__["a" /* AppItemComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__progressBar_component__["a" /* ProgressBarComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__slideShow_component__["a" /* SlideShowComponent */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_20_angular2_baidu_map__["a" /* BaiduMapModule */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */])
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
+        entryComponents: [
+            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
+            __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePageComponent */],
+            __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_appDetail_appDetail__["a" /* AppDetailComponent */]
+        ],
+        providers: [
+            __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_15__ionic_native_app_availability__["a" /* AppAvailability */],
+            __WEBPACK_IMPORTED_MODULE_16__ionic_native_device__["a" /* Device */],
+            __WEBPACK_IMPORTED_MODULE_17__ionic_native_transfer__["a" /* Transfer */],
+            __WEBPACK_IMPORTED_MODULE_17__ionic_native_transfer__["b" /* TransferObject */],
+            __WEBPACK_IMPORTED_MODULE_18__ionic_native_file__["a" /* File */],
+            __WEBPACK_IMPORTED_MODULE_19__ionic_native_file_opener__["a" /* FileOpener */],
+            __WEBPACK_IMPORTED_MODULE_9__appData_service__["a" /* AppDataService */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* LoadingController */],
+            { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+        ]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 263:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(192);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var MyApp = (function () {
+    function MyApp(platform, statusBar, splashScreen) {
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__["a" /* TabsPage */];
+        // this.appData = appData;
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            statusBar.styleDefault();
+            splashScreen.hide();
+        });
+    }
+    return MyApp;
+}());
+MyApp = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\app\app.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+], MyApp);
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 282:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppItemComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appDetail_appDetail__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_progressBar_component__ = __webpack_require__(199);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AppItemComponent = (function () {
+    function AppItemComponent(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.app = {};
+    }
+    AppItemComponent.prototype.goToDetailPage = function (e) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__appDetail_appDetail__["a" /* AppDetailComponent */], this.app);
+    };
+    AppItemComponent.prototype.ionViewCanLeave = function (e) {
+        var str = e.target.textContent.replace(/^\s+|\s+$/g, "");
+        if (str == "下载") {
+            return false;
+        }
+        else if (str == "打开") {
+            return false;
+        }
+        else {
+            this.goToDetailPage(e);
+        }
+    };
+    return AppItemComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+    __metadata("design:type", Object)
+], AppItemComponent.prototype, "app", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3__app_progressBar_component__["a" /* ProgressBarComponent */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3__app_progressBar_component__["a" /* ProgressBarComponent */])
+], AppItemComponent.prototype, "progressBar", void 0);
+AppItemComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'app-item',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/'<ion-item (click)="ionViewCanLeave($event)">\n\n  <ion-thumbnail item-left>\n\n    <img src={{app.icon}}>\n\n  </ion-thumbnail>\n\n  <h2>{{app.name}}</h2>\n\n  <p>{{app.corp}}</p>\n\n\n\n  <button ion-button item-right><progress-bar [app]="app" item-right></progress-bar></button>\n\n</ion-item>\n\n<!--ionViewCanLeave($event)-->\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+], AppItemComponent);
+
+//# sourceMappingURL=appItem.component.js.map
+
+/***/ }),
+
+/***/ 283:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlideShowComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SlideShowComponent = (function () {
+    function SlideShowComponent() {
+        this.slides = {};
+    }
+    return SlideShowComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+    __metadata("design:type", Object)
+], SlideShowComponent.prototype, "slides", void 0);
+SlideShowComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'slide-show',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\app\slideShow.html"*/'<ion-slides pager>\n\n  <ion-slide *ngFor="let slide of slides.slideImg">\n\n    <img [src]="slide" class="slide-image"/>\n\n  </ion-slide>\n\n</ion-slides>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\app\slideShow.html"*/
+    })
+], SlideShowComponent);
+
+//# sourceMappingURL=slideShow.component.js.map
+
+/***/ })
+
+},[204]);
+//# sourceMappingURL=main.js.map

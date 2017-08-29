@@ -59,6 +59,10 @@
                         {
                             "xml": "<feature name=\"ThemeableBrowser\"><param name=\"android-package\" value=\"com.initialxy.cordova.themeablebrowser.ThemeableBrowser\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BaiduLocation\"><param name=\"android-package\" value=\"com.qdc.plugins.baidu.BaiduLocation\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -68,16 +72,56 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 2
+                            "count": 3
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\" />",
                             "count": 1
                         }
                     ],
                     "/manifest/application": [
                         {
                             "xml": "<provider android:authorities=\"com.ionicframework.asuseasywork901784.opener.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"io.github.pwlin.cordova.plugins.fileopener2.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/opener_paths\" /></provider>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:enabled=\"true\" android:name=\"com.baidu.location.f\" android:process=\":remote\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"com.baidu.lbsapi.API_KEY\" android:value=\"8ahMsvwHAnp4ZFAfVZVg6mx9gMGdpN0A\" />",
                             "count": 1
                         }
                     ]
@@ -126,6 +170,10 @@
             "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
         },
         "cordova-plugin-themeablebrowser": {
+            "PACKAGE_NAME": "com.asus.easywork"
+        },
+        "com.qdc.plugins.baidu.location": {
+            "API_KEY": "8ahMsvwHAnp4ZFAfVZVg6mx9gMGdpN0A",
             "PACKAGE_NAME": "com.asus.easywork"
         }
     },
@@ -393,6 +441,14 @@
             "clobbers": [
                 "cordova.ThemeableBrowser"
             ]
+        },
+        {
+            "id": "com.qdc.plugins.baidu.location.baidu_location",
+            "file": "plugins/com.qdc.plugins.baidu.location/www/baidu_location.js",
+            "pluginId": "com.qdc.plugins.baidu.location",
+            "clobbers": [
+                "baidu_location"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -409,6 +465,7 @@
         "cordova-plugin-file": "4.3.3",
         "cordova-plugin-file-transfer": "1.6.3",
         "cordova-plugin-file-opener2": "2.0.15",
-        "cordova-plugin-themeablebrowser": "0.2.17"
+        "cordova-plugin-themeablebrowser": "0.2.17",
+        "com.qdc.plugins.baidu.location": "1.0.0"
     }
 }
