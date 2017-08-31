@@ -1,2 +1,8 @@
-<h1>Test Baidu-Map<h1>
-  <baidu-map ak="8ahMsvwHAnp4ZFAfVZVg6mx9gMGdpN0A" [options]="opts" [offline]="offlineOpts" (onMapLoaded)="loadMap($event)" (onMarkerClicked)="clickMarker($event)" (onClicked)="clickmap($event)" ></baidu-map>
+<ion-content>
+  <ion-list>
+    <ion-item id="position" >您当前的位置：获取中...</ion-item>
+  </ion-list>
+  <!--<div id="position">您当前的位置：</div>-->
+  <div id="map" #map></div>
+  <button ion-button block>打 卡</button>
+</ion-content>

@@ -1,9 +1,9 @@
 import { Component, Input,OnInit } from '@angular/core';
-import { Platform } from 'ionic-angular';
 import { AppAvailability } from '@ionic-native/app-availability';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
+import { Platform } from 'ionic-angular';
 
 @Component({
   selector: 'progress-bar',

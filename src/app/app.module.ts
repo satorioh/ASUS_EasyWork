@@ -24,7 +24,7 @@ import { Device  } from '@ionic-native/device';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
-import { BaiduMapModule } from 'angular2-baidu-map';
+//import { BaiduMapModule } from 'angular2-baidu-map';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,6 @@ import { BaiduMapModule } from 'angular2-baidu-map';
   ],
   imports: [
     BrowserModule,
-    BaiduMapModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
