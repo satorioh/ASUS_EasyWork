@@ -1,8 +1,14 @@
+<ion-header>
+  <ion-navbar color="blue">
+    <ion-title id="position">您当前的位置：获取中...</ion-title>
+  </ion-navbar>
+</ion-header>
+
 <ion-content>
-  <ion-list>
-    <ion-item id="position" >您当前的位置：获取中...</ion-item>
-  </ion-list>
+  <!--<ion-list>-->
+    <!--<ion-item></ion-item>-->
+  <!--</ion-list>-->
   <!--<div id="position">您当前的位置：</div>-->
   <div id="map" #map></div>
-  <button ion-button block>打 卡</button>
+  <button ion-button block id="checkin" (click)="presentPopover($event)">打 卡</button>
 </ion-content>

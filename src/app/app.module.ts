@@ -15,6 +15,8 @@ import { AppDataService } from './appData.service';
 import { AppItemComponent } from '../pages/home/appItem.component';
 import { ProgressBarComponent } from './progressBar.component';
 import { SlideShowComponent } from './slideShow.component';
+import { PopOver } from '../components/pop-over/pop-over';
+
 
 //第三方组件
 import { StatusBar } from '@ionic-native/status-bar';
@@ -24,7 +26,7 @@ import { Device  } from '@ionic-native/device';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
-//import { BaiduMapModule } from 'angular2-baidu-map';
+import { NgCalendarModule  } from 'ionic2-calendar';
 
 @NgModule({
   declarations: [
@@ -36,10 +38,12 @@ import { FileOpener } from '@ionic-native/file-opener';
     AppDetailComponent,
     AppItemComponent,
     ProgressBarComponent,
-    SlideShowComponent
+    SlideShowComponent,
+    PopOver
   ],
   imports: [
     BrowserModule,
+    NgCalendarModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -49,7 +53,8 @@ import { FileOpener } from '@ionic-native/file-opener';
     HomePageComponent,
     AboutPageComponent,
     ContactPageComponent,
-    AppDetailComponent
+    AppDetailComponent,
+    PopOver
   ],
   providers: [
     StatusBar,
