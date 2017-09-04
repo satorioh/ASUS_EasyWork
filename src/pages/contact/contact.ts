@@ -31,6 +31,9 @@ export class ContactPageComponent implements OnInit{
     //初始化地图
     var map = new BMap.Map(this.mapElement.nativeElement);
       var point = new BMap.Point(120.61990712, 31.31798737);
+    const x_pi = 3.14159265358979324 * 3000.0 / 180.0;
+    var gg_lon = 0;
+      var gg_lat = 0;
       map.centerAndZoom(point, 15);
     //加载地图插件
     map.addControl(new BMap.NavigationControl());
@@ -42,6 +45,8 @@ export class ContactPageComponent implements OnInit{
     geolocation.getCurrentPosition(function(r){
       if(this.getStatus() == 0){
         console.log(r.point);
+        bd_decrypt(r.point.lat,r.point.lng);
+        console.log(gg_lon,gg_lat);
     //坐标转换回调函数
         var translateCallback = function (data){
           if(data.status === 0) {
@@ -82,9 +87,19 @@ export class ContactPageComponent implements OnInit{
         console.log('failed'+this.getStatus());
       }
     },{enableHighAccuracy: true})
+
+    function bd_decrypt(bd_lat, bd_lon) {
+      var x = bd_lon - 0.0065, y = bd_lat - 0.006;
+      var z = Math.sqrt(x * x + y * y) - 0.00002 * Math.sin(y * x_pi);
+      var theta = Math.atan2(y, x) - 0.000003 * Math.cos(x * x_pi);
+      gg_lon = z * Math.cos(theta);
+      gg_lat = z * Math.sin(theta);
+    }
   }
 
-  presentPopover(myEvent) {
+
+
+presentPopover(myEvent) {
     alert("功能开发中，敬请期待!")
     // let popover = this.popoverCtrl.create(PopOver);
     // popover.present({
