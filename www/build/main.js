@@ -1,1 +1,869 @@
-webpackJsonp([0],{108:function(l,n){function a(l){return new Promise(function(n,a){a(new Error("Cannot find module '"+l+"'."))})}a.keys=function(){return[]},a.resolve=a,l.exports=a,a.id=108},118:function(l,n){function a(l){return new Promise(function(n,a){a(new Error("Cannot find module '"+l+"'."))})}a.keys=function(){return[]},a.resolve=a,l.exports=a,a.id=118},128:function(l,n,a){"use strict";function u(l){return O._36(0,[(l()(),O._12(0,null,null,2,"ion-nav",[],null,null,null,T.b,T.a)),O._31(6144,null,S.a,null,[x.a]),O._10(4374528,null,0,x.a,[[2,N.a],[2,D.a],U.a,E.a,L.a,O.l,O.B,O.I,O.k,j.g,z.a,[2,F.a],V.a,O.m],{root:[0,"root"]},null),(l()(),O._34(null,["\n"]))],function(l,n){l(n,2,0,n.component.rootPage)},null)}function t(l){return W._36(0,[(l()(),W._12(0,null,null,12,"ion-tabs",[],null,null,null,Y.b,Y.a)),W._31(6144,null,Z.a,null,[q.a]),W._10(4374528,null,0,q.a,[[2,J.a],[2,X.a],ll.a,nl.a,W.l,al.a,W.I,ul.a,tl.a],null,null),(l()(),W._34(0,["\n  "])),(l()(),W._12(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","apps"],["tabTitle","应用"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,el.b,el.a)),W._10(245760,null,0,ol.a,[q.a,ll.a,nl.a,al.a,W.l,W.B,W.I,W.k,W.h,il.g,sl.a,[2,ul.a],rl.a,W.m],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(l()(),W._34(0,["\n  "])),(l()(),W._12(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","book"],["tabTitle","指南"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,el.b,el.a)),W._10(245760,null,0,ol.a,[q.a,ll.a,nl.a,al.a,W.l,W.B,W.I,W.k,W.h,il.g,sl.a,[2,ul.a],rl.a,W.m],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(l()(),W._34(0,["\n  "])),(l()(),W._12(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","checkbox-outline"],["tabTitle","打卡"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,el.b,el.a)),W._10(245760,null,0,ol.a,[q.a,ll.a,nl.a,al.a,W.l,W.B,W.I,W.k,W.h,il.g,sl.a,[2,ul.a],rl.a,W.m],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(l()(),W._34(0,["\n"])),(l()(),W._34(null,["\n"]))],function(l,n){var a=n.component;l(n,5,0,a.tab1Root,"应用","apps");l(n,8,0,a.tab2Root,"指南","book");l(n,11,0,a.tab3Root,"打卡","checkbox-outline")},function(l,n){l(n,4,0,W._26(n,5)._tabId,W._26(n,5)._btnId),l(n,7,0,W._26(n,8)._tabId,W._26(n,8)._btnId),l(n,10,0,W._26(n,11)._tabId,W._26(n,11)._btnId)})}function e(l){return dl._36(0,[(l()(),dl._12(0,null,null,4,"div",[["class","progress-outer"]],null,null,null,null,null)),(l()(),dl._34(null,["\n  "])),(l()(),dl._12(0,null,null,1,"div",[["class","progress-inner"]],[[8,"id",0]],[[null,"click"]],function(l,n,a){var u=!0,t=l.component;return"click"===n&&(u=!1!==t.callApp(a)&&u),u},null,null)),(l()(),dl._34(null,["\n    ","\n  "])),(l()(),dl._34(null,["\n"])),(l()(),dl._34(null,["\n"]))],null,function(l,n){var a=n.component;l(n,2,0,dl._15(1,"",a.app.buttonColor,"")),l(n,3,0,a.app.method)})}function o(l){return yl._36(0,[yl._32(402653184,1,{progressBar:0}),(l()(),yl._12(0,null,null,23,"ion-item",[["class","item item-block"]],null,[[null,"click"]],function(l,n,a){var u=!0,t=l.component;return"click"===n&&(u=!1!==t.ionViewCanLeave(a)&&u),u},kl.b,kl.a)),yl._10(1097728,null,3,Cl.a,[wl.a,Bl.a,yl.l,yl.I,[2,Pl.a]],null,null),yl._32(335544320,2,{contentLabel:0}),yl._32(603979776,3,{_buttons:1}),yl._32(603979776,4,{_icons:1}),yl._10(16384,null,0,Ml.a,[],null,null),(l()(),yl._34(2,["\n  "])),(l()(),yl._12(0,null,0,4,"ion-thumbnail",[["item-left",""]],null,null,null,null,null)),yl._10(16384,null,0,Al.a,[],null,null),(l()(),yl._34(null,["\n    "])),(l()(),yl._12(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),yl._34(null,["\n  "])),(l()(),yl._34(2,["\n  "])),(l()(),yl._12(0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),yl._34(null,["",""])),(l()(),yl._34(2,["\n  "])),(l()(),yl._12(0,null,2,1,"p",[],null,null,null,null,null)),(l()(),yl._34(null,["",""])),(l()(),yl._34(2,["\n\n  "])),(l()(),yl._12(0,null,4,3,"button",[["ion-button",""],["item-right",""]],null,null,null,Rl.b,Rl.a)),yl._10(1097728,[[3,4]],0,Ol.a,[[8,""],Bl.a,yl.l,yl.I],null,null),(l()(),yl._12(0,null,0,1,"progress-bar",[["item-right",""]],null,null,null,e,Il)),yl._10(114688,[[1,4]],0,B,[Tl.a,Sl.a,xl.a,Nl.a,Dl.a],{app:[0,"app"]},null),(l()(),yl._34(2,["\n"])),(l()(),yl._34(null,["\n"])),(l()(),yl._34(null,["\n"]))],function(l,n){l(n,23,0,n.component.app)},function(l,n){var a=n.component;l(n,11,0,yl._15(1,"",a.app.icon,"")),l(n,15,0,a.app.name),l(n,18,0,a.app.corp)})}function i(l){return jl._36(0,[(l()(),jl._12(0,null,null,4,"li",[],null,null,null,null,null)),(l()(),jl._34(null,["\n        "])),(l()(),jl._12(0,null,null,1,"app-item",[],null,null,null,o,Ll)),jl._10(49152,null,0,P,[zl.a],{app:[0,"app"]},null),(l()(),jl._34(null,["\n      "]))],function(l,n){l(n,3,0,n.context.$implicit)},null)}function s(l){return jl._36(0,[(l()(),jl._12(0,null,null,10,"ion-header",[],null,null,null,null,null)),jl._10(16384,null,0,Fl.a,[Vl.a,jl.l,jl.I,[2,Hl.a]],null,null),(l()(),jl._34(null,["\n  "])),(l()(),jl._12(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","blue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,$l.b,$l.a)),jl._10(49152,null,0,Gl.a,[Kl.a,[2,Hl.a],[2,zl.a],Vl.a,jl.l,jl.I],{color:[0,"color"]},null),(l()(),jl._34(3,["\n    "])),(l()(),jl._12(0,null,3,2,"ion-title",[],null,null,null,Ql.b,Ql.a)),jl._10(49152,null,0,Wl.a,[Vl.a,jl.l,jl.I,[2,Yl.a],[2,Gl.a]],null,null),(l()(),jl._34(0,["ASUS EasyWork"])),(l()(),jl._34(3,["\n  "])),(l()(),jl._34(null,["\n"])),(l()(),jl._34(null,["\n\n"])),(l()(),jl._12(0,null,null,20,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Zl.b,Zl.a)),jl._10(4374528,null,0,ql.a,[Vl.a,Jl.a,Xl.a,jl.l,jl.I,Kl.a,ln.a,jl.B,[2,Hl.a],[2,zl.a]],null,null),(l()(),jl._34(1,["\n  "])),(l()(),jl._12(0,null,1,16,"ion-list",[["no-border",""]],null,null,null,null,null)),jl._10(16384,null,0,nn.a,[Vl.a,jl.l,jl.I,Jl.a,an.g,Xl.a],null,null),(l()(),jl._34(null,["\n\n    "])),(l()(),jl._12(0,null,null,6,"ion-list-header",[["class","item"]],null,null,null,un.b,un.a)),jl._10(1097728,null,3,tn.a,[en.a,Vl.a,jl.l,jl.I,[2,on.a]],null,null),jl._32(335544320,1,{contentLabel:0}),jl._32(603979776,2,{_buttons:1}),jl._32(603979776,3,{_icons:1}),jl._10(16384,null,0,sn.a,[Vl.a,jl.I,jl.l,[8,null]],null,null),(l()(),jl._34(2,["\n      应用\n    "])),(l()(),jl._34(null,["\n    "])),(l()(),jl._12(0,null,null,4,"ul",[],null,null,null,null,null)),(l()(),jl._34(null,["\n      "])),(l()(),jl._6(16777216,null,null,1,null,i)),jl._10(802816,null,0,rn.i,[jl.U,jl.Q,jl.v],{ngForOf:[0,"ngForOf"]},null),(l()(),jl._34(null,["\n    "])),(l()(),jl._34(null,["\n  "])),(l()(),jl._34(1,["\n\n\n"])),(l()(),jl._34(null,["\n\n"]))],function(l,n){var a=n.component;l(n,4,0,"blue"),l(n,29,0,a.appDatas)},function(l,n){l(n,3,0,jl._26(n,4)._hidden,jl._26(n,4)._sbPadding),l(n,12,0,jl._26(n,13).statusbarPadding,jl._26(n,13)._hasRefresher)})}function r(l){return dn._36(0,[(l()(),dn._12(0,null,null,10,"ion-header",[],null,null,null,null,null)),dn._10(16384,null,0,fn.a,[bn.a,dn.l,dn.I,[2,gn.a]],null,null),(l()(),dn._34(null,["\n  "])),(l()(),dn._12(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","blue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,mn.b,mn.a)),dn._10(49152,null,0,hn.a,[vn.a,[2,gn.a],[2,In.a],bn.a,dn.l,dn.I],{color:[0,"color"]},null),(l()(),dn._34(3,["\n    "])),(l()(),dn._12(0,null,3,2,"ion-title",[],null,null,null,yn.b,yn.a)),dn._10(49152,null,0,kn.a,[bn.a,dn.l,dn.I,[2,Cn.a],[2,hn.a]],null,null),(l()(),dn._34(0,["\n      ASUS EasyWork\n    "])),(l()(),dn._34(3,["\n  "])),(l()(),dn._34(null,["\n"])),(l()(),dn._34(null,["\n\n"])),(l()(),dn._12(0,null,null,4,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,wn.b,wn.a)),dn._10(4374528,null,0,Bn.a,[bn.a,Pn.a,Mn.a,dn.l,dn.I,vn.a,An.a,dn.B,[2,gn.a],[2,In.a]],null,null),(l()(),dn._34(1,["\n  "])),(l()(),dn._12(0,null,1,0,"iframe",[["frameborder","0"]],[[8,"src",5]],null,null,null,null)),(l()(),dn._34(1,["\n"])),(l()(),dn._34(null,["\n"]))],function(l,n){l(n,4,0,"blue")},function(l,n){var a=n.component;l(n,3,0,dn._26(n,4)._hidden,dn._26(n,4)._sbPadding),l(n,12,0,dn._26(n,13).statusbarPadding,dn._26(n,13)._hasRefresher),l(n,15,0,a.manualUrl())})}function _(l){return Nn._36(0,[Nn._32(402653184,1,{mapElement:0}),(l()(),Nn._12(0,null,null,10,"ion-header",[],null,null,null,null,null)),Nn._10(16384,null,0,Dn.a,[Un.a,Nn.l,Nn.I,[2,En.a]],null,null),(l()(),Nn._34(null,["\n  "])),(l()(),Nn._12(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","blue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,Ln.b,Ln.a)),Nn._10(49152,null,0,jn.a,[zn.a,[2,En.a],[2,Fn.a],Un.a,Nn.l,Nn.I],{color:[0,"color"]},null),(l()(),Nn._34(3,["\n    "])),(l()(),Nn._12(0,null,3,2,"ion-title",[["id","position"]],null,null,null,Vn.b,Vn.a)),Nn._10(49152,null,0,Hn.a,[Un.a,Nn.l,Nn.I,[2,$n.a],[2,jn.a]],null,null),(l()(),Nn._34(0,["您当前的位置：获取中..."])),(l()(),Nn._34(3,["\n  "])),(l()(),Nn._34(null,["\n"])),(l()(),Nn._34(null,["\n\n"])),(l()(),Nn._12(0,null,null,12,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Gn.b,Gn.a)),Nn._10(4374528,null,0,Kn.a,[Un.a,Qn.a,Wn.a,Nn.l,Nn.I,zn.a,Yn.a,Nn.B,[2,En.a],[2,Fn.a]],null,null),(l()(),Nn._34(1,["\n  "])),(l()(),Nn._34(1,["\n    "])),(l()(),Nn._34(1,["\n  "])),(l()(),Nn._34(1,["\n  "])),(l()(),Nn._34(1,["\n  "])),(l()(),Nn._12(0,[[1,0],["map",1]],1,0,"div",[["id","map"]],null,null,null,null,null)),(l()(),Nn._34(1,["\n  "])),(l()(),Nn._12(0,null,1,2,"button",[["block",""],["id","checkin"],["ion-button",""]],null,[[null,"click"]],function(l,n,a){var u=!0,t=l.component;return"click"===n&&(u=!1!==t.presentPopover(a)&&u),u},Zn.b,Zn.a)),Nn._10(1097728,null,0,qn.a,[[8,""],Un.a,Nn.l,Nn.I],{block:[0,"block"]},null),(l()(),Nn._34(0,["打 卡"])),(l()(),Nn._34(1,["\n"])),(l()(),Nn._34(null,["\n"]))],function(l,n){l(n,5,0,"blue");l(n,23,0,"")},function(l,n){l(n,4,0,Nn._26(n,5)._hidden,Nn._26(n,5)._sbPadding),l(n,13,0,Nn._26(n,14).statusbarPadding,Nn._26(n,14)._hasRefresher)})}function c(l){return aa._36(0,[(l()(),aa._12(0,null,null,4,"ion-slide",[],null,null,null,ua.b,ua.a)),aa._10(180224,null,0,ta.a,[aa.l,aa.I,ea.a],null,null),(l()(),aa._34(0,["\n    "])),(l()(),aa._12(0,null,0,0,"img",[["class","slide-image"]],[[8,"src",4]],null,null,null,null)),(l()(),aa._34(0,["\n  "]))],null,function(l,n){l(n,3,0,n.context.$implicit)})}function p(l){return aa._36(0,[(l()(),aa._12(0,null,null,5,"ion-slides",[["pager",""]],null,null,null,oa.b,oa.a)),aa._10(1228800,null,0,ea.a,[ia.a,sa.a,aa.B,[2,ra.a],aa.l,aa.I],{pager:[0,"pager"]},null),(l()(),aa._34(0,["\n  "])),(l()(),aa._6(16777216,null,0,1,null,c)),aa._10(802816,null,0,_a.i,[aa.U,aa.Q,aa.v],{ngForOf:[0,"ngForOf"]},null),(l()(),aa._34(0,["\n"])),(l()(),aa._34(null,["\n"]))],function(l,n){var a=n.component;l(n,1,0,""),l(n,4,0,a.slides.slideImg)},null)}function d(l){return da._36(0,[(l()(),da._12(0,null,null,10,"ion-header",[],null,null,null,null,null)),da._10(16384,null,0,fa.a,[ba.a,da.l,da.I,[2,ga.a]],null,null),(l()(),da._34(null,["\n  "])),(l()(),da._12(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","blue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,ma.b,ma.a)),da._10(49152,[["nav",4]],0,ha.a,[va.a,[2,ga.a],[2,Ia.a],ba.a,da.l,da.I],{color:[0,"color"]},null),(l()(),da._34(3,["\n    "])),(l()(),da._12(0,null,3,2,"ion-title",[],null,null,null,ya.b,ya.a)),da._10(49152,null,0,ka.a,[ba.a,da.l,da.I,[2,Ca.a],[2,ha.a]],null,null),(l()(),da._34(0,["\n      应用详情\n    "])),(l()(),da._34(3,["\n  "])),(l()(),da._34(null,["\n"])),(l()(),da._34(null,["\n\n"])),(l()(),da._12(0,null,null,47,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,wa.b,wa.a)),da._10(4374528,null,0,Ba.a,[ba.a,Pa.a,Ma.a,da.l,da.I,va.a,Aa.a,da.B,[2,ga.a],[2,Ia.a]],null,null),(l()(),da._34(1,["\n  "])),(l()(),da._12(0,null,1,16,"ion-item",[["class","item item-block"]],null,null,null,Ra.b,Ra.a)),da._10(1097728,null,3,Oa.a,[Ta.a,ba.a,da.l,da.I,[2,Sa.a]],null,null),da._32(335544320,1,{contentLabel:0}),da._32(603979776,2,{_buttons:1}),da._32(603979776,3,{_icons:1}),da._10(16384,null,0,xa.a,[],null,null),(l()(),da._34(2,["\n    "])),(l()(),da._12(0,null,2,4,"ion-thumbnail",[["class","detailPageIcon"]],null,null,null,null,null)),da._10(16384,null,0,Na.a,[],null,null),(l()(),da._34(null,["\n      "])),(l()(),da._12(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),da._34(null,["\n    "])),(l()(),da._34(2,["\n    "])),(l()(),da._12(0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),da._34(null,["",""])),(l()(),da._34(2,["\n\n    "])),(l()(),da._34(2,["\n  "])),(l()(),da._34(1,["\n  "])),(l()(),da._12(0,null,1,1,"h6",[],null,null,null,null,null)),(l()(),da._34(null,["配置演示"])),(l()(),da._34(1,["\n  "])),(l()(),da._12(0,null,1,1,"slide-show",[],null,null,null,p,pa)),da._10(49152,null,0,M,[],{slides:[0,"slides"]},null),(l()(),da._34(1,["\n  "])),(l()(),da._12(0,null,1,1,"h6",[],null,null,null,null,null)),(l()(),da._34(null,["应用描述"])),(l()(),da._34(1,["\n  "])),(l()(),da._12(0,null,1,1,"p",[],null,null,null,null,null)),(l()(),da._34(null,["",""])),(l()(),da._34(1,["\n\n  "])),(l()(),da._12(0,null,1,1,"h6",[],null,null,null,null,null)),(l()(),da._34(null,["其他信息"])),(l()(),da._34(1,["\n  "])),(l()(),da._12(0,null,1,5,"p",[],null,null,null,null,null)),(l()(),da._34(null,["开发者：",""])),(l()(),da._12(0,null,null,0,"br",[],null,null,null,null,null)),(l()(),da._34(null,["\n  版本：",""])),(l()(),da._12(0,null,null,0,"br",[],null,null,null,null,null)),(l()(),da._34(null,["\n  大小：",""])),(l()(),da._34(1,["\n\n  "])),(l()(),da._12(0,null,1,3,"button",[["block",""],["ion-button",""]],null,null,null,Da.b,Da.a)),da._10(1097728,null,0,Ua.a,[[8,""],ba.a,da.l,da.I],{block:[0,"block"]},null),(l()(),da._12(0,null,0,1,"progress-bar",[],null,null,null,e,Il)),da._10(114688,null,0,B,[Ea.a,Pa.a,La.a,ja.a,za.a],{app:[0,"app"]},null),(l()(),da._34(1,["\n"])),(l()(),da._34(null,["\n"]))],function(l,n){var a=n.component;l(n,4,0,"blue"),l(n,37,0,a.ItemInfo);l(n,56,0,""),l(n,58,0,a.ItemInfo)},function(l,n){var a=n.component;l(n,3,0,da._26(n,4)._hidden,da._26(n,4)._sbPadding),l(n,12,0,da._26(n,13).statusbarPadding,da._26(n,13)._hasRefresher),l(n,25,0,da._15(1,"",a.ItemInfo.icon,"")),l(n,29,0,a.ItemInfo.name),l(n,43,0,a.ItemInfo.info),l(n,49,0,a.ItemInfo.corp),l(n,51,0,a.ItemInfo.version),l(n,53,0,a.ItemInfo.size)})}function f(l){return Ga._36(0,[(l()(),Ga._34(null,["\n"]))],null,null)}Object.defineProperty(n,"__esModule",{value:!0});a(0),a(19),a(15);var b=function(){function l(l,n){this.sanitizer=l,this.loadingCtrl=n,this.loader=this.loadingCtrl.create({content:"载入中...",duration:1500})}return l.prototype.manualUrl=function(){return this.sanitizer.bypassSecurityTrustResourceUrl("http://appservice.asus.com/app_userguide/index.html")},l.prototype.ngOnInit=function(){this.loader.present()},l}(),g=(a(0),a(15),function(){function l(l,n,a){this.navCtrl=l,this.platform=n,this.popoverCtrl=a}return l.prototype.ngOnInit=function(){var l=this;this.platform.ready().then(function(){l.loadMap()})},l.prototype.loadMap=function(){var l=new BMap.Map(this.mapElement.nativeElement),n=new BMap.Point(120.61990712,31.31798737);l.centerAndZoom(n,15),l.addControl(new BMap.NavigationControl),l.addControl(new BMap.GeolocationControl),l.addControl(new BMap.MapTypeControl),l.setCurrentCity("苏州"),(new BMap.Geolocation).getCurrentPosition(function(a){if(0==this.getStatus()){console.log(a.point);var u=function(n){if(0===n.status){console.log(n.points[0]);var a=new BMap.Point(n.points[0]);l.centerAndZoom(a,15);var u=new BMap.Marker(n.points[0]);l.addOverlay(u),l.panTo(n.points[0])}};setTimeout(function(){var l=new BMap.Convertor,n=[];n.push(a.point),l.translate(n,1,5,u)},1e3),(new BMap.Geocoder).getLocation(n,function(l){var n=l.addressComponents,a="您当前的位置："+n.province+", "+n.city+", "+n.district;document.getElementById("position").textContent=a,console.log(a)})}else document.getElementById("position").textContent="您当前的位置：定位失败",console.log("failed"+this.getStatus())},{enableHighAccuracy:!0})},l.prototype.presentPopover=function(l){alert("功能开发中，敬请期待")},l}()),m=a(0),h=this&&this.__decorate||function(l,n,a,u){var t,e=arguments.length,o=e<3?n:null===u?u=Object.getOwnPropertyDescriptor(n,a):u;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)o=Reflect.decorate(l,n,a,u);else for(var i=l.length-1;i>=0;i--)(t=l[i])&&(o=(e<3?t(o):e>3?t(n,a,o):t(n,a))||o);return e>3&&o&&Object.defineProperty(n,a,o),o},v=this&&this.__metadata||function(l,n){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(l,n)},I=function(){function l(){this.appArr=[{id:1,name:"Skype for Business",packageName:"com.microsoft.office.lync15",version:"6.16.0.6",size:"41.4 MB",icon:"assets/img/icon/skype-icon.png",corp:"Microsoft Corporation",info:"Skype for Business(原来的 Lync 2013)将Lync和Skype的强大功能扩展至常用的移动设备 – 在简单易用的单一界面中，你可以进行无线语音和视频通话、查看丰富的状态信息、传递即时消息、参加会议以及拨打电话。",method:"",buttonColor:"blue",percent:100,slideImg:["assets/img/slide/skype_1.png","assets/img/slide/skype_2.png","assets/img/slide/skype_3.png","assets/img/slide/skype_4.png","assets/img/slide/skype_5.png","assets/img/slide/skype_6.png"]},{id:2,name:"ASUS IT Mobile Portal",packageName:"com.asusit.ap5.asusitmobileportal",version:"1.1.9",size:"5.8 MB",icon:"assets/img/icon/e-form-icon.png",corp:"ASUSTeK COMPUTER INC.",info:"本APP是華碩員工專屬，提供MIS所開發的各項免費應用程式，可以幫助同仁在工作效率上、或生活便利性，利用您隨身的智慧手機，創造更優質的華碩科技生活！",method:"",buttonColor:"blue",percent:100,slideImg:["assets/img/slide/asusitmobile_1.png","assets/img/slide/asusitmobile_2.png","assets/img/slide/asusitmobile_3.png","assets/img/slide/asusitmobile_4.png"]},{id:3,name:"Outlook",packageName:"com.microsoft.office.outlook",version:"2.1.219",size:"37.0 MB",icon:"assets/img/icon/outlook-icon.png",corp:"Microsoft Corporation",info:"快来体验 Android 版 Outlook，这个应用可帮助数百万用户在一个便利位置连接他们的所有电子邮件帐户、日历和文件。Android 版 Outlook 经过重新设计，让你能够在一个功能强大的收件箱执行更多操作。想要先查看最重要的邮件就到“重点”收件箱，该收件箱将重要邮件放在最上方。点击几下就可以在电子邮件和日历之间进行切换，方便你安排下一个会议或共享你的空闲时间。你也可以从文件列表中选择一个文档，再将其无缝附加到电子邮件中。",method:"",buttonColor:"blue",percent:100,slideImg:["assets/img/slide/outlook_1.png","assets/img/slide/outlook_2.png","assets/img/slide/outlook_3.png","assets/img/slide/outlook_4.png","assets/img/slide/outlook_5.png","assets/img/slide/outlook_6.png"]},{id:4,name:"VPN",packageName:"com.blazasoft.vpn",version:"1.1",size:"156 KB",icon:"assets/img/icon/vpn-icon.png",corp:"BlazaSoft",info:"This application is a single-tap shortcut to the VPN Settings menu. There are no ads, permissions or unnecessary features, nor will there be in the future.You can use it to access the VPN Settings menu right from your home screen, with a single tap.",method:"",buttonColor:"blue",percent:100,slideImg:["assets/img/slide/vpn_1.png","assets/img/slide/vpn_2.png","assets/img/slide/vpn_3.png","assets/img/slide/vpn_4.png","assets/img/slide/vpn_5.png"]}]}return l=h([Object(m.r)(),v("design:paramtypes",[])],l)}(),y=(a(0),function(){return function(l){this.appData=l,this.appDatas=[],this.appDatas=l.appArr}}()),k=(a(0),function(){return function(){this.tab1Root=y,this.tab2Root=b,this.tab3Root=g}}()),C=(a(0),a(15),a(72),a(73),function(){return function(l,n,a){this.rootPage=k,l.ready().then(function(){n.styleDefault(),a.hide()})}}()),w=(a(0),a(15),function(){return function(l){this.navParams=l,this.ItemInfo=this.navParams.data}}()),B=(a(0),a(43),a(44),a(45),a(46),a(15),function(){function l(l,n,a,u,t){this.appAvailability=l,this.platform=n,this.transfer=a,this.file=u,this.fileOpener=t,this.app={}}return l.prototype.ngOnInit=function(){var l=this;this.platform.ready().then(function(){var n=l.app;l.appAvailability.check(l.app.packageName).then(function(){n.method="打开",n.buttonColor="secondary"},function(){n.method="下载"}),l.setLineHeight("progress-inner")})},l.prototype.setLineHeight=function(l){for(var n=document.getElementsByClassName(l),a=window.getComputedStyle(n[0],null).height,u=0,t=n.length;u<t;u++)n[u].style.lineHeight=a},l.prototype.startApp=function(){window.startApp.set({package:this.app.packageName}).start()},l.prototype.downloadApp=function(l){var n,a=this,u=this.transfer.create(),t=encodeURI("http://221.224.163.10:9443/temp/"+this.app.packageName+".apk");u.onProgress(function(n){var a=n.loaded/n.total*100;a=Math.round(a),l.style.width=a+"%",l.textContent=a+"%"}),u.download(t,this.file.externalDataDirectory+this.app.packageName+".apk",!0).then(function(u){confirm(a.app.name+"下载完成，是否立即安装？")&&(n=u.toURL(),a.file.checkFile(a.file.externalDataDirectory,a.app.packageName+".apk").then(function(u){a.fileOpener.open(n,"application/vnd.android.package-archive").then(function(n){l.textContent="打开"},function(l){alert("开启安装包错误，请重新再试！")})},function(l){alert("文件无法找到，请重新再试！")}))},function(l){alert("无可用网络连接！"+l.code)})},l.prototype.callApp=function(l){var n=l.target.textContent.replace(/^\s+|\s+$/g,"");"下载"==n?(this.app.buttonColor="secondary",this.downloadApp(l.target)):"打开"==n&&this.startApp()},l}()),P=(a(0),a(15),function(){function l(l){this.navCtrl=l,this.app={}}return l.prototype.goToDetailPage=function(l){this.navCtrl.push(w,this.app)},l.prototype.ionViewCanLeave=function(l){var n=l.target.textContent.replace(/^\s+|\s+$/g,"");return"下载"!=n&&("打开"!=n&&void this.goToDetailPage(l))},l}()),M=(a(0),function(){return function(){this.slides={}}}()),A=(a(0),a(15),function(){function l(l){this.viewCtrl=l,this.calendar={mode:"month",currentDate:new Date}}return l.prototype.close=function(){this.viewCtrl.dismiss()},l}()),R=(a(0),a(19),a(15),a(72),a(73),a(43),a(125),a(44),a(45),a(46),a(157),function(){return function(){}}()),O=a(0),T=a(166),S=a(27),x=a(63),N=a(3),D=a(10),U=a(5),E=a(1),L=a(4),j=a(7),z=a(18),F=a(12),V=a(6),H=a(72),$=a(73),G=[],K=O._9({encapsulation:2,styles:G,data:{}}),Q=O._7("ng-component",C,function(l){return O._36(0,[(l()(),O._12(0,null,null,1,"ng-component",[],null,null,null,u,K)),O._10(49152,null,0,C,[L.a,H.a,$.a],null,null)],null,null)},{},{},[]),W=a(0),Y=a(167),Z=a(27),q=a(41),J=a(10),X=a(3),ll=a(5),nl=a(1),al=a(4),ul=a(12),tl=a(17),el=a(168),ol=a(68),il=a(7),sl=a(18),rl=a(6),_l=[],cl=W._9({encapsulation:2,styles:_l,data:{}}),pl=W._7("ng-component",k,function(l){return W._36(0,[(l()(),W._12(0,null,null,1,"ng-component",[],null,null,null,t,cl)),W._10(49152,null,0,k,[],null,null)],null,null)},{},{},[]),dl=a(0),fl=a(43),bl=a(4),gl=a(44),ml=a(45),hl=a(46),vl=[],Il=dl._9({encapsulation:2,styles:vl,data:{}}),yl=(dl._7("progress-bar",B,function(l){return dl._36(0,[(l()(),dl._12(0,null,null,1,"progress-bar",[],null,null,null,e,Il)),dl._10(114688,null,0,B,[fl.a,bl.a,gl.a,ml.a,hl.a],null,null)],function(l,n){l(n,1,0)},null)},{progress:"progress",app:"app"},{},[]),a(0)),kl=a(75),Cl=a(32),wl=a(20),Bl=a(1),Pl=a(26),Ml=a(53),Al=a(71),Rl=a(78),Ol=a(24),Tl=a(43),Sl=a(4),xl=a(44),Nl=a(45),Dl=a(46),Ul=a(10),El=[],Ll=yl._9({encapsulation:2,styles:El,data:{}}),jl=(yl._7("app-item",P,function(l){return yl._36(0,[(l()(),yl._12(0,null,null,1,"app-item",[],null,null,null,o,Ll)),yl._10(49152,null,0,P,[Ul.a],null,null)],null,null)},{app:"app"},{},[]),a(0)),zl=a(10),Fl=a(42),Vl=a(1),Hl=a(3),$l=a(79),Gl=a(22),Kl=a(5),Ql=a(80),Wl=a(34),Yl=a(28),Zl=a(81),ql=a(25),Jl=a(4),Xl=a(6),ln=a(17),nn=a(60),an=a(7),un=a(75),tn=a(32),en=a(20),on=a(26),sn=a(90),rn=a(8),_n=[],cn=jl._9({encapsulation:2,styles:_n,data:{}}),pn=jl._7("page-home",y,function(l){return jl._36(0,[(l()(),jl._12(0,null,null,1,"page-home",[],null,null,null,s,cn)),jl._10(49152,null,0,y,[I],null,null)],null,null)},{},{},[]),dn=a(0),fn=a(42),bn=a(1),gn=a(3),mn=a(79),hn=a(22),vn=a(5),In=a(10),yn=a(80),kn=a(34),Cn=a(28),wn=a(81),Bn=a(25),Pn=a(4),Mn=a(6),An=a(17),Rn=a(19),On=a(62),Tn=[],Sn=dn._9({encapsulation:2,styles:Tn,data:{}}),xn=dn._7("page-about",b,function(l){return dn._36(0,[(l()(),dn._12(0,null,null,1,"page-about",[],null,null,null,r,Sn)),dn._10(114688,null,0,b,[Rn.c,On.a],null,null)],function(l,n){l(n,1,0)},null)},{},{},[]),Nn=a(0),Dn=a(42),Un=a(1),En=a(3),Ln=a(79),jn=a(22),zn=a(5),Fn=a(10),Vn=a(80),Hn=a(34),$n=a(28),Gn=a(81),Kn=a(25),Qn=a(4),Wn=a(6),Yn=a(17),Zn=a(78),qn=a(24),Jn=a(66),Xn=[],la=Nn._9({encapsulation:2,styles:Xn,data:{}}),na=Nn._7("page-contact",g,function(l){return Nn._36(0,[(l()(),Nn._12(0,null,null,1,"page-contact",[],null,null,null,_,la)),Nn._10(114688,null,0,g,[Fn.a,Qn.a,Jn.a],null,null)],function(l,n){l(n,1,0)},null)},{},{},[]),aa=a(0),ua=a(77),ta=a(33),ea=a(21),oa=a(76),ia=a(1),sa=a(4),ra=a(3),_a=a(8),ca=[],pa=aa._9({encapsulation:2,styles:ca,data:{}}),da=(aa._7("slide-show",M,function(l){return aa._36(0,[(l()(),aa._12(0,null,null,1,"slide-show",[],null,null,null,p,pa)),aa._10(49152,null,0,M,[],null,null)],null,null)},{slides:"slides"},{},[]),a(0)),fa=a(42),ba=a(1),ga=a(3),ma=a(79),ha=a(22),va=a(5),Ia=a(10),ya=a(80),ka=a(34),Ca=a(28),wa=a(81),Ba=a(25),Pa=a(4),Ma=a(6),Aa=a(17),Ra=a(75),Oa=a(32),Ta=a(20),Sa=a(26),xa=a(53),Na=a(71),Da=a(78),Ua=a(24),Ea=a(43),La=a(44),ja=a(45),za=a(46),Fa=a(14),Va=[],Ha=da._9({encapsulation:2,styles:Va,data:{}}),$a=da._7("app-detail",w,function(l){return da._36(0,[(l()(),da._12(0,null,null,1,"app-detail",[],null,null,null,d,Ha)),da._10(49152,null,0,w,[Fa.a],null,null)],null,null)},{},{},[]),Ga=a(0),Ka=a(3),Qa=[],Wa=Ga._9({encapsulation:2,styles:Qa,data:{}}),Ya=Ga._7("pop-over",A,function(l){return Ga._36(0,[(l()(),Ga._12(0,null,null,1,"pop-over",[],null,null,null,f,Wa)),Ga._10(49152,null,0,A,[Ka.a],null,null)],null,null)},{},{},[]),Za=a(0),qa=a(49),Ja=a(162),Xa=a(163),lu=a(164),nu=a(165),au=a(8),uu=a(19),tu=a(97),eu=a(123),ou=a(169),iu=a(5),su=a(1),ru=a(170),_u=a(94),cu=a(20),pu=a(64),du=a(4),fu=a(17),bu=a(6),gu=a(62),mu=a(122),hu=a(52),vu=a(12),Iu=a(54),yu=a(171),ku=a(172),Cu=a(66),wu=a(93),Bu=a(7),Pu=a(173),Mu=a(18),Au=a(72),Ru=a(73),Ou=a(43),Tu=a(125),Su=a(44),xu=a(45),Nu=a(46),Du=a(121),Uu=a(95),Eu=a(51),Lu=a(92),ju=a(96),zu=a(126),Fu=Za._8(R,[qa.b],function(l){return Za._23([Za._24(512,Za.k,Za._4,[[8,[Ja.a,Xa.a,lu.a,nu.a,Q,pl,pn,xn,na,$a,Ya]],[3,Za.k],Za.z]),Za._24(5120,Za.x,Za._22,[[3,Za.x]]),Za._24(4608,au.l,au.k,[Za.x]),Za._24(5120,Za.b,Za._13,[]),Za._24(5120,Za.v,Za._19,[]),Za._24(5120,Za.w,Za._20,[]),Za._24(4608,uu.c,uu.s,[au.c]),Za._24(6144,Za.M,null,[uu.c]),Za._24(4608,uu.f,tu.a,[]),Za._24(5120,uu.d,function(l,n,a,u){return[new uu.l(l),new uu.p(n),new uu.o(a,u)]},[au.c,au.c,au.c,uu.f]),Za._24(4608,uu.e,uu.e,[uu.d,Za.B]),Za._24(135680,uu.n,uu.n,[au.c]),Za._24(4608,uu.m,uu.m,[uu.e,uu.n]),Za._24(6144,Za.K,null,[uu.m]),Za._24(6144,uu.q,null,[uu.n]),Za._24(4608,Za.R,Za.R,[Za.B]),Za._24(4608,uu.h,uu.h,[au.c]),Za._24(4608,uu.j,uu.j,[au.c]),Za._24(4608,eu.e,eu.e,[]),Za._24(4608,eu.a,eu.a,[]),Za._24(4608,ou.a,ou.a,[iu.a,su.a]),Za._24(4608,ru.a,ru.a,[iu.a,su.a]),Za._24(4608,_u.a,_u.a,[]),Za._24(4608,cu.a,cu.a,[]),Za._24(4608,pu.a,pu.a,[du.a]),Za._24(4608,fu.a,fu.a,[su.a,du.a,Za.B,bu.a]),Za._24(4608,gu.a,gu.a,[iu.a,su.a]),Za._24(5120,au.g,mu.b,[au.r,[2,au.a],su.a]),Za._24(4608,au.f,au.f,[au.g]),Za._24(5120,hu.b,hu.d,[iu.a,hu.a]),Za._24(5120,vu.a,vu.b,[iu.a,hu.b,au.f,Iu.b,Za.k]),Za._24(4608,yu.a,yu.a,[iu.a,su.a,vu.a]),Za._24(4608,ku.a,ku.a,[iu.a,su.a]),Za._24(4608,Cu.a,Cu.a,[iu.a,su.a,vu.a]),Za._24(4608,wu.a,wu.a,[su.a,du.a,bu.a,iu.a,Bu.g]),Za._24(4608,Pu.a,Pu.a,[iu.a,su.a]),Za._24(4608,Mu.a,Mu.a,[du.a,su.a]),Za._24(4608,Au.a,Au.a,[]),Za._24(4608,Ru.a,Ru.a,[]),Za._24(4608,Ou.a,Ou.a,[]),Za._24(4608,Tu.a,Tu.a,[]),Za._24(4608,Su.a,Su.a,[]),Za._24(4608,Su.b,Su.b,[]),Za._24(4608,xu.a,xu.a,[]),Za._24(4608,Nu.a,Nu.a,[]),Za._24(4608,I,I,[]),Za._24(512,au.b,au.b,[]),Za._24(512,Za.m,Du.a,[]),Za._24(256,su.b,null,[]),Za._24(1024,Uu.a,Uu.b,[]),Za._24(1024,du.a,du.b,[uu.b,Uu.a,Za.B]),Za._24(1024,su.a,su.c,[su.b,du.a]),Za._24(512,bu.a,bu.a,[du.a]),Za._24(512,Eu.a,Eu.a,[]),Za._24(512,iu.a,iu.a,[su.a,du.a,[2,Eu.a]]),Za._24(512,Bu.g,Bu.g,[iu.a]),Za._24(256,hu.a,null,[]),Za._24(512,Za.i,Za.i,[]),Za._24(512,Lu.a,Lu.a,[Za.i]),Za._24(1024,Iu.b,Iu.c,[Lu.a,Za.t]),Za._24(1024,Za.c,function(l,n,a,u,t,e,o,i,s,r,_,c,p,d){return[uu.r(l,n),ju.a(a),_u.b(u,t),wu.b(e,o,i,s,r),Iu.d(_,c,p,d)]},[[2,uu.i],[2,Za.A],su.a,du.a,bu.a,su.a,du.a,bu.a,iu.a,Bu.g,su.a,hu.a,Iu.b,Za.B]),Za._24(512,Za.d,Za.d,[[2,Za.c]]),Za._24(131584,Za._11,Za._11,[Za.B,Za._5,Za.t,Za.m,Za.k,Za.d]),Za._24(2048,Za.f,null,[Za._11]),Za._24(512,Za.e,Za.e,[Za.f]),Za._24(512,uu.a,uu.a,[[3,uu.a]]),Za._24(512,eu.d,eu.d,[]),Za._24(512,eu.b,eu.b,[]),Za._24(512,eu.c,eu.c,[]),Za._24(512,mu.a,mu.a,[]),Za._24(512,zu.a,zu.a,[]),Za._24(512,R,R,[]),Za._24(256,qa.a,C,[]),Za._24(256,au.a,"/",[])])}),Vu=a(19),Hu=a(0);Object(Hu.Y)(),Object(Vu.k)().bootstrapModuleFactory(Fu)},160:function(l,n){}},[128]);
+webpackJsonp([0],{
+
+/***/ 109:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	return new Promise(function(resolve, reject) { reject(new Error("Cannot find module '" + req + "'.")); });
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 109;
+
+/***/ }),
+
+/***/ 150:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	return new Promise(function(resolve, reject) { reject(new Error("Cannot find module '" + req + "'.")); });
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 150;
+
+/***/ }),
+
+/***/ 193:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(196);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var TabsPage = (function () {
+    function TabsPage() {
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePageComponent */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__about_about__["a" /* AboutPageComponent */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPageComponent */];
+    }
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="应用" tabIcon="apps"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="指南" tabIcon="book"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="打卡" tabIcon="checkbox-outline"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\tabs\tabs.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], TabsPage);
+    return TabsPage;
+}());
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 194:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AboutPageComponent = (function () {
+    function AboutPageComponent(sanitizer, loadingCtrl) {
+        this.sanitizer = sanitizer;
+        this.loadingCtrl = loadingCtrl;
+        this.loader = this.loadingCtrl.create({
+            content: "载入中...",
+            duration: 1500
+        });
+    }
+    AboutPageComponent.prototype.manualUrl = function () {
+        var dangerousUrl = 'http://appservice.asus.com/app_userguide/index.html';
+        return this.sanitizer.bypassSecurityTrustResourceUrl(dangerousUrl);
+    };
+    AboutPageComponent.prototype.ngOnInit = function () {
+        this.loader.present();
+    };
+    AboutPageComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-about',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-title>\n\n      ASUS EasyWork\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <iframe [src]="manualUrl()" frameborder="0"></iframe>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\about\about.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* LoadingController */]])
+    ], AboutPageComponent);
+    return AboutPageComponent;
+}());
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 195:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ContactPageComponent = (function () {
+    function ContactPageComponent(navCtrl, platform, popoverCtrl) {
+        this.navCtrl = navCtrl;
+        this.platform = platform;
+        this.popoverCtrl = popoverCtrl;
+    }
+    ContactPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.platform.ready().then(function () {
+            _this.loadMap();
+        });
+    };
+    ContactPageComponent.prototype.loadMap = function () {
+        baidu_location.getCurrentPosition(function (data) {
+            console.dir(data);
+            alert(data.latitude);
+            alert(data.longitude);
+        }, function (err) {
+            console.dir(err);
+            alert(err);
+        });
+        //初始化地图
+        // var map = new BMap.Map(this.mapElement.nativeElement);
+        //   var point = new BMap.Point(120.61990712, 31.31798737);
+        // const x_pi = 3.14159265358979324 * 3000.0 / 180.0;
+        // var gg_lon = 0;
+        //   var gg_lat = 0;
+        //   map.centerAndZoom(point, 15);
+        // //加载地图插件
+        // map.addControl(new BMap.NavigationControl());
+        // map.addControl(new BMap.GeolocationControl());
+        // map.addControl(new BMap.MapTypeControl());
+        // map.setCurrentCity("苏州");
+        // //获取经纬度
+        // var geolocation = new BMap.Geolocation();
+        // geolocation.getCurrentPosition(function(r){
+        //   if(this.getStatus() == 0){
+        //     console.log(r.point);
+        //     bd_decrypt(r.point.lat,r.point.lng);
+        //     console.log(gg_lon,gg_lat);
+        // //坐标转换回调函数
+        //     var translateCallback = function (data){
+        //       if(data.status === 0) {
+        //         console.log(data.points[0]);
+        //         //var fixedPoint = new BMap.Point(data.points[0]);
+        //         //console.log(point);
+        //         map.centerAndZoom(data.points[0], 15);
+        //         var mk = new BMap.Marker(data.points[0]);
+        //         map.addOverlay(mk);
+        //         map.panTo(data.points[0]);
+        //         //var marker = new BMap.Marker(data.points[0]);
+        //         //bm.addOverlay(marker);
+        //         //var label = new BMap.Label("转换后的百度坐标（正确）",{offset:new BMap.Size(20,-10)});
+        //         //marker.setLabel(label); //添加百度label
+        //         //bm.setCenter(data.points[0]);
+        //         //console.log('您的位置：'+r.point.lng+','+r.point.lat);
+        //         var geoc = new BMap.Geocoder();
+        //         geoc.getLocation(data.points[0], function(rs){
+        //           var addComp = rs.addressComponents;
+        //           var posMessage = "您当前的位置："+ addComp.province + ", " + addComp.city + ", " + addComp.district;
+        //           document.getElementById('position').textContent = posMessage;
+        //           console.log(posMessage);
+        //         });
+        //       }
+        //     };
+        // //坐标转换
+        //     setTimeout(function(){
+        //       var convertor = new BMap.Convertor();
+        //       var pointArr = [];
+        //       pointArr.push(r.point);
+        //       convertor.translate(pointArr, 1, 5, translateCallback);
+        //     }, 1000);
+        //
+        //
+        //
+        //     }else {
+        //     document.getElementById('position').textContent = "您当前的位置：定位失败";
+        //     console.log('failed'+this.getStatus());
+        //   }
+        // },{enableHighAccuracy: true})
+        //
+        // function bd_decrypt(bd_lat, bd_lon) {
+        //   var x = bd_lon - 0.0065, y = bd_lat - 0.006;
+        //   var z = Math.sqrt(x * x + y * y) - 0.00002 * Math.sin(y * x_pi);
+        //   var theta = Math.atan2(y, x) - 0.000003 * Math.cos(x * x_pi);
+        //   gg_lon = z * Math.cos(theta);
+        //   gg_lat = z * Math.sin(theta);
+        //}
+    };
+    ContactPageComponent.prototype.presentPopover = function (myEvent) {
+        alert("功能开发中，敬请期待!");
+        // let popover = this.popoverCtrl.create(PopOver);
+        // popover.present({
+        //   ev: myEvent
+        // });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('map'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */])
+    ], ContactPageComponent.prototype, "mapElement", void 0);
+    ContactPageComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-contact',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-title id="position">您当前的位置：获取中...</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <!--<ion-list>-->\n\n    <!--<ion-item></ion-item>-->\n\n  <!--</ion-list>-->\n\n  <!--<div id="position">您当前的位置：</div>-->\n\n  <div id="map" #map></div>\n\n  <button ion-button block id="checkin" (click)="presentPopover($event)">打 卡</button>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]])
+    ], ContactPageComponent);
+    return ContactPageComponent;
+}());
+
+//# sourceMappingURL=contact.js.map
+
+/***/ }),
+
+/***/ 196:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_appData_service__ = __webpack_require__(197);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var HomePageComponent = (function () {
+    function HomePageComponent(appData) {
+        this.appData = appData;
+        this.appDatas = [];
+        this.appDatas = appData.appArr;
+    }
+    HomePageComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-title>ASUS EasyWork</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list no-border>\n\n    <ion-list-header>\n      应用\n    </ion-list-header>\n    <ul>\n      <li *ngFor="let app of appDatas">\n        <app-item [app]="app"></app-item>\n      </li>\n    </ul>\n  </ion-list>\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\home\home.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__app_appData_service__["a" /* AppDataService */]])
+    ], HomePageComponent);
+    return HomePageComponent;
+}());
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 197:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppDataService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AppDataService = (function () {
+    function AppDataService() {
+        this.appArr = [
+            {
+                id: 1,
+                name: 'Skype for Business',
+                packageName: 'com.microsoft.office.lync15',
+                version: '6.16.0.6',
+                size: '41.4 MB',
+                icon: 'assets/img/icon/skype-icon.png',
+                corp: 'Microsoft Corporation',
+                info: 'Skype for Business(原来的 Lync 2013)将Lync和Skype的强大功能扩展至常用的移动设备 – 在简单易用的单一界面中，你可以进行无线语音和视频通话、查看丰富的状态信息、传递即时消息、参加会议以及拨打电话。',
+                method: '',
+                buttonColor: 'blue',
+                percent: 100,
+                slideImg: ['assets/img/slide/skype_1.png', 'assets/img/slide/skype_2.png', 'assets/img/slide/skype_3.png', 'assets/img/slide/skype_4.png', 'assets/img/slide/skype_5.png', 'assets/img/slide/skype_6.png']
+            },
+            {
+                id: 2,
+                name: 'ASUS IT Mobile Portal',
+                packageName: 'com.asusit.ap5.asusitmobileportal',
+                version: '1.1.9',
+                size: '5.8 MB',
+                icon: 'assets/img/icon/e-form-icon.png',
+                corp: 'ASUSTeK COMPUTER INC.',
+                info: '本APP是華碩員工專屬，提供MIS所開發的各項免費應用程式，可以幫助同仁在工作效率上、或生活便利性，利用您隨身的智慧手機，創造更優質的華碩科技生活！',
+                method: '',
+                buttonColor: 'blue',
+                percent: 100,
+                slideImg: ['assets/img/slide/asusitmobile_1.png', 'assets/img/slide/asusitmobile_2.png', 'assets/img/slide/asusitmobile_3.png', 'assets/img/slide/asusitmobile_4.png']
+            },
+            {
+                id: 3,
+                name: 'Outlook',
+                packageName: 'com.microsoft.office.outlook',
+                version: '2.1.219',
+                size: '37.0 MB',
+                icon: 'assets/img/icon/outlook-icon.png',
+                corp: 'Microsoft Corporation',
+                info: '快来体验 Android 版 Outlook，这个应用可帮助数百万用户在一个便利位置连接他们的所有电子邮件帐户、日历和文件。Android 版 Outlook 经过重新设计，让你能够在一个功能强大的收件箱执行更多操作。想要先查看最重要的邮件就到“重点”收件箱，该收件箱将重要邮件放在最上方。点击几下就可以在电子邮件和日历之间进行切换，方便你安排下一个会议或共享你的空闲时间。你也可以从文件列表中选择一个文档，再将其无缝附加到电子邮件中。',
+                method: '',
+                buttonColor: 'blue',
+                percent: 100,
+                slideImg: ['assets/img/slide/outlook_1.png', 'assets/img/slide/outlook_2.png', 'assets/img/slide/outlook_3.png', 'assets/img/slide/outlook_4.png', 'assets/img/slide/outlook_5.png', 'assets/img/slide/outlook_6.png']
+            },
+            {
+                id: 4,
+                name: 'VPN',
+                packageName: 'com.blazasoft.vpn',
+                version: '1.1',
+                size: '156 KB',
+                icon: 'assets/img/icon/vpn-icon.png',
+                corp: 'BlazaSoft',
+                info: 'This application is a single-tap shortcut to the VPN Settings menu. There are no ads, permissions or unnecessary features, nor will there be in the future.You can use it to access the VPN Settings menu right from your home screen, with a single tap.',
+                method: '',
+                buttonColor: 'blue',
+                percent: 100,
+                slideImg: ['assets/img/slide/vpn_1.png', 'assets/img/slide/vpn_2.png', 'assets/img/slide/vpn_3.png', 'assets/img/slide/vpn_4.png', 'assets/img/slide/vpn_5.png']
+            }
+        ];
+    }
+    AppDataService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], AppDataService);
+    return AppDataService;
+}());
+
+//# sourceMappingURL=appData.service.js.map
+
+/***/ }),
+
+/***/ 198:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppDetailComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AppDetailComponent = (function () {
+    function AppDetailComponent(navParams) {
+        this.navParams = navParams;
+        this.ItemInfo = this.navParams.data;
+    }
+    AppDetailComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-detail',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/'<ion-header>\n\n  <ion-navbar color="blue" #nav>\n\n    <ion-title>\n\n      应用详情\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-thumbnail class="detailPageIcon">\n\n      <img src={{ItemInfo.icon}}>\n\n    </ion-thumbnail>\n\n    <h2>{{ItemInfo.name}}</h2>\n\n\n\n    <!--<button ion-button item-right>View</button>-->\n\n  </ion-item>\n\n  <h6>配置演示</h6>\n\n  <slide-show [slides]="ItemInfo"></slide-show>\n\n  <h6>应用描述</h6>\n\n  <p>{{ItemInfo.info}}</p>\n\n\n\n  <h6>其他信息</h6>\n\n  <p>开发者：{{ItemInfo.corp}}<br/>\n\n  版本：{{ItemInfo.version}}<br/>\n\n  大小：{{ItemInfo.size}}</p>\n\n\n\n  <button ion-button block><progress-bar [app]="ItemInfo"></progress-bar></button>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], AppDetailComponent);
+    return AppDetailComponent;
+}());
+
+//# sourceMappingURL=appDetail.js.map
+
+/***/ }),
+
+/***/ 199:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgressBarComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_app_availability__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_transfer__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_opener__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var ProgressBarComponent = (function () {
+    function ProgressBarComponent(appAvailability, platform, transfer, file, fileOpener) {
+        this.appAvailability = appAvailability;
+        this.platform = platform;
+        this.transfer = transfer;
+        this.file = file;
+        this.fileOpener = fileOpener;
+        this.app = {}; //从appItem.component的app对象导入
+    }
+    ProgressBarComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.platform.ready().then(function () {
+            //检查app是否已经安装
+            var appcopy = _this.app;
+            _this.appAvailability.check(_this.app.packageName)
+                .then(function () {
+                appcopy.method = "打开";
+                appcopy.buttonColor = "secondary";
+            }, function () {
+                appcopy.method = "下载";
+            });
+            //获取progress-bar的height值，并设置其line-height
+            _this.setLineHeight("progress-inner");
+        });
+    };
+    ProgressBarComponent.prototype.setLineHeight = function (element) {
+        var elementAll = document.getElementsByClassName(element);
+        var height = window.getComputedStyle(elementAll[0], null).height;
+        for (var i = 0, len = elementAll.length; i < len; i++) {
+            var target = elementAll[i];
+            target.style.lineHeight = height;
+        }
+    };
+    ProgressBarComponent.prototype.startApp = function () {
+        window.startApp.set({ "package": this.app.packageName }).start();
+    };
+    ProgressBarComponent.prototype.downloadApp = function (e) {
+        var _this = this;
+        //console.log(e);
+        var fileTransfer = this.transfer.create();
+        var url = encodeURI('http://221.224.163.10:9443/temp/' + this.app.packageName + '.apk');
+        var fileURL;
+        fileTransfer.onProgress(function (ProgressEvent) {
+            var percent = ProgressEvent.loaded / ProgressEvent.total * 100;
+            percent = Math.round(percent);
+            e.style.width = percent + "%";
+            e.textContent = percent + "%";
+        });
+        fileTransfer.download(url, this.file.externalDataDirectory + this.app.packageName + '.apk', true)
+            .then(function (entry) {
+            if (confirm(_this.app.name + '下载完成，是否立即安装？')) {
+                fileURL = entry.toURL();
+                _this.file.checkFile(_this.file.externalDataDirectory, _this.app.packageName + '.apk').then(function (entry) {
+                    _this.fileOpener.open(fileURL, 'application/vnd.android.package-archive')
+                        .then(function (entry) {
+                        e.textContent = "打开";
+                    } //open file success
+                    , function (error) {
+                        alert('开启安装包错误，请重新再试！');
+                    }); //open file fail
+                }, function (error) {
+                    alert('文件无法找到，请重新再试！');
+                }); //file.checkFile file not exist
+            }
+            else {
+            } //user choose not install app now
+        }, function (error) {
+            alert('无可用网络连接！' + error.code);
+        }); //fileTransfer.download error
+    };
+    //检测点击的按钮，分别调用对应的函数
+    ProgressBarComponent.prototype.callApp = function (e) {
+        var str = e.target.textContent.replace(/^\s+|\s+$/g, "");
+        if (str == "下载") {
+            this.app.buttonColor = "secondary";
+            this.downloadApp(e.target);
+        }
+        else if (str == "打开") {
+            this.startApp();
+        }
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], ProgressBarComponent.prototype, "progress", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], ProgressBarComponent.prototype, "app", void 0);
+    ProgressBarComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'progress-bar',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\app\progressBar.html"*/'<div class="progress-outer">\n\n  <div class="progress-inner" id={{app.buttonColor}} (click)="callApp($event)">\n\n    {{app.method}}\n\n  </div>\n\n</div>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\app\progressBar.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_app_availability__["a" /* AppAvailability */],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["g" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_transfer__["a" /* Transfer */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__["a" /* File */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_opener__["a" /* FileOpener */]])
+    ], ProgressBarComponent);
+    return ProgressBarComponent;
+}());
+
+//# sourceMappingURL=progressBar.component.js.map
+
+/***/ }),
+
+/***/ 204:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(223);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 223:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_appDetail_appDetail__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__appData_service__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_appItem_component__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__progressBar_component__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__slideShow_component__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_pop_over_pop_over__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_splash_screen__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_app_availability__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_device__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_transfer__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_file__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_file_opener__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic2_calendar__ = __webpack_require__(277);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+//核心组件
+
+
+
+
+
+//自定义组件
+
+
+
+
+
+
+
+
+
+
+//第三方组件
+
+
+
+
+
+
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePageComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_appDetail_appDetail__["a" /* AppDetailComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_home_appItem_component__["a" /* AppItemComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__progressBar_component__["a" /* ProgressBarComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__slideShow_component__["a" /* SlideShowComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_pop_over_pop_over__["a" /* PopOver */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_21_ionic2_calendar__["a" /* NgCalendarModule */],
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */])
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
+            entryComponents: [
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePageComponent */],
+                __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_appDetail_appDetail__["a" /* AppDetailComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_pop_over_pop_over__["a" /* PopOver */]
+            ],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_15__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_16__ionic_native_app_availability__["a" /* AppAvailability */],
+                __WEBPACK_IMPORTED_MODULE_17__ionic_native_device__["a" /* Device */],
+                __WEBPACK_IMPORTED_MODULE_18__ionic_native_transfer__["a" /* Transfer */],
+                __WEBPACK_IMPORTED_MODULE_18__ionic_native_transfer__["b" /* TransferObject */],
+                __WEBPACK_IMPORTED_MODULE_19__ionic_native_file__["a" /* File */],
+                __WEBPACK_IMPORTED_MODULE_20__ionic_native_file_opener__["a" /* FileOpener */],
+                __WEBPACK_IMPORTED_MODULE_9__appData_service__["a" /* AppDataService */],
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* LoadingController */],
+                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+            ]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 264:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(193);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var MyApp = (function () {
+    function MyApp(platform, statusBar, splashScreen) {
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__["a" /* TabsPage */];
+        // this.appData = appData;
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            statusBar.styleDefault();
+            splashScreen.hide();
+        });
+    }
+    MyApp = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\app\app.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    ], MyApp);
+    return MyApp;
+}());
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 273:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppItemComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appDetail_appDetail__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_progressBar_component__ = __webpack_require__(199);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AppItemComponent = (function () {
+    function AppItemComponent(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.app = {};
+    }
+    AppItemComponent.prototype.goToDetailPage = function (e) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__appDetail_appDetail__["a" /* AppDetailComponent */], this.app);
+    };
+    AppItemComponent.prototype.ionViewCanLeave = function (e) {
+        var str = e.target.textContent.replace(/^\s+|\s+$/g, "");
+        if (str == "下载") {
+            return false;
+        }
+        else if (str == "打开") {
+            return false;
+        }
+        else {
+            this.goToDetailPage(e);
+        }
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AppItemComponent.prototype, "app", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3__app_progressBar_component__["a" /* ProgressBarComponent */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3__app_progressBar_component__["a" /* ProgressBarComponent */])
+    ], AppItemComponent.prototype, "progressBar", void 0);
+    AppItemComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-item',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\home\appItem.html"*/'<ion-item (click)="ionViewCanLeave($event)">\n\n  <ion-thumbnail item-left>\n\n    <img src={{app.icon}}>\n\n  </ion-thumbnail>\n\n  <h2>{{app.name}}</h2>\n\n  <p>{{app.corp}}</p>\n\n\n\n  <button ion-button item-right><progress-bar [app]="app" item-right></progress-bar></button>\n\n</ion-item>\n\n<!--ionViewCanLeave($event)-->\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\home\appItem.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+    ], AppItemComponent);
+    return AppItemComponent;
+}());
+
+//# sourceMappingURL=appItem.component.js.map
+
+/***/ }),
+
+/***/ 274:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlideShowComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SlideShowComponent = (function () {
+    function SlideShowComponent() {
+        this.slides = {};
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+        __metadata("design:type", Object)
+    ], SlideShowComponent.prototype, "slides", void 0);
+    SlideShowComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'slide-show',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\app\slideShow.html"*/'<ion-slides pager>\n\n  <ion-slide *ngFor="let slide of slides.slideImg">\n\n    <img [src]="slide" class="slide-image"/>\n\n  </ion-slide>\n\n</ion-slides>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\app\slideShow.html"*/
+        })
+    ], SlideShowComponent);
+    return SlideShowComponent;
+}());
+
+//# sourceMappingURL=slideShow.component.js.map
+
+/***/ }),
+
+/***/ 275:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopOver; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PopOver = (function () {
+    function PopOver(viewCtrl) {
+        this.viewCtrl = viewCtrl;
+        this.calendar = {
+            mode: 'month',
+            currentDate: new Date()
+        };
+    }
+    PopOver.prototype.close = function () {
+        this.viewCtrl.dismiss();
+    };
+    PopOver = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'pop-over',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\components\pop-over\pop-over.html"*/'\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\components\pop-over\pop-over.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */]])
+    ], PopOver);
+    return PopOver;
+}());
+
+//# sourceMappingURL=pop-over.js.map
+
+/***/ }),
+
+/***/ 281:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ })
+
+},[204]);
+//# sourceMappingURL=main.js.map

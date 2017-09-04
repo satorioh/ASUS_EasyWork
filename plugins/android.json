@@ -46,7 +46,7 @@
         "cordova-plugin-themeablebrowser": {
             "PACKAGE_NAME": "com.asus.easywork"
         },
-        "com.qdc.plugins.baidu.location": {
+        "hewz.plugins.baidu-location": {
             "API_KEY": "YG0GuiCFojifNGPR8zqN24us5IvIm8gg",
             "PACKAGE_NAME": "com.asus.easywork"
         }

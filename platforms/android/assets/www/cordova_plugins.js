@@ -264,9 +264,9 @@ module.exports = [
         ]
     },
     {
-        "id": "com.qdc.plugins.baidu.location.baidu_location",
-        "file": "plugins/com.qdc.plugins.baidu.location/www/baidu_location.js",
-        "pluginId": "com.qdc.plugins.baidu.location",
+        "id": "hewz.plugins.baidu-location.baidu_location",
+        "file": "plugins/hewz.plugins.baidu-location/www/baidu_location.js",
+        "pluginId": "hewz.plugins.baidu-location",
         "clobbers": [
             "baidu_location"
         ]
@@ -289,7 +289,7 @@ module.exports.metadata =
     "cordova-plugin-file-transfer": "1.6.3",
     "cordova-plugin-file-opener2": "2.0.15",
     "cordova-plugin-themeablebrowser": "0.2.17",
-    "com.qdc.plugins.baidu.location": "1.0.0"
+    "hewz.plugins.baidu-location": "1.2.0"
 };
 // BOTTOM OF METADATA
 });

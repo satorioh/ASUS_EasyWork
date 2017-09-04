@@ -111,10 +111,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.qdc.plugins.baidu.location": {
+    "hewz.plugins.baidu-location": {
         "source": {
             "type": "git",
-            "url": "https://github.com/mrwutong/cordova-qdc-baidu-location",
+            "url": "https://github.com/hewz/cordova-baidu-location",
             "subdir": "."
         },
         "is_top_level": true,

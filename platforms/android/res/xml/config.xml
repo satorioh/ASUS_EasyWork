@@ -43,7 +43,7 @@
         <param name="android-package" value="com.initialxy.cordova.themeablebrowser.ThemeableBrowser" />
     </feature>
     <feature name="BaiduLocation">
-        <param name="android-package" value="com.qdc.plugins.baidu.BaiduLocation" />
+        <param name="android-package" value="com.hewz.plugins.baidu.BaiduLocation" />
     </feature>
     <name>ASUS EasyWork</name>
     <description>An awesome Ionic/Cordova app.</description>
