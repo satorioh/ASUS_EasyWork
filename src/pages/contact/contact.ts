@@ -32,8 +32,8 @@ export class ContactPageComponent implements OnInit{
     let ggLat = '';
 
     //初始化地图
-    var map = new BMap.Map(this.mapElement.nativeElement);
-    var point = new BMap.Point(120.61990712,31.31798737);
+    let map = new BMap.Map(this.mapElement.nativeElement);
+    let point = new BMap.Point(120.61990712,31.31798737);
     map.centerAndZoom(point, 15);
 
     //加载地图插件
@@ -50,15 +50,15 @@ export class ContactPageComponent implements OnInit{
         ggLat = result.latitude;
         let ggpoint = new BMap.Point(ggLng,ggLat);
         map.centerAndZoom(ggpoint, 15);
-        var mk = new BMap.Marker(ggpoint);
+        let mk = new BMap.Marker(ggpoint);
         map.addOverlay(mk);
         map.panTo(ggpoint);
 
         //逆地址解析
-        var geoc = new BMap.Geocoder();
+        let geoc = new BMap.Geocoder();
         geoc.getLocation(ggpoint, function(rs){
-          var addComp = rs.addressComponents;
-          var posMessage = "您当前的位置："+ addComp.province + ", " + addComp.city + ", " + addComp.district+ ", " + addComp.street + ", " + addComp.streetNumber;
+          let addComp = rs.addressComponents;
+          let posMessage = "您当前的位置："+ addComp.province + addComp.city + addComp.district+ addComp.street +addComp.streetNumber;
           document.getElementById('position').textContent = posMessage;
           console.log(posMessage);
         });
