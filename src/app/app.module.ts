@@ -12,6 +12,7 @@ import { HomePageComponent } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { AppDetailComponent } from '../pages/appDetail/appDetail';
 import { AppDataService } from './appData.service';
+import { MapService } from './map.service';
 import { AppItemComponent } from '../pages/home/appItem.component';
 import { ProgressBarComponent } from './progressBar.component';
 import { SlideShowComponent } from './slideShow.component';
@@ -66,6 +67,7 @@ import { NgCalendarModule  } from 'ionic2-calendar';
     File,
     FileOpener,
     AppDataService,
+    MapService,
     LoadingController,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

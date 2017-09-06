@@ -1,10 +1,10 @@
 import {Component, ViewChild, ElementRef, OnInit} from '@angular/core';
-import { NavController, Platform} from 'ionic-angular';
-import { PopoverController} from 'ionic-angular';
+import {NavController, Platform} from 'ionic-angular';
+import {PopoverController} from 'ionic-angular';
+import {MapService} from '../../app/map.service';
 import { PopOver} from '../../components/pop-over/pop-over';
 
 declare var BMap;
-declare var baidu_location: any;
 
 @Component({
   selector: 'page-contact',
@@ -12,25 +12,26 @@ declare var baidu_location: any;
 })
 
 export class ContactPageComponent implements OnInit{
-
   @ViewChild('map') mapElement: ElementRef;
+
+//bMap = {};
 
   constructor(
     private navCtrl: NavController,
     public platform: Platform,
+    private _bMap: MapService,
     public popoverCtrl: PopoverController
   ) {}
 
+  mapResult = this._bMap.locateResult;
+  mapLocate = this._bMap.locate();
   ngOnInit() {
     this.platform.ready().then(() => {
       this.loadMap();
     });
   }
 
-  loadMap() {
-    let ggLng = '';
-    let ggLat = '';
-
+  loadMap(){
     //初始化地图
     let map = new BMap.Map(this.mapElement.nativeElement);
     let point = new BMap.Point(120.61990712,31.31798737);
@@ -42,33 +43,22 @@ export class ContactPageComponent implements OnInit{
     map.addControl(new BMap.MapTypeControl());
     map.setCurrentCity("苏州");
 
-    //使用cordova baidu SDK plugin获取原始经纬度
-    baidu_location.getCurrentPosition(function (result) {
-      if(result.describe=="网络定位成功"){
-        console.dir(result);
-        ggLng = result.longitude;
-        ggLat = result.latitude;
-        let ggpoint = new BMap.Point(ggLng,ggLat);
-        map.centerAndZoom(ggpoint, 15);
-        let mk = new BMap.Marker(ggpoint);
-        map.addOverlay(mk);
-        map.panTo(ggpoint);
+    this.mapLocate;
+    //;
+    if(this.mapResult.ifSuccess=="success"){
+      let ggpoint = this.mapResult.ggpoint;
+      map.centerAndZoom(ggpoint, 15);
+      let mk = new BMap.Marker(ggpoint);
+      map.addOverlay(mk);
+      map.panTo(ggpoint);
 
-        //逆地址解析
-        let geoc = new BMap.Geocoder();
-        geoc.getLocation(ggpoint, function(rs){
-          let addComp = rs.addressComponents;
-          let posMessage = "您当前的位置："+ addComp.province + addComp.city + addComp.district+ addComp.street +addComp.streetNumber;
-          document.getElementById('position').textContent = posMessage;
-          console.log(posMessage);
-        });
-      }else{
-        alert("请在设置-应用-ASUS EasyWork-权限中开启位置信息权限，以正常使用定位功能")
-      }
-    }, function (err) {
-      alert("定位失败");
-    });
-  }//loadmap function en
+      document.getElementById('position').textContent = this.mapResult.address;
+    }else{
+      alert(this.mapResult.address);
+    }
+
+  }
+
 
 }//export class end
 
