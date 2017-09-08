@@ -27494,6 +27494,13 @@ ion-navbar.toolbar {
   }
 }
 
+.popover-content {
+  top: 30% !important;
+  left: 10% !important;
+  width: 80% !important;
+  border-radius: 10px !important;
+}
+
 progress-bar {
   margin: 0 !important;
   width: 50px;
@@ -27533,8 +27540,17 @@ slide-show ion-slides .slide-zoom {
   height: 100%;
 }
 
-pop-over #popCalendar {
+pop-over button#close {
+  position: absolute;
+  z-index: 1;
+}
+
+pop-over #map {
+  height: 30rem;
   width: 100%;
+  overflow: hidden;
+  font-family: "微软雅黑";
+  position: relative;
 }
 
 page-about .scroll-content {
@@ -27596,13 +27612,26 @@ page-contact #position {
   font-size: 1.5rem;
 }
 
-page-contact #map {
-  width: 100%;
-  height: 90%;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  font-family: "微软雅黑";
+page-contact div#checkIn {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  margin-left: -50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3em;
+  background: #488aff;
+}
+
+page-contact div#checkIn span {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
 }
 
 app-item .item-button {

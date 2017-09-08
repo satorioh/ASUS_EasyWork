@@ -2,7 +2,7 @@
   <ion-navbar color="blue">
     <ion-item color="blue">
       <ion-title>考勤</ion-title>
-      <button ion-button item-end small>地图</button>
+      <button ion-button item-end small (click)="presentPopover($event)">地图</button>
     </ion-item>
   </ion-navbar>
 </ion-header>
@@ -14,6 +14,9 @@
       <h2 id="position">您当前的位置：获取中...</h2>
     </ion-item>
   </ion-list>
-  <div id="map" #map></div>
-  <button ion-button block id="checkin" (click)="presentPopover($event)">打 卡</button>
+  <div id="bmap" #bmap></div>
+  <div id="checkIn">
+    <span>打卡<br/>{{ myDate | date:'HH:mm:ss' }}</span>
+    <!--<span></span>-->
+  </div>
 </ion-content>

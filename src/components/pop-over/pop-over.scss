@@ -1,5 +1,13 @@
 pop-over {
-  #popCalendar {
+  button#close{
+    position: absolute;
+    z-index: 1;
+  }
+  #map{
+    height: 30rem;
     width: 100%;
+    overflow: hidden;
+    font-family:"微软雅黑";
+    position: relative;
   }
 }
