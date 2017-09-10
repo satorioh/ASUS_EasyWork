@@ -27612,7 +27612,7 @@ page-contact #position {
   font-size: 1.5rem;
 }
 
-page-contact div#checkIn {
+page-contact div#check-in {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -27628,7 +27628,7 @@ page-contact div#checkIn {
   background: #488aff;
 }
 
-page-contact div#checkIn span {
+page-contact div#check-in span {
   display: inline-block;
   line-height: normal;
   vertical-align: middle;

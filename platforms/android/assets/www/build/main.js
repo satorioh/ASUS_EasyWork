@@ -55,7 +55,7 @@ var TabsPage = (function () {
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPageComponent */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\tabs\tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="应用" tabIcon="apps"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="指南" tabIcon="book"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="打卡" tabIcon="checkbox-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\tabs\tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="应用" tabIcon="apps"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="指南" tabIcon="book"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="打卡" tabIcon="checkbox-outline"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -104,7 +104,7 @@ var AboutPageComponent = (function () {
     };
     AboutPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-title>\n\n      ASUS EasyWork\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <iframe [src]="manualUrl()" frameborder="0"></iframe>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\about\about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-title>\n\n      ASUS EasyWork\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <iframe [src]="manualUrl()" frameborder="0"></iframe>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\about\about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* LoadingController */]])
@@ -201,7 +201,7 @@ var ContactPageComponent = (function () {
     ], ContactPageComponent.prototype, "mapElement", void 0);
     ContactPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-item color="blue">\n      <ion-title>考勤</ion-title>\n      <button ion-button item-end small (click)="presentPopover($event)">地图</button>\n    </ion-item>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item>\n      <ion-icon name="pin" item-start color="danger" small></ion-icon>\n      <h2 id="position">您当前的位置：获取中...</h2>\n    </ion-item>\n  </ion-list>\n  <div id="bmap" #bmap></div>\n  <div id="checkIn">\n    <span>打卡<br/>{{ myDate | date:\'HH:mm:ss\' }}</span>\n    <!--<span></span>-->\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-item color="blue">\n\n      <ion-title>考勤</ion-title>\n\n      <button ion-button item-end small (click)="presentPopover($event)">地图</button>\n\n    </ion-item>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-icon name="pin" item-start color="danger" small></ion-icon>\n\n      <h2 id="position">您当前的位置：获取中...</h2>\n\n    </ion-item>\n\n  </ion-list>\n\n  <div id="bmap" #bmap></div>\n\n  <div id="checkIn">\n\n    <span>打卡<br/>{{ myDate | date:\'HH:mm:ss\' }}</span>\n\n    <!--<span></span>-->\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */],
@@ -293,7 +293,7 @@ var PopOver = (function () {
     ], PopOver.prototype, "mapElement", void 0);
     PopOver = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'pop-over',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\components\pop-over\pop-over.html"*/'<button ion-button icon-only clear color="dark" id="close" (click)="close()">\n  <ion-icon name="close-circle"></ion-icon>\n</button>\n<div id="map" #map></div>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\components\pop-over\pop-over.html"*/
+            selector: 'pop-over',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\components\pop-over\pop-over.html"*/'<button ion-button icon-only clear color="dark" id="close" (click)="close()">\n\n  <ion-icon name="close-circle"></ion-icon>\n\n</button>\n\n<div id="map" #map></div>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\components\pop-over\pop-over.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
@@ -331,7 +331,7 @@ var HomePageComponent = (function () {
     }
     HomePageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-title>ASUS EasyWork</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list no-border>\n\n\n\n    <ion-list-header>\n\n      应用\n\n    </ion-list-header>\n\n    <ul>\n\n      <li *ngFor="let app of appDatas">\n\n        <app-item [app]="app"></app-item>\n\n      </li>\n\n    </ul>\n\n  </ion-list>\n\n\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-title>ASUS EasyWork</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list no-border>\n\n    <ion-list-header>\n      应用\n    </ion-list-header>\n    <ul>\n      <li *ngFor="let app of appDatas">\n        <app-item [app]="app"></app-item>\n      </li>\n    </ul>\n  </ion-list>\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__app_appData_service__["a" /* AppDataService */]])
     ], HomePageComponent);
@@ -455,7 +455,7 @@ var AppDetailComponent = (function () {
     }
     AppDetailComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'app-detail',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/'<ion-header>\n\n  <ion-navbar color="blue" #nav>\n\n    <ion-title>\n\n      应用详情\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-thumbnail class="detailPageIcon">\n\n      <img src={{ItemInfo.icon}}>\n\n    </ion-thumbnail>\n\n    <h2>{{ItemInfo.name}}</h2>\n\n\n\n    <!--<button ion-button item-right>View</button>-->\n\n  </ion-item>\n\n  <h6>配置演示</h6>\n\n  <slide-show [slides]="ItemInfo"></slide-show>\n\n  <h6>应用描述</h6>\n\n  <p>{{ItemInfo.info}}</p>\n\n\n\n  <h6>其他信息</h6>\n\n  <p>开发者：{{ItemInfo.corp}}<br/>\n\n  版本：{{ItemInfo.version}}<br/>\n\n  大小：{{ItemInfo.size}}</p>\n\n\n\n  <button ion-button block><progress-bar [app]="ItemInfo"></progress-bar></button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/
+            selector: 'app-detail',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/'<ion-header>\n\n  <ion-navbar color="blue" #nav>\n\n    <ion-title>\n\n      应用详情\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-thumbnail class="detailPageIcon">\n\n      <img src={{ItemInfo.icon}}>\n\n    </ion-thumbnail>\n\n    <h2>{{ItemInfo.name}}</h2>\n\n\n\n    <!--<button ion-button item-right>View</button>-->\n\n  </ion-item>\n\n  <h6>配置演示</h6>\n\n  <slide-show [slides]="ItemInfo"></slide-show>\n\n  <h6>应用描述</h6>\n\n  <p>{{ItemInfo.info}}</p>\n\n\n\n  <h6>其他信息</h6>\n\n  <p>开发者：{{ItemInfo.corp}}<br/>\n\n  版本：{{ItemInfo.version}}<br/>\n\n  大小：{{ItemInfo.size}}</p>\n\n\n\n  <button ion-button block><progress-bar [app]="ItemInfo"></progress-bar></button>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\appDetail\appDetail.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], AppDetailComponent);
@@ -583,7 +583,7 @@ var ProgressBarComponent = (function () {
     ], ProgressBarComponent.prototype, "app", void 0);
     ProgressBarComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'progress-bar',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\app\progressBar.html"*/'<div class="progress-outer">\n\n  <div class="progress-inner" id={{app.buttonColor}} (click)="callApp($event)">\n\n    {{app.method}}\n\n  </div>\n\n</div>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\app\progressBar.html"*/
+            selector: 'progress-bar',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\app\progressBar.html"*/'<div class="progress-outer">\n\n  <div class="progress-inner" id={{app.buttonColor}} (click)="callApp($event)">\n\n    {{app.method}}\n\n  </div>\n\n</div>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\app\progressBar.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_app_availability__["a" /* AppAvailability */],
             __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["g" /* Platform */],
@@ -761,7 +761,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -824,7 +824,7 @@ var AppItemComponent = (function () {
     ], AppItemComponent.prototype, "progressBar", void 0);
     AppItemComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'app-item',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/'<ion-item (click)="ionViewCanLeave($event)">\n\n  <ion-thumbnail item-left>\n\n    <img src={{app.icon}}>\n\n  </ion-thumbnail>\n\n  <h2>{{app.name}}</h2>\n\n  <p>{{app.corp}}</p>\n\n\n\n  <button ion-button item-right><progress-bar [app]="app" item-right></progress-bar></button>\n\n</ion-item>\n\n<!--ionViewCanLeave($event)-->\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\home\appItem.html"*/
+            selector: 'app-item',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\home\appItem.html"*/'<ion-item (click)="ionViewCanLeave($event)">\n\n  <ion-thumbnail item-left>\n\n    <img src={{app.icon}}>\n\n  </ion-thumbnail>\n\n  <h2>{{app.name}}</h2>\n\n  <p>{{app.corp}}</p>\n\n\n\n  <button ion-button item-right><progress-bar [app]="app" item-right></progress-bar></button>\n\n</ion-item>\n\n<!--ionViewCanLeave($event)-->\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\home\appItem.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], AppItemComponent);
@@ -861,7 +861,7 @@ var SlideShowComponent = (function () {
     ], SlideShowComponent.prototype, "slides", void 0);
     SlideShowComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'slide-show',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\app\slideShow.html"*/'<ion-slides pager>\n\n  <ion-slide *ngFor="let slide of slides.slideImg">\n\n    <img [src]="slide" class="slide-image"/>\n\n  </ion-slide>\n\n</ion-slides>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\app\slideShow.html"*/
+            selector: 'slide-show',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\app\slideShow.html"*/'<ion-slides pager>\n\n  <ion-slide *ngFor="let slide of slides.slideImg">\n\n    <img [src]="slide" class="slide-image"/>\n\n  </ion-slide>\n\n</ion-slides>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\app\slideShow.html"*/
         })
     ], SlideShowComponent);
     return SlideShowComponent;
