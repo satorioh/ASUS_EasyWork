@@ -3,22 +3,33 @@ import {NavController, Platform} from 'ionic-angular';
 import {PopoverController} from 'ionic-angular';
 import {PopOver} from '../../components/pop-over/pop-over';
 import { DatePipe } from '@angular/common';
+import { ToastController } from 'ionic-angular';
 
 declare var BMap;
 declare var baidu_location: any;
 
 @Component({
   selector: 'page-contact',
+  providers:[DatePipe],
   templateUrl: 'contact.html'
 })
 
 export class ContactPageComponent implements OnInit {
   @ViewChild('bmap') mapElement: ElementRef;
   myDate: number;
+  myCheckIn = {
+    knockontime:'',
+    knockonpos:'',
+    knockofftime:'',
+    knockoffpos:''
+  };
 
   constructor(private navCtrl: NavController,
               public platform: Platform,
-              public popoverCtrl: PopoverController) {
+              public popoverCtrl: PopoverController,
+              private datePipe: DatePipe,
+              public toastCtrl: ToastController
+  ) {
   }
 
   ngOnInit() {
@@ -33,24 +44,12 @@ export class ContactPageComponent implements OnInit {
   loadMap() {
     //初始化地图
     let map = new BMap.Map(this.mapElement.nativeElement);
-    let point = new BMap.Point(120.61990712, 31.31798737);
-    map.centerAndZoom(point, 15);
-
-    //加载地图插件
-    map.addControl(new BMap.NavigationControl());
-    map.addControl(new BMap.GeolocationControl());
-    map.addControl(new BMap.MapTypeControl());
-    map.setCurrentCity("苏州");
 
     //调用baidu SDK plugin获取经纬度
     baidu_location.getCurrentPosition(function (result) {
         if (result.describe == "网络定位成功") {
           console.dir(result);
           let ggpoint = new BMap.Point(result.longitude, result.latitude);
-          map.centerAndZoom(ggpoint, 15);
-          let mk = new BMap.Marker(ggpoint);
-          map.addOverlay(mk);
-          map.panTo(ggpoint);
 
           //逆地址解析
           let geoc = new BMap.Geocoder();
@@ -77,6 +76,36 @@ export class ContactPageComponent implements OnInit {
     });
   }
 
+  presentToast(str) {
+    let toast = this.toastCtrl.create({
+      message: str,
+      duration: 2000,
+      position: 'top'
+    });
+    toast.present();
+  }
+
+  checkIn(e){
+    let knockOnTime = document.querySelector('#knock-on span.knock-time');
+    let knockOnPost = document.querySelector('#knock-on p.knock-pos');
+    let str = '';
+    console.log(knockOnTime.textContent);
+    if(knockOnTime.textContent){
+      str="亲，你已经打过卡了哦";
+      this.presentToast(str);
+      return;
+    }else{
+      knockOnTime.textContent = "打卡时间"+this.datePipe.transform(this.myDate,'hh:mm:ss');
+      this.myCheckIn.knockontime = this.datePipe.transform(this.myDate,'hh:mm:ss');
+      knockOnPost.textContent = document.getElementById('position').textContent.substr(7);
+      this.myCheckIn.knockonpos = knockOnPost.textContent;
+      str = "打卡成功！";
+      this.presentToast(str);
+      console.dir(this.myCheckIn);
+    }
+
+
+  }
 
 }//export class end
 

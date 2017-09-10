@@ -27605,6 +27605,26 @@ page-contact .item-block .item-inner ion-label {
   white-space: normal !important;
 }
 
+page-contact span.knock-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  color: #fff;
+  font-size: 8px;
+  text-align: center;
+  border-radius: 50%;
+  background: #488aff;
+  margin-right: 8px;
+}
+
+page-contact span.knock-time {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
 page-contact #position {
   color: #000;
   padding: 0;
@@ -27612,7 +27632,11 @@ page-contact #position {
   font-size: 1.5rem;
 }
 
-page-contact div#checkIn {
+page-contact #bmap {
+  display: none;
+}
+
+page-contact div#check-in {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -27628,10 +27652,22 @@ page-contact div#checkIn {
   background: #488aff;
 }
 
-page-contact div#checkIn span {
+page-contact div#check-in span {
   display: inline-block;
   line-height: normal;
   vertical-align: middle;
+}
+
+page-contact #knock-on span:nth-of-type(3), page-contact #knock-on p.knock-pos, page-contact #knock-off span:nth-of-type(3), page-contact #knock-off p.knock-pos {
+  color: #A2A9AC;
+  font-size: 14px;
+  vertical-align: bottom;
+}
+
+page-contact #knock-on p.knock-pos, page-contact #knock-off p.knock-pos {
+  padding-left: 30px;
+  font-style: italic;
+  padding-top: 5px;
 }
 
 app-item .item-button {

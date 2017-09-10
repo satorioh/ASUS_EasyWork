@@ -124,6 +124,7 @@ var AboutPageComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_pop_over_pop_over__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -137,11 +138,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var ContactPageComponent = (function () {
-    function ContactPageComponent(navCtrl, platform, popoverCtrl) {
+    function ContactPageComponent(navCtrl, platform, popoverCtrl, datePipe, toastCtrl) {
         this.navCtrl = navCtrl;
         this.platform = platform;
         this.popoverCtrl = popoverCtrl;
+        this.datePipe = datePipe;
+        this.toastCtrl = toastCtrl;
+        this.myCheckIn = {
+            knockontime: '',
+            knockonpos: '',
+            knockofftime: '',
+            knockoffpos: ''
+        };
     }
     ContactPageComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -155,22 +166,11 @@ var ContactPageComponent = (function () {
     ContactPageComponent.prototype.loadMap = function () {
         //初始化地图
         var map = new BMap.Map(this.mapElement.nativeElement);
-        var point = new BMap.Point(120.61990712, 31.31798737);
-        map.centerAndZoom(point, 15);
-        //加载地图插件
-        map.addControl(new BMap.NavigationControl());
-        map.addControl(new BMap.GeolocationControl());
-        map.addControl(new BMap.MapTypeControl());
-        map.setCurrentCity("苏州");
         //调用baidu SDK plugin获取经纬度
         baidu_location.getCurrentPosition(function (result) {
             if (result.describe == "网络定位成功") {
                 console.dir(result);
                 var ggpoint = new BMap.Point(result.longitude, result.latitude);
-                map.centerAndZoom(ggpoint, 15);
-                var mk = new BMap.Marker(ggpoint);
-                map.addOverlay(mk);
-                map.panTo(ggpoint);
                 //逆地址解析
                 var geoc = new BMap.Geocoder();
                 geoc.getLocation(ggpoint, function (rs) {
@@ -195,19 +195,47 @@ var ContactPageComponent = (function () {
             ev: myEvent
         });
     };
+    ContactPageComponent.prototype.presentToast = function (str) {
+        var toast = this.toastCtrl.create({
+            message: str,
+            duration: 2000,
+            position: 'top'
+        });
+        toast.present();
+    };
+    ContactPageComponent.prototype.checkIn = function (e) {
+        var knockOnTime = document.querySelector('#knock-on span.knock-time');
+        var knockOnPost = document.querySelector('#knock-on p.knock-pos');
+        var str = '';
+        console.log(knockOnTime.textContent);
+        if (knockOnTime.textContent) {
+            str = "亲，你已经打过卡了哦";
+            this.presentToast(str);
+            return;
+        }
+        else {
+            knockOnTime.textContent = "打卡时间" + this.datePipe.transform(this.myDate, 'hh:mm:ss');
+            this.myCheckIn.knockontime = this.datePipe.transform(this.myDate, 'hh:mm:ss');
+            knockOnPost.textContent = document.getElementById('position').textContent.substr(7);
+            this.myCheckIn.knockonpos = knockOnPost.textContent;
+            str = "打卡成功！";
+            this.presentToast(str);
+            console.dir(this.myCheckIn);
+        }
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('bmap'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */]) === "function" && _a || Object)
     ], ContactPageComponent.prototype, "mapElement", void 0);
     ContactPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-item color="blue">\n      <ion-title>考勤</ion-title>\n      <button ion-button item-end small (click)="presentPopover($event)">地图</button>\n    </ion-item>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item>\n      <ion-icon name="pin" item-start color="danger" small></ion-icon>\n      <h2 id="position">您当前的位置：获取中...</h2>\n    </ion-item>\n  </ion-list>\n  <div id="bmap" #bmap></div>\n  <div id="knock-on"></div>\n  <div id="check-in">\n    <span>打卡<br/>{{ myDate | date:\'HH:mm:ss\' }}</span>\n    <!--<span></span>-->\n  </div>\n</ion-content>\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/
+            selector: 'page-contact',
+            providers: [__WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */]],template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-item color="blue">\n      <ion-title>考勤</ion-title>\n      <button ion-button item-end small (click)="presentPopover($event)">地图</button>\n    </ion-item>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item>\n      <ion-icon name="pin" item-start color="danger" small></ion-icon>\n      <h2 id="position">您当前的位置：获取中...</h2>\n    </ion-item>\n      <div id="bmap" #bmap></div>\n    <ion-item id="knock-on">\n      <span class="knock-icon">上</span>\n      <span class="knock-time"></span>\n      <span>(上班时间8:00)</span>\n      <p class="knock-pos"></p>\n    </ion-item>\n    <ion-item id="knock-off">\n      <span class="knock-icon">下</span>\n      <span class="knock-time"></span>\n      <span>(下班时间17:00)</span>\n      <p class="knock-pos"></p>\n    </ion-item>\n  </ion-list>\n\n  <div id="check-in" (click)="checkIn($event)">\n    <span>打卡<br/>{{ myDate | date:\'HH:mm:ss\' }}</span>\n    <!--<span></span>-->\n  </div>\n</ion-content>\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\pages\contact\contact.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]) === "function" && _f || Object])
     ], ContactPageComponent);
     return ContactPageComponent;
+    var _a, _b, _c, _d, _e, _f;
 }()); //export class end
 
 //# sourceMappingURL=contact.js.map
@@ -295,7 +323,7 @@ var PopOver = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'pop-over',template:/*ion-inline-start:"D:\Git\ASUS EasyWork\src\components\pop-over\pop-over.html"*/'<button ion-button icon-only clear color="dark" id="close" (click)="close()">\n\n  <ion-icon name="close-circle"></ion-icon>\n\n</button>\n\n<div id="map" #map></div>\n\n'/*ion-inline-end:"D:\Git\ASUS EasyWork\src\components\pop-over\pop-over.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
     ], PopOver);
     return PopOver;

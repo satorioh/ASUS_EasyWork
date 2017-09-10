@@ -6,11 +6,32 @@ page-contact {
       white-space: normal!important;
     }
   }
+  span.knock-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    color:#fff;
+    font-size: 8px;
+    text-align: center;
+    border-radius: 50%;
+    background: #488aff;
+    margin-right:8px;
+  }
+  span.knock-time{
+    color:#000;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: bottom;
+  }
   #position {
     color:#000;
     padding: 0;
     margin: 0;
     font-size:1.5rem;
+  }
+  #bmap {
+    display: none;
   }
   div#check-in{
     width: 100px;
@@ -30,6 +51,19 @@ page-contact {
       display: inline-block;
       line-height: normal;
       vertical-align: middle;
+    }
+  }
+  #knock-on,#knock-off {
+
+    span:nth-of-type(3),p.knock-pos{
+      color:#A2A9AC;
+      font-size: 14px;
+      vertical-align:bottom;
+    }
+    p.knock-pos {
+      padding-left: 28px;
+      font-style: italic;
+      padding-top:5px;
     }
   }
 }
