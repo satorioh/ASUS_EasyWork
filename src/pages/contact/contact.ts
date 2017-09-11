@@ -85,20 +85,29 @@ export class ContactPageComponent implements OnInit {
     toast.present();
   }
 
-  checkIn(e){
-    let knockOnTime = document.querySelector('#knock-on span.knock-time');
-    let knockOnPost = document.querySelector('#knock-on p.knock-pos');
+  ampmChoose(){
+    let time = parseInt(this.datePipe.transform(this.myDate,'HH'));
+    console.log(time);
+    if(time<=12){
+      this.checkIn('knock-on','knockontime','knockonpos');
+    }else{
+      this.checkIn('knock-off','knockofftime','knockoffpos');
+    }
+  }
+  checkIn(knockType,knockTime,knockPos){
+    let knockOnTime = document.querySelector(`#${knockType} span.knock-time`);
+    let knockOnPost = document.querySelector(`#${knockType} p.knock-pos`);
     let str = '';
     console.log(knockOnTime.textContent);
     if(knockOnTime.textContent){
-      str="亲，你已经打过卡了哦";
+      str="亲，不要重复打卡哦";
       this.presentToast(str);
       return;
     }else{
-      knockOnTime.textContent = "打卡时间"+this.datePipe.transform(this.myDate,'hh:mm:ss');
-      this.myCheckIn.knockontime = this.datePipe.transform(this.myDate,'hh:mm:ss');
+      knockOnTime.textContent = "打卡时间"+this.datePipe.transform(this.myDate,'HH:mm:ss');
+      this.myCheckIn[knockTime] = this.datePipe.transform(this.myDate,'HH:mm:ss');
       knockOnPost.textContent = document.getElementById('position').textContent.substr(7);
-      this.myCheckIn.knockonpos = knockOnPost.textContent;
+      this.myCheckIn[knockPos] = knockOnPost.textContent;
       str = "打卡成功！";
       this.presentToast(str);
       console.dir(this.myCheckIn);
