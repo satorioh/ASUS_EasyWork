@@ -27,6 +27,7 @@ import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
 import { NgCalendarModule  } from 'ionic2-calendar';
+import { Network } from '@ionic-native/network';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { NgCalendarModule  } from 'ionic2-calendar';
     FileOpener,
     AppDataService,
     LoadingController,
+    Network,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

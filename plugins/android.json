@@ -49,6 +49,9 @@
         "hewz.plugins.baidu-location": {
             "API_KEY": "YG0GuiCFojifNGPR8zqN24us5IvIm8gg",
             "PACKAGE_NAME": "com.asus.easywork"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.asus.easywork"
         }
     },
     "dependent_plugins": {

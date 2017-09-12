@@ -121,5 +121,13 @@
         "variables": {
             "API_KEY": "YG0GuiCFojifNGPR8zqN24us5IvIm8gg"
         }
+    },
+    "cordova-plugin-network-information": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-network-information"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

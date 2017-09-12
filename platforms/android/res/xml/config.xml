@@ -45,6 +45,9 @@
     <feature name="BaiduLocation">
         <param name="android-package" value="com.hewz.plugins.baidu.BaiduLocation" />
     </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
     <name>ASUS EasyWork</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>

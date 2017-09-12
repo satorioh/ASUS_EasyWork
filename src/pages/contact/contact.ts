@@ -4,6 +4,8 @@ import {PopoverController} from 'ionic-angular';
 import {PopOver} from '../../components/pop-over/pop-over';
 import { DatePipe } from '@angular/common';
 import { ToastController } from 'ionic-angular';
+import { Network } from '@ionic-native/network';
+import { HomePageComponent } from '../home/home';
 
 declare var BMap;
 declare var baidu_location: any;
@@ -28,17 +30,29 @@ export class ContactPageComponent implements OnInit {
               public platform: Platform,
               public popoverCtrl: PopoverController,
               private datePipe: DatePipe,
-              public toastCtrl: ToastController
+              public toastCtrl: ToastController,
+              private network: Network
+
   ) {
   }
 
   ngOnInit() {
     this.platform.ready().then(() => {
-      this.loadMap();
-      setInterval(() => {
-        this.myDate = Date.now();
-      }, 1000);
+        this.ionViewCanEnter();
+        this.loadMap();
+        setInterval(() => {
+          this.myDate = Date.now();
+        }, 1000);
     })
+  }
+
+  ionViewCanEnter(){
+    if(this.network.type=="none"){
+      alert("请先连接网络");
+      return false;
+    }else{
+      return true;
+    }
   }
 
   loadMap() {
