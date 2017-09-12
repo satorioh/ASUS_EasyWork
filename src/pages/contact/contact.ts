@@ -2,10 +2,9 @@ import {Component, ViewChild, ElementRef, OnInit} from '@angular/core';
 import {NavController, Platform} from 'ionic-angular';
 import {PopoverController} from 'ionic-angular';
 import {PopOver} from '../../components/pop-over/pop-over';
-import { DatePipe } from '@angular/common';
-import { ToastController } from 'ionic-angular';
-import { Network } from '@ionic-native/network';
-import { HomePageComponent } from '../home/home';
+import {DatePipe } from '@angular/common';
+import {ToastController } from 'ionic-angular';
+import {Network } from '@ionic-native/network';
 
 declare var BMap;
 declare var baidu_location: any;

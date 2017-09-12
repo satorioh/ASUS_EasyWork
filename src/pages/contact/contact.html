@@ -1,7 +1,11 @@
 <ion-header>
   <ion-navbar color="blue">
     <ion-item color="blue">
-      <ion-title>考勤</ion-title>
+      <button ion-button menuToggle icon-only left>
+        <ion-icon name='menu'></ion-icon>
+      </button>
+
+      <ion-title></ion-title>
       <button ion-button item-end small (click)="presentPopover($event)">地图</button>
     </ion-item>
   </ion-navbar>
@@ -33,3 +37,12 @@
     <!--<span></span>-->
   </div>
 </ion-content>
+
+<ion-menu [content]="mycontent">
+  <ion-content>
+    <ion-list>
+      <p>some menu content, could be list items</p>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
