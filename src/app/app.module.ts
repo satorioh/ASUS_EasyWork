@@ -16,7 +16,6 @@ import { AppItemComponent } from '../pages/home/appItem.component';
 import { ProgressBarComponent } from './progressBar.component';
 import { SlideShowComponent } from './slideShow.component';
 import { PopOver } from '../components/pop-over/pop-over';
-import { UserCenter } from '../components/user-center/user-center';
 
 
 //第三方组件
@@ -41,8 +40,7 @@ import { Network } from '@ionic-native/network';
     AppItemComponent,
     ProgressBarComponent,
     SlideShowComponent,
-    PopOver,
-    UserCenter
+    PopOver
   ],
   imports: [
     BrowserModule,
@@ -57,8 +55,7 @@ import { Network } from '@ionic-native/network';
     AboutPageComponent,
     ContactPageComponent,
     AppDetailComponent,
-    PopOver,
-    UserCenter
+    PopOver
   ],
   providers: [
     StatusBar,

@@ -2,54 +2,57 @@ import {Component, ViewChild, ElementRef, OnInit} from '@angular/core';
 import {NavController, Platform} from 'ionic-angular';
 import {PopoverController} from 'ionic-angular';
 import {PopOver} from '../../components/pop-over/pop-over';
-import {DatePipe } from '@angular/common';
-import {ToastController } from 'ionic-angular';
-import {Network } from '@ionic-native/network';
+import {DatePipe} from '@angular/common';
+import {ToastController} from 'ionic-angular';
+import {Network} from '@ionic-native/network';
 
 declare var BMap;
 declare var baidu_location: any;
 
 @Component({
   selector: 'page-contact',
-  providers:[DatePipe],
+  providers: [DatePipe],
   templateUrl: 'contact.html'
 })
 
 export class ContactPageComponent implements OnInit {
   @ViewChild('bmap') mapElement: ElementRef;
+  // @ViewChild('uid') uid:ElementRef;
+  // @ViewChild('upwd') upwd:ElementRef;
+
   myDate: number;
   myCheckIn = {
-    knockontime:'',
-    knockonpos:'',
-    knockofftime:'',
-    knockoffpos:''
+    knockontime: '',
+    knockonpos: '',
+    knockofftime: '',
+    knockoffpos: ''
   };
+  uid:string;
+  upwd:string;
 
   constructor(private navCtrl: NavController,
               public platform: Platform,
               public popoverCtrl: PopoverController,
               private datePipe: DatePipe,
               public toastCtrl: ToastController,
-              private network: Network
-
-  ) {
+              private network: Network) {
   }
 
   ngOnInit() {
     this.platform.ready().then(() => {
-        this.ionViewCanEnter();
-        this.loadMap();
-        setInterval(() => {
-          this.myDate = Date.now();
-        }, 1000);
+      this.ionViewCanEnter();
+      this.loadMap();
+      setInterval(() => {
+        this.myDate = Date.now();
+      }, 1000);
     })
   }
 
-  ionViewCanEnter(){
-    if(this.network.type=="none"){
+  ionViewCanEnter() {
+    if (this.network.type == "none") {
       alert("请先连接网络");
       return false;
-    }else{
+    } else {
       return true;
     }
   }
@@ -82,7 +85,6 @@ export class ContactPageComponent implements OnInit {
   }
 
   presentPopover(myEvent) {
-    //alert("功能开发中，敬请期待!")
     let popover = this.popoverCtrl.create(PopOver);
     popover.present({
       ev: myEvent
@@ -98,27 +100,28 @@ export class ContactPageComponent implements OnInit {
     toast.present();
   }
 
-  ampmChoose(){
-    let time = parseInt(this.datePipe.transform(this.myDate,'HH'));
+  ampmChoose() {
+    let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
     console.log(time);
-    if(time<=12){
-      this.checkIn('knock-on','knockontime','knockonpos');
-    }else{
-      this.checkIn('knock-off','knockofftime','knockoffpos');
+    if (time <= 12) {
+      this.checkIn('knock-on', 'knockontime', 'knockonpos');
+    } else {
+      this.checkIn('knock-off', 'knockofftime', 'knockoffpos');
     }
   }
-  checkIn(knockType,knockTime,knockPos){
+
+  checkIn(knockType, knockTime, knockPos) {
     let knockOnTime = document.querySelector(`#${knockType} span.knock-time`);
     let knockOnPost = document.querySelector(`#${knockType} p.knock-pos`);
     let str = '';
     console.log(knockOnTime.textContent);
-    if(knockOnTime.textContent){
-      str="亲，不要重复打卡哦";
+    if (knockOnTime.textContent) {
+      str = "亲，不要重复打卡哦";
       this.presentToast(str);
       return;
-    }else{
-      knockOnTime.textContent = "打卡时间"+this.datePipe.transform(this.myDate,'HH:mm:ss');
-      this.myCheckIn[knockTime] = this.datePipe.transform(this.myDate,'HH:mm:ss');
+    } else {
+      knockOnTime.textContent = "打卡时间" + this.datePipe.transform(this.myDate, 'HH:mm:ss');
+      this.myCheckIn[knockTime] = this.datePipe.transform(this.myDate, 'HH:mm:ss');
       knockOnPost.textContent = document.getElementById('position').textContent.substr(7);
       this.myCheckIn[knockPos] = knockOnPost.textContent;
       str = "打卡成功！";
@@ -127,6 +130,10 @@ export class ContactPageComponent implements OnInit {
     }
 
 
+  }
+
+  login() {
+    console.log(this.uid+','+this.upwd);
   }
 
 }//export class end

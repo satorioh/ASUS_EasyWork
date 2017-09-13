@@ -38,11 +38,27 @@
   </div>
 </ion-content>
 
-<ion-menu [content]="mycontent">
+<!--用户中心-->
+<ion-menu [content]="usercenter">
+  <ion-header>
+    <ion-navbar color="blue">
+      <ion-title>用户中心</ion-title>
+    </ion-navbar>
+  </ion-header>
   <ion-content>
     <ion-list>
-      <p>some menu content, could be list items</p>
+      <ion-item>
+        <ion-label floating>工号</ion-label>
+        <ion-input type="text" [(ngModel)]="uid"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>OA密码</ion-label>
+        <ion-input type="password" [(ngModel)]="upwd"></ion-input>
+      </ion-item>
     </ion-list>
+    <div padding>
+      <button ion-button color="blue" block id="loginBt" (click)="login($event)">登录</button>
+    </div>
   </ion-content>
 </ion-menu>
-<ion-nav #mycontent [root]="rootPage"></ion-nav>
+<ion-nav #usercenter [root]="rootPage"></ion-nav>
