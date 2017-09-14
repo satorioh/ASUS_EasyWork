@@ -2,7 +2,7 @@
   <ion-navbar color="blue">
     <ion-item color="blue">
       <button ion-button menuToggle icon-only left>
-        <ion-icon name='person'></ion-icon>
+        <ion-icon name='menu'></ion-icon>
       </button>
 
       <ion-title></ion-title>
@@ -47,19 +47,7 @@
   </ion-header>
 
   <ion-content id="ucenter-content">
-    <ion-list>
-      <ion-item>
-        <ion-label floating>工号</ion-label>
-        <ion-input type="text" [(ngModel)]="uwid"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label floating>OA密码</ion-label>
-        <ion-input type="password" [(ngModel)]="upwd"></ion-input>
-      </ion-item>
-    </ion-list>
-    <div padding>
-      <button ion-button color="blue" block id="loginBt" (click)="login($event)">登录</button>
-    </div>
+    <button ion-button (click)="goToLogin($event)">点击登录</button>
   </ion-content>
 </ion-menu>
 <ion-nav #usercenter [root]="rootPage"></ion-nav>
