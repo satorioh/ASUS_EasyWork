@@ -371,21 +371,57 @@ var ContactPageComponent = (function () {
         }
     };
     ContactPageComponent.prototype.login = function () {
-        console.log(this.uid + ',' + this.upwd);
+        console.log(this.uwid + ',' + this.upwd);
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    doResponse(xhr);
+                }
+                else {
+                    alert("响应完成但有问题");
+                }
+            }
+        };
+        xhr.open('POST', 'http://192.168.2.6/login.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send("uwid=" + this.uwid + "&upwd=" + this.upwd);
+        //let str = '测试';
+        var successToast = this.presentToast("登录成功");
+        var errorToast = this.presentToast("用户名或密码错误");
+        function doResponse(xhr) {
+            //console.log('开始处理响应消息');
+            if (xhr.responseText == 'success') {
+                //str = "登录成功";
+                document.getElementById('ucenter-content').innerHTML = "";
+                successToast;
+            }
+            else if (xhr.responseText == 'error') {
+                //str = "用户名或密码错误";
+                errorToast;
+            }
+            else {
+                alert('不可识别的响应数据');
+            }
+        }
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('bmap'),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */])
     ], ContactPageComponent.prototype, "mapElement", void 0);
     ContactPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'page-contact',
-            providers: [__WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */]],template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-item color="blue">\n      <button ion-button menuToggle icon-only left>\n        <ion-icon name=\'menu\'></ion-icon>\n      </button>\n\n      <ion-title></ion-title>\n      <button ion-button item-end small (click)="presentPopover($event)">地图</button>\n    </ion-item>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item>\n      <ion-icon name="pin" item-start color="danger" small></ion-icon>\n      <h2 id="position">您当前的位置：获取中...</h2>\n    </ion-item>\n      <div id="bmap" #bmap></div>\n    <ion-item id="knock-on">\n      <span class="knock-icon">上</span>\n      <span class="knock-time"></span>\n      <span>(上班时间8:00)</span>\n      <p class="knock-pos"></p>\n    </ion-item>\n    <ion-item id="knock-off">\n      <span class="knock-icon">下</span>\n      <span class="knock-time"></span>\n      <span>(下班时间17:00)</span>\n      <p class="knock-pos"></p>\n    </ion-item>\n  </ion-list>\n\n  <div id="check-in" (click)="ampmChoose($event)">\n    <span>打卡<br/>{{ myDate | date:\'HH:mm:ss\' }}</span>\n    <!--<span></span>-->\n  </div>\n</ion-content>\n\n<!--用户中心-->\n<ion-menu [content]="usercenter">\n  <ion-header>\n    <ion-navbar color="blue">\n      <ion-title>用户中心</ion-title>\n    </ion-navbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n      <ion-item>\n        <ion-label floating>工号</ion-label>\n        <ion-input type="text" [(ngModel)]="uid"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>OA密码</ion-label>\n        <ion-input type="password" [(ngModel)]="upwd"></ion-input>\n      </ion-item>\n    </ion-list>\n    <div padding>\n      <button ion-button color="blue" block id="loginBt" (click)="login($event)">登录</button>\n    </div>\n  </ion-content>\n</ion-menu>\n<ion-nav #usercenter [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/
+            providers: [__WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */]],template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-item color="blue">\n      <button ion-button menuToggle icon-only left>\n        <ion-icon name=\'person\'></ion-icon>\n      </button>\n\n      <ion-title></ion-title>\n      <button ion-button item-end small (click)="presentPopover($event)">地图</button>\n    </ion-item>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item>\n      <ion-icon name="pin" item-start color="danger" small></ion-icon>\n      <h2 id="position">您当前的位置：获取中...</h2>\n    </ion-item>\n      <div id="bmap" #bmap></div>\n    <ion-item id="knock-on">\n      <span class="knock-icon">上</span>\n      <span class="knock-time"></span>\n      <span>(上班时间8:00)</span>\n      <p class="knock-pos"></p>\n    </ion-item>\n    <ion-item id="knock-off">\n      <span class="knock-icon">下</span>\n      <span class="knock-time"></span>\n      <span>(下班时间17:00)</span>\n      <p class="knock-pos"></p>\n    </ion-item>\n  </ion-list>\n\n  <div id="check-in" (click)="ampmChoose($event)">\n    <span>打卡<br/>{{ myDate | date:\'HH:mm:ss\' }}</span>\n    <!--<span></span>-->\n  </div>\n</ion-content>\n\n<!--用户中心-->\n<ion-menu [content]="usercenter">\n  <ion-header>\n    <ion-navbar color="blue">\n      <ion-title>用户中心</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content id="ucenter-content">\n    <ion-list>\n      <ion-item>\n        <ion-label floating>工号</ion-label>\n        <ion-input type="text" [(ngModel)]="uwid"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>OA密码</ion-label>\n        <ion-input type="password" [(ngModel)]="upwd"></ion-input>\n      </ion-item>\n    </ion-list>\n    <div padding>\n      <button ion-button color="blue" block id="loginBt" (click)="login($event)">登录</button>\n    </div>\n  </ion-content>\n</ion-menu>\n<ion-nav #usercenter [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */]) === "function" && _g || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */]])
     ], ContactPageComponent);
     return ContactPageComponent;
-    var _a, _b, _c, _d, _e, _f, _g;
 }()); //export class end
 
 //# sourceMappingURL=contact.js.map
@@ -687,11 +723,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_splash_screen__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_app_availability__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_device__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_device__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_transfer__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_file__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_file_opener__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic2_calendar__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic2_calendar__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_network__ = __webpack_require__(200);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -927,7 +963,7 @@ var SlideShowComponent = (function () {
 
 /***/ }),
 
-/***/ 284:
+/***/ 283:
 /***/ (function(module, exports) {
 
 /* (ignored) */

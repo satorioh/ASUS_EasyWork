@@ -2,7 +2,7 @@
   <ion-navbar color="blue">
     <ion-item color="blue">
       <button ion-button menuToggle icon-only left>
-        <ion-icon name='menu'></ion-icon>
+        <ion-icon name='person'></ion-icon>
       </button>
 
       <ion-title></ion-title>
@@ -45,11 +45,12 @@
       <ion-title>用户中心</ion-title>
     </ion-navbar>
   </ion-header>
-  <ion-content>
+
+  <ion-content id="ucenter-content">
     <ion-list>
       <ion-item>
         <ion-label floating>工号</ion-label>
-        <ion-input type="text" [(ngModel)]="uid"></ion-input>
+        <ion-input type="text" [(ngModel)]="uwid"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>OA密码</ion-label>

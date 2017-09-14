@@ -27,7 +27,7 @@ export class ContactPageComponent implements OnInit {
     knockofftime: '',
     knockoffpos: ''
   };
-  uid:string;
+  uwid:string;
   upwd:string;
 
   constructor(private navCtrl: NavController,
@@ -133,8 +133,38 @@ export class ContactPageComponent implements OnInit {
   }
 
   login() {
-    console.log(this.uid+','+this.upwd);
+    console.log(this.uwid+','+this.upwd);
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if(xhr.readyState===4){
+        if(xhr.status ===200){
+            doResponse(xhr);
+        }else{
+          alert("响应完成但有问题");
+        }
+      }
+    };
+    xhr.open('POST','http://192.168.2.6/login.php',true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send(`uwid=${this.uwid}&upwd=${this.upwd}`);
+    //let str = '测试';
+    let successToast = this.presentToast("登录成功");
+    let errorToast = this.presentToast("用户名或密码错误");
+    function doResponse(xhr){
+      //console.log('开始处理响应消息');
+      if(xhr.responseText=='success'){
+        //str = "登录成功";
+        document.getElementById('ucenter-content').innerHTML="";
+        successToast;
+      }else if(xhr.responseText=='error'){
+        //str = "用户名或密码错误";
+        errorToast;
+      }else {
+        alert('不可识别的响应数据');
+      }
+    }
   }
+
 
 }//export class end
 
