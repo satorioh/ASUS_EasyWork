@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NavController} from 'ionic-angular';
 import {ToastController} from 'ionic-angular';
 
 @Component({
@@ -10,7 +11,23 @@ export class Login {
   uwid:string;
   upwd:string;
 
-  constructor(public toastCtrl: ToastController,) {}
+  constructor(
+    public toastCtrl: ToastController,
+    private navCtrl: NavController
+  ) {}
+
+  goBack = () => {
+    this.navCtrl.pop();
+  };
+
+  presentToast = (str) =>{
+    let toast = this.toastCtrl.create({
+      message: str,
+      duration: 2000,
+      position: 'top'
+    });
+    toast.present();
+  };
 
   login() {
     console.log(this.uwid+','+this.upwd);
@@ -24,29 +41,24 @@ export class Login {
         }
       }
     };
-    xhr.open('POST','http://192.168.1.5/login.php',true);
+    xhr.open('POST','http://192.168.2.6/login.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`uwid=${this.uwid}&upwd=${this.upwd}`);
-    let successToast = this.toastCtrl.create({
-      message: "登录成功",
-      duration: 2000,
-      position: 'top'
-    });
-    let errorToast = this.toastCtrl.create({
-      message: "用户名或密码错误",
-      duration: 2000,
-      position: 'top'
-    });
 
-    function doResponse(xhr){
+    let doResponse=(xhr)=>{
       console.log('开始处理响应消息');
-      if(xhr.responseText=='success'){
-        document.getElementById('ucenter-content').innerHTML="";
-        successToast.present();
-      }else if(xhr.responseText=='error'){
-        errorToast.present();
-      }else {
-        alert('不可识别的响应数据');
+      let result = JSON.parse(xhr.responseText);
+      console.dir(result);
+      if(result!==null){
+        localStorage.setItem("uwid",result.uwid);
+        localStorage.setItem("upwd",result.upwd);
+        document.getElementById('show-ucname').innerHTML=result.ucname;
+        document.getElementById('show-uename').innerHTML=result.uename;
+        document.getElementById('avator').setAttribute("src","assets/img/icon/asus.png");
+        this.presentToast("登陆成功");
+        this.goBack();
+      }else{
+        this.presentToast("用户名或密码错误");
       }
     }
   }

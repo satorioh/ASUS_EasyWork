@@ -46,8 +46,26 @@
     </ion-navbar>
   </ion-header>
 
-  <ion-content id="ucenter-content">
-    <button ion-button (click)="goToLogin($event)">点击登录</button>
+  <ion-content id="ucenter-header">
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/icon/user.png" id="avator">
+        </ion-avatar>
+        <h2 id="show-ucname">未登录</h2>
+        <p id="show-uename"></p>
+      </ion-item>
+
+      <ion-card-content>
+      </ion-card-content>
+
+      <ion-row>
+          <button ion-button block clear small full (click)="goToLogin($event)">
+            <div>登 录</div>
+          </button>
+      </ion-row>
+    </ion-card>
+
   </ion-content>
 </ion-menu>
 <ion-nav #usercenter [root]="rootPage"></ion-nav>
