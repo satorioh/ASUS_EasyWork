@@ -1,5 +1,5 @@
 //核心组件
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler,LOCALE_ID} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
@@ -17,6 +17,7 @@ import { ProgressBarComponent } from './progressBar.component';
 import { SlideShowComponent } from './slideShow.component';
 import { PopOver } from '../components/pop-over/pop-over';
 import { Login } from '../components/login/login';
+import { Calendar } from '../components/calendar/calendar';
 
 
 //第三方组件
@@ -42,7 +43,8 @@ import { Network } from '@ionic-native/network';
     ProgressBarComponent,
     SlideShowComponent,
     PopOver,
-    Login
+    Login,
+    Calendar
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import { Network } from '@ionic-native/network';
     ContactPageComponent,
     AppDetailComponent,
     PopOver,
-    Login
+    Login,
+    Calendar
   ],
   providers: [
     StatusBar,
@@ -72,7 +75,8 @@ import { Network } from '@ionic-native/network';
     AppDataService,
     LoadingController,
     Network,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    {provide: LOCALE_ID, useValue: 'zh-CN'}
   ]
 })
 export class AppModule {}

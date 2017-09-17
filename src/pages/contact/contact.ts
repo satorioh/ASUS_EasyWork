@@ -6,6 +6,7 @@ import {DatePipe} from '@angular/common';
 import {ToastController} from 'ionic-angular';
 import {Network} from '@ionic-native/network';
 import {Login} from '../../components/login/login';
+import {Calendar} from '../../components/calendar/calendar'
 
 declare var BMap;
 declare var baidu_location: any;
@@ -18,8 +19,6 @@ declare var baidu_location: any;
 
 export class ContactPageComponent implements OnInit {
   @ViewChild('bmap') mapElement: ElementRef;
-  // @ViewChild('uid') uid:ElementRef;
-  // @ViewChild('upwd') upwd:ElementRef;
 
   myDate: number;
   myCheckIn = {
@@ -84,12 +83,27 @@ export class ContactPageComponent implements OnInit {
       });
   }
 
-  presentPopover(myEvent) {
-    let popover = this.popoverCtrl.create(PopOver);
-    popover.present({
-      ev: myEvent
-    });
+  presentPopover(e) {
+    if (e.target.textContent == "地图") {
+      let popover = this.popoverCtrl.create(PopOver);
+      popover.present({
+        ev: e
+      });
+    } else if (e.target.textContent == "日历") {
+      let popover = this.popoverCtrl.create(Calendar);
+      popover.present({
+        ev: e
+      });
+    }
+
   }
+
+  // calendarPopover(e) {
+  //   let popover = this.popoverCtrl.create(Calendar);
+  //   popover.present({
+  //     ev: e
+  //   });
+  // }
 
   presentToast(str) {
     let toast = this.toastCtrl.create({
@@ -132,7 +146,7 @@ export class ContactPageComponent implements OnInit {
 
   }
 
-  goToLogin(e){
+  goToLogin(e) {
     this.navCtrl.push(Login);
   }
 

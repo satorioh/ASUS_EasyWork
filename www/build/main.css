@@ -27540,7 +27540,12 @@ slide-show ion-slides .slide-zoom {
   height: 100%;
 }
 
-pop-over button#close {
+page-calendar button.close {
+  position: absolute;
+  z-index: 99;
+}
+
+pop-over button.close {
   position: absolute;
   z-index: 1;
 }

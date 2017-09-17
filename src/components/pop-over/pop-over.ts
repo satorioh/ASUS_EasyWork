@@ -60,12 +60,6 @@ export class PopOver implements OnInit{
       });
   }
 
-  // calendar = {
-  //   mode: 'month',
-  //   currentDate: new Date()
-  //
-  //   };
-
   close() {
     this.viewCtrl.dismiss();
   }

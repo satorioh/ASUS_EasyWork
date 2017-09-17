@@ -41,7 +41,7 @@ export class Login {
         }
       }
     };
-    xhr.open('POST','http://192.168.2.6/login.php',true);
+    xhr.open('POST','http://192.168.137.1/login.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`uwid=${this.uwid}&upwd=${this.upwd}`);
 
