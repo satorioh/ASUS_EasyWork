@@ -1,5 +1,5 @@
 //核心组件
-import { NgModule, ErrorHandler,LOCALE_ID} from '@angular/core';
+import { NgModule, ErrorHandler} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
@@ -75,8 +75,7 @@ import { Network } from '@ionic-native/network';
     AppDataService,
     LoadingController,
     Network,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    {provide: LOCALE_ID, useValue: 'zh-CN'}
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}

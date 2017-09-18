@@ -27,7 +27,7 @@ export class ContactPageComponent implements OnInit {
     knockofftime: '',
     knockoffpos: ''
   };
-
+  CheckInDate = JSON.parse(localStorage.getItem("CheckInDate"));
 
   constructor(private navCtrl: NavController,
               public platform: Platform,
@@ -40,7 +40,7 @@ export class ContactPageComponent implements OnInit {
   ngOnInit() {
     this.platform.ready().then(() => {
       this.ionViewCanEnter();
-      this.loadMap();
+      //this.loadMap();
       setInterval(() => {
         this.myDate = Date.now();
       }, 1000);
@@ -98,13 +98,6 @@ export class ContactPageComponent implements OnInit {
 
   }
 
-  // calendarPopover(e) {
-  //   let popover = this.popoverCtrl.create(Calendar);
-  //   popover.present({
-  //     ev: e
-  //   });
-  // }
-
   presentToast(str) {
     let toast = this.toastCtrl.create({
       message: str,
@@ -138,9 +131,16 @@ export class ContactPageComponent implements OnInit {
       this.myCheckIn[knockTime] = this.datePipe.transform(this.myDate, 'HH:mm:ss');
       knockOnPost.textContent = document.getElementById('position').textContent.substr(7);
       this.myCheckIn[knockPos] = knockOnPost.textContent;
+      let knockDate = new Date(this.myDate).getDate();
+      if(this.CheckInDate){
+        this.CheckInDate.push(knockDate);
+        localStorage.setItem("CheckInDate",JSON.stringify(this.CheckInDate));
+      }else{
+        localStorage.setItem("CheckInDate",JSON.stringify(new Array(knockDate)));
+      }
       str = "打卡成功！";
       this.presentToast(str);
-      console.dir(this.myCheckIn);
+
     }
 
 
