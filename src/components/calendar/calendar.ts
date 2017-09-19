@@ -10,6 +10,7 @@ export class Calendar {
   eventSource = [];
   viewTitle: string;
   selectedDay = new Date();
+  lockSwipeToPrev:boolean;
 
   calendar = {
     mode: 'month',
@@ -23,7 +24,8 @@ export class Calendar {
 
   ngOnInit() {
     this.platform.ready().then(() => {
-      //this.showMonth();
+      this.lockSwipeToPrev = true;
+
     })
   }
 
@@ -35,6 +37,17 @@ export class Calendar {
   }
   onTimeSelected(ev){
     console.dir(ev);
+    let selected = new Date(ev.selectedTime);
+    let selectedDate = selected.getDate();
+    let tbody = document.querySelector(".monthview-datetable>tbody");
+    let tds = tbody.querySelectorAll("td:not(.text-muted)");
+    //console.dir(tds);
+    for(let i=0,len=tds.length;i<len;i++){
+      let td = <HTMLElement><any>tds[i];
+      if(td.innerText==selectedDate.toString()){
+          td.setAttribute("class","hook");
+      }
+    }
   }
   close() {
     this.viewCtrl.dismiss();

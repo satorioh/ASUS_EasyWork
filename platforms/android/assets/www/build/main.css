@@ -27545,6 +27545,10 @@ page-calendar button.close {
   z-index: 99;
 }
 
+page-calendar .hook {
+  background: #488aff !important;
+}
+
 pop-over button.close {
   position: absolute;
   z-index: 1;

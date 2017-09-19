@@ -285,12 +285,13 @@ var ContactPageComponent = (function () {
             knockofftime: '',
             knockoffpos: ''
         };
+        this.CheckInDate = JSON.parse(localStorage.getItem("CheckInDate"));
     }
     ContactPageComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.platform.ready().then(function () {
             _this.ionViewCanEnter();
-            _this.loadMap();
+            //this.loadMap();
             setInterval(function () {
                 _this.myDate = Date.now();
             }, 1000);
@@ -377,9 +378,16 @@ var ContactPageComponent = (function () {
             this.myCheckIn[knockTime] = this.datePipe.transform(this.myDate, 'HH:mm:ss');
             knockOnPost.textContent = document.getElementById('position').textContent.substr(7);
             this.myCheckIn[knockPos] = knockOnPost.textContent;
+            var knockDate = new Date(this.myDate).getDate();
+            if (this.CheckInDate) {
+                this.CheckInDate.push(knockDate);
+                localStorage.setItem("CheckInDate", JSON.stringify(this.CheckInDate));
+            }
+            else {
+                localStorage.setItem("CheckInDate", JSON.stringify(new Array(knockDate)));
+            }
             str = "打卡成功！";
             this.presentToast(str);
-            console.dir(this.myCheckIn);
         }
     };
     ContactPageComponent.prototype.goToLogin = function (e) {
@@ -544,7 +552,7 @@ var Login = (function () {
                 }
             }
         };
-        xhr.open('POST', 'http://192.168.137.1/login.php', true);
+        xhr.open('POST', 'http://192.168.2.6/login.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.send("uwid=" + this.uwid + "&upwd=" + this.upwd);
         var doResponse = function (xhr) {
@@ -609,8 +617,9 @@ var Calendar = (function () {
         };
     }
     Calendar.prototype.ngOnInit = function () {
+        var _this = this;
         this.platform.ready().then(function () {
-            //this.showMonth();
+            _this.lockSwipeToPrev = true;
         });
     };
     Calendar.prototype.onViewTitleChanged = function (title) {
@@ -620,13 +629,24 @@ var Calendar = (function () {
     };
     Calendar.prototype.onTimeSelected = function (ev) {
         console.dir(ev);
+        var selected = new Date(ev.selectedTime);
+        var selectedDate = selected.getDate();
+        var tbody = document.querySelector(".monthview-datetable>tbody");
+        var tds = tbody.querySelectorAll("td:not(.text-muted)");
+        //console.dir(tds);
+        for (var i = 0, len = tds.length; i < len; i++) {
+            var td = tds[i];
+            if (td.innerText == selectedDate.toString()) {
+                td.setAttribute("class", "hook");
+            }
+        }
     };
     Calendar.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
     Calendar = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-calendar',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\components\calendar\calendar.html"*/'<button ion-button icon-only clear color="dark" class="close" (click)="close()">\n\n  <ion-icon name="close-circle"></ion-icon>\n\n</button>\n\n<calendar [eventSource]="eventSource"\n\n          [calendarMode]="calendar.mode"\n\n          [currentDate]="calendar.currentDate"\n\n          (onTitleChanged)="onViewTitleChanged($event)"\n\n          (onTimeSelected)="onTimeSelected($event)"\n\n          step="30"\n\n          class="calendar">\n\n</calendar>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\components\calendar\calendar.html"*/
+            selector: 'page-calendar',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\components\calendar\calendar.html"*/'<button ion-button icon-only clear color="dark" class="close" (click)="close()">\n  <ion-icon name="close-circle"></ion-icon>\n</button>\n<calendar [eventSource]="eventSource"\n          [calendarMode]="calendar.mode"\n          [currentDate]="calendar.currentDate"\n          [lockSwipeToPrev]="lockSwipeToPrev"\n          (onTitleChanged)="onViewTitleChanged($event)"\n          (onTimeSelected)="onTimeSelected($event)"\n          step="30"\n          class="calendar">\n</calendar>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\components\calendar\calendar.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])

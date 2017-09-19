@@ -395,17 +395,21 @@ var ContactPageComponent = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('bmap'),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */])
     ], ContactPageComponent.prototype, "mapElement", void 0);
     ContactPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'page-contact',
             providers: [__WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */]],template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-item color="blue">\n\n      <button ion-button menuToggle icon-only left>\n\n        <ion-icon name=\'menu\'></ion-icon>\n\n      </button>\n\n      <ion-title></ion-title>\n\n      <button ion-button item-end small (click)="presentPopover($event)">日历</button>\n\n      <button ion-button item-end small (click)="presentPopover($event)">地图</button>\n\n    </ion-item>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-icon name="pin" item-start color="danger" small></ion-icon>\n\n      <h2 id="position">您当前的位置：获取中...</h2>\n\n    </ion-item>\n\n      <div id="bmap" #bmap></div>\n\n    <ion-item id="knock-on">\n\n      <span class="knock-icon">上</span>\n\n      <span class="knock-time"></span>\n\n      <span>(上班时间8:00)</span>\n\n      <p class="knock-pos"></p>\n\n    </ion-item>\n\n    <ion-item id="knock-off">\n\n      <span class="knock-icon">下</span>\n\n      <span class="knock-time"></span>\n\n      <span>(下班时间17:00)</span>\n\n      <p class="knock-pos"></p>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <div id="check-in" (click)="ampmChoose($event)">\n\n    <span>打卡<br/>{{ myDate | date:\'HH:mm:ss\' }}</span>\n\n    <!--<span></span>-->\n\n  </div>\n\n</ion-content>\n\n\n\n<!--用户中心-->\n\n<ion-menu [content]="usercenter">\n\n  <ion-header>\n\n    <ion-navbar color="blue">\n\n      <ion-title>用户中心</ion-title>\n\n    </ion-navbar>\n\n  </ion-header>\n\n\n\n  <ion-content id="ucenter-header">\n\n    <ion-card>\n\n      <ion-item>\n\n        <ion-avatar item-start>\n\n          <img src="assets/img/icon/user.png" id="avator">\n\n        </ion-avatar>\n\n        <h2 id="show-ucname">未登录</h2>\n\n        <p id="show-uename"></p>\n\n      </ion-item>\n\n\n\n      <ion-card-content>\n\n      </ion-card-content>\n\n\n\n      <ion-row>\n\n          <button ion-button block clear small full (click)="goToLogin($event)">\n\n            <div>登 录</div>\n\n          </button>\n\n      </ion-row>\n\n    </ion-card>\n\n\n\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav #usercenter [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */]) === "function" && _g || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */]])
     ], ContactPageComponent);
     return ContactPageComponent;
-    var _a, _b, _c, _d, _e, _f, _g;
 }()); //export class end
 
 //# sourceMappingURL=contact.js.map
@@ -573,10 +577,10 @@ var Login = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'login',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\components\login\login.html"*/'<ion-header>\n  <ion-navbar color="blue">\n    <ion-title>登录</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content id="ucenter-content">\n  <ion-list inset>\n    <ion-item>\n      <ion-label>工号</ion-label>\n      <ion-input type="text" [(ngModel)]="uwid"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>OA密码</ion-label>\n      <ion-input type="password" [(ngModel)]="upwd"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div padding>\n    <button ion-button color="blue" block id="loginBt" (click)="login($event)">登录</button>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\components\login\login.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], Login);
     return Login;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=login.js.map
@@ -613,8 +617,9 @@ var Calendar = (function () {
         };
     }
     Calendar.prototype.ngOnInit = function () {
+        var _this = this;
         this.platform.ready().then(function () {
-            //this.showMonth();
+            _this.lockSwipeToPrev = true;
         });
     };
     Calendar.prototype.onViewTitleChanged = function (title) {
@@ -624,13 +629,24 @@ var Calendar = (function () {
     };
     Calendar.prototype.onTimeSelected = function (ev) {
         console.dir(ev);
+        var selected = new Date(ev.selectedTime);
+        var selectedDate = selected.getDate();
+        var tbody = document.querySelector(".monthview-datetable>tbody");
+        var tds = tbody.querySelectorAll("td:not(.text-muted)");
+        //console.dir(tds);
+        for (var i = 0, len = tds.length; i < len; i++) {
+            var td = tds[i];
+            if (td.innerText == selectedDate.toString()) {
+                td.setAttribute("class", "hook");
+            }
+        }
     };
     Calendar.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
     Calendar = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-calendar',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\components\calendar\calendar.html"*/'<button ion-button icon-only clear color="dark" class="close" (click)="close()">\n\n  <ion-icon name="close-circle"></ion-icon>\n\n</button>\n\n<calendar [eventSource]="eventSource"\n\n          [calendarMode]="calendar.mode"\n\n          [currentDate]="calendar.currentDate"\n\n          (onTitleChanged)="onViewTitleChanged($event)"\n\n          (onTimeSelected)="onTimeSelected($event)"\n\n          step="30"\n\n          class="calendar">\n\n</calendar>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\components\calendar\calendar.html"*/
+            selector: 'page-calendar',template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\components\calendar\calendar.html"*/'<button ion-button icon-only clear color="dark" class="close" (click)="close()">\n  <ion-icon name="close-circle"></ion-icon>\n</button>\n<calendar [eventSource]="eventSource"\n          [calendarMode]="calendar.mode"\n          [currentDate]="calendar.currentDate"\n          [lockSwipeToPrev]="lockSwipeToPrev"\n          (onTitleChanged)="onViewTitleChanged($event)"\n          (onTimeSelected)="onTimeSelected($event)"\n          step="30"\n          class="calendar">\n</calendar>\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\components\calendar\calendar.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
