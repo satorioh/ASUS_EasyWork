@@ -25,11 +25,11 @@ export class ContactPageComponent implements OnInit {
     cwid:'',
     ccname:'',
     cdate:'',
-    cintime: '',
+    cintime: 0,
     cinpos: '',
-    cofftime: '',
+    cofftime: 0,
     coffpos: '',
-    chour:0
+    chour:''
   };
 
   constructor(private navCtrl: NavController,
@@ -114,37 +114,66 @@ export class ContactPageComponent implements OnInit {
     let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
     console.log(time);
     if (time <= 12) {
-      this.showCheckInfo('knock-on', 'cintime', 'cinpos');
+      this.setCheckData('cintime', 'cinpos');
+      this.xhrSend();
+      this.showCheckInfo('knock-on');
     } else {
-      this.showCheckInfo('knock-off', 'cofftime', 'coffpos');
+      this.setCheckData('cofftime', 'coffpos');
+      this.checkInData.chour = ((this.checkInData.cofftime - this.checkInData.cintime)/(1000*3600)).toFixed(1);
+      this.xhrSend();
+      this.showCheckInfo('knock-off');
     }
   }
 
   showCheckInfo(knockType) {
-    let knockOnTime = document.querySelector(`#${knockType} span.knock-time`);
-    let knockOnPos = document.querySelector(`#${knockType} p.knock-pos`);
+    let knockTime = document.querySelector(`#${knockType} span.knock-time`);
+    let knockPos = document.querySelector(`#${knockType} p.knock-pos`);
     let str = '';
-    if (knockOnTime.textContent) {
+    if (knockTime.textContent) {
       str = "亲，不要重复打卡哦";
       this.presentToast(str);
       return;
     } else {
-      knockOnTime.textContent = "打卡时间" + this.datePipe.transform(this.myDate, 'HH:mm:ss');
-      knockOnPos.textContent = document.getElementById('position').textContent.substr(7);
+      knockTime.textContent = "打卡时间" + this.datePipe.transform(this.myDate, 'HH:mm:ss');
+      knockPos.textContent = document.getElementById('position').textContent.substr(7);
       str = "打卡成功！";
       this.presentToast(str);
     }
   }
 
-  checkIn =(knockTime,knockPos)=>{
+  setCheckData =(checkTime,checkPos)=>{
     let currentUser = JSON.parse(localStorage.getItem("currentUser"));
     this.checkInData.cwid = currentUser.uwid;
     this.checkInData.ccname = currentUser.ucname;
     this.checkInData.cdate = new Date(this.myDate).toDateString();
-    this.checkInData[knockTime]
-
-
+    this.checkInData[checkTime] = this.myDate;
+    this.checkInData[checkPos] = document.getElementById('position').textContent.substr(7);
 };
+
+  xhrSend=()=>{
+    let arr=[];
+    arr.push(this.checkInData);
+    let data=JSON.stringify(arr);
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if(xhr.readyState===4){
+        if(xhr.status ===200){
+          doResponse(xhr);
+        }else{
+          alert("响应完成但有问题");
+        }
+      }
+    };
+    xhr.open('POST','http://192.168.1.3/checkin.php',true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send(`checkInData=${data}`);
+
+    let doResponse=(xhr)=>{
+      console.log('开始处理响应消息');
+      let result = JSON.parse(xhr.responseText);
+      console.dir(result);
+    }
+  };
 
   goToLogin(e) {
     this.navCtrl.push(Login);

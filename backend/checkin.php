@@ -15,8 +15,8 @@ foreach($data as $p){
   $cdate = $p -> cdate;
   $cintime = $p -> cintime;
   $cinpos = $p -> cinpos;
-  $cofftime = $p -> cintime;
-  $coffpos = $p -> cinpos;
+  $cofftime = $p -> cofftime;
+  $coffpos = $p -> coffpos;
   $chour = $p -> chour;
 }
 
@@ -25,7 +25,7 @@ $result = mysqli_query($link,$sql);
 $res = mysqli_fetch_assoc($result);
 $cid = $res['cid'];
 if($cid){
-  $sql = "update asus_checkin set cofftime='$cofftime' and coffpos='$coffpos'where cid='$cid'";
+  $sql = "update asus_checkin set cofftime='$cofftime', coffpos='$coffpos', chour='$chour' where cid='$cid'";
   $result = mysqli_query($link,$sql);
 }else{
   $sql = "insert into asus_checkin values(NULL,'$cwid','$ccname','$cdate','$cintime','$cinpos','$cofftime','$coffpos','$chour')";

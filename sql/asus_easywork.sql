@@ -17,15 +17,15 @@ create table asus_checkIn(
   cwid varchar(32),
   ccname varchar(32),
   cdate varchar(128),
-  cintime varchar(32),
+  cintime bigint,
   cinpos varchar(128),
-  cofftime varchar(32),
+  cofftime bigint,
   coffpos varchar(128),
-  chour int
+  chour varchar(32)
 );
 
 insert into asus_user values(
-1,'aa','123','robin1_wang','肉饼',''
+1,'aa','123','robin1_wang','王斌',''
 );
 
 
