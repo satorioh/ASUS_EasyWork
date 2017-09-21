@@ -540,7 +540,6 @@ var Login = (function () {
     }
     Login.prototype.login = function () {
         var _this = this;
-        console.log(this.uwid + ',' + this.upwd);
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
@@ -552,18 +551,21 @@ var Login = (function () {
                 }
             }
         };
-        xhr.open('POST', 'http://192.168.2.6/login.php', true);
+        xhr.open('POST', 'http://192.168.2.7/login.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.send("uwid=" + this.uwid + "&upwd=" + this.upwd);
         var doResponse = function (xhr) {
             console.log('开始处理响应消息');
-            var result = JSON.parse(xhr.responseText);
+            var result = xhr.responseText;
             console.dir(result);
             if (result !== null) {
-                localStorage.setItem("uwid", result.uwid);
-                localStorage.setItem("upwd", result.upwd);
-                document.getElementById('show-ucname').innerHTML = result.ucname;
-                document.getElementById('show-uename').innerHTML = result.uename;
+                localStorage.setItem("currentUser", result);
+                var currentUser = JSON.parse(localStorage.getItem("currentUser"));
+                console.log(currentUser["ucname"]);
+                console.log(currentUser["uename"]);
+                //localStorage.setItem("upwd",result.upwd);
+                document.getElementById('show-ucname').innerHTML = currentUser["ucname"];
+                document.getElementById('show-uename').innerHTML = currentUser["uename"];
                 document.getElementById('avator').setAttribute("src", "assets/img/icon/asus.png");
                 _this.presentToast("登陆成功");
                 _this.goBack();

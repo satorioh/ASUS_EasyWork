@@ -21,13 +21,16 @@ export class ContactPageComponent implements OnInit {
   @ViewChild('bmap') mapElement: ElementRef;
 
   myDate: number;
-  myCheckIn = {
-    knockontime: '',
-    knockonpos: '',
-    knockofftime: '',
-    knockoffpos: ''
+  checkInData = {
+    cwid:'',
+    ccname:'',
+    cdate:'',
+    cintime: '',
+    cinpos: '',
+    cofftime: '',
+    coffpos: '',
+    chour:0
   };
-  CheckInDate = JSON.parse(localStorage.getItem("CheckInDate"));
 
   constructor(private navCtrl: NavController,
               public platform: Platform,
@@ -40,7 +43,7 @@ export class ContactPageComponent implements OnInit {
   ngOnInit() {
     this.platform.ready().then(() => {
       this.ionViewCanEnter();
-      //this.loadMap();
+      this.loadMap();
       setInterval(() => {
         this.myDate = Date.now();
       }, 1000);
@@ -111,40 +114,37 @@ export class ContactPageComponent implements OnInit {
     let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
     console.log(time);
     if (time <= 12) {
-      this.checkIn('knock-on', 'knockontime', 'knockonpos');
+      this.showCheckInfo('knock-on', 'cintime', 'cinpos');
     } else {
-      this.checkIn('knock-off', 'knockofftime', 'knockoffpos');
+      this.showCheckInfo('knock-off', 'cofftime', 'coffpos');
     }
   }
 
-  checkIn(knockType, knockTime, knockPos) {
+  showCheckInfo(knockType) {
     let knockOnTime = document.querySelector(`#${knockType} span.knock-time`);
-    let knockOnPost = document.querySelector(`#${knockType} p.knock-pos`);
+    let knockOnPos = document.querySelector(`#${knockType} p.knock-pos`);
     let str = '';
-    console.log(knockOnTime.textContent);
     if (knockOnTime.textContent) {
       str = "亲，不要重复打卡哦";
       this.presentToast(str);
       return;
     } else {
       knockOnTime.textContent = "打卡时间" + this.datePipe.transform(this.myDate, 'HH:mm:ss');
-      this.myCheckIn[knockTime] = this.datePipe.transform(this.myDate, 'HH:mm:ss');
-      knockOnPost.textContent = document.getElementById('position').textContent.substr(7);
-      this.myCheckIn[knockPos] = knockOnPost.textContent;
-      let knockDate = new Date(this.myDate).getDate();
-      if(this.CheckInDate){
-        this.CheckInDate.push(knockDate);
-        localStorage.setItem("CheckInDate",JSON.stringify(this.CheckInDate));
-      }else{
-        localStorage.setItem("CheckInDate",JSON.stringify(new Array(knockDate)));
-      }
+      knockOnPos.textContent = document.getElementById('position').textContent.substr(7);
       str = "打卡成功！";
       this.presentToast(str);
-
     }
-
-
   }
+
+  checkIn =(knockTime,knockPos)=>{
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    this.checkInData.cwid = currentUser.uwid;
+    this.checkInData.ccname = currentUser.ucname;
+    this.checkInData.cdate = new Date(this.myDate).toDateString();
+    this.checkInData[knockTime]
+
+
+};
 
   goToLogin(e) {
     this.navCtrl.push(Login);

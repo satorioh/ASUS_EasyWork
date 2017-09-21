@@ -273,25 +273,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ContactPageComponent = (function () {
     function ContactPageComponent(navCtrl, platform, popoverCtrl, datePipe, toastCtrl, network) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.platform = platform;
         this.popoverCtrl = popoverCtrl;
         this.datePipe = datePipe;
         this.toastCtrl = toastCtrl;
         this.network = network;
-        this.myCheckIn = {
-            knockontime: '',
-            knockonpos: '',
-            knockofftime: '',
-            knockoffpos: ''
+        this.checkInData = {
+            cwid: '',
+            ccname: '',
+            cdate: '',
+            cintime: '',
+            cinpos: '',
+            cofftime: '',
+            coffpos: '',
+            chour: 0
         };
-        this.CheckInDate = JSON.parse(localStorage.getItem("CheckInDate"));
+        this.checkIn = function (knockTime, knockPos) {
+            var currentUser = JSON.parse(localStorage.getItem("currentUser"));
+            _this.checkInData.cwid = currentUser.uwid;
+            _this.checkInData.ccname = currentUser.ucname;
+            _this.checkInData.cdate = new Date(_this.myDate).toDateString();
+            _this.checkInData[knockTime];
+        };
     }
     ContactPageComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.platform.ready().then(function () {
             _this.ionViewCanEnter();
-            //this.loadMap();
+            _this.loadMap();
             setInterval(function () {
                 _this.myDate = Date.now();
             }, 1000);
@@ -357,17 +368,16 @@ var ContactPageComponent = (function () {
         var time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
         console.log(time);
         if (time <= 12) {
-            this.checkIn('knock-on', 'knockontime', 'knockonpos');
+            this.showCheckInfo('knock-on', 'cintime', 'cinpos');
         }
         else {
-            this.checkIn('knock-off', 'knockofftime', 'knockoffpos');
+            this.showCheckInfo('knock-off', 'cofftime', 'coffpos');
         }
     };
-    ContactPageComponent.prototype.checkIn = function (knockType, knockTime, knockPos) {
+    ContactPageComponent.prototype.showCheckInfo = function (knockType) {
         var knockOnTime = document.querySelector("#" + knockType + " span.knock-time");
-        var knockOnPost = document.querySelector("#" + knockType + " p.knock-pos");
+        var knockOnPos = document.querySelector("#" + knockType + " p.knock-pos");
         var str = '';
-        console.log(knockOnTime.textContent);
         if (knockOnTime.textContent) {
             str = "亲，不要重复打卡哦";
             this.presentToast(str);
@@ -375,17 +385,7 @@ var ContactPageComponent = (function () {
         }
         else {
             knockOnTime.textContent = "打卡时间" + this.datePipe.transform(this.myDate, 'HH:mm:ss');
-            this.myCheckIn[knockTime] = this.datePipe.transform(this.myDate, 'HH:mm:ss');
-            knockOnPost.textContent = document.getElementById('position').textContent.substr(7);
-            this.myCheckIn[knockPos] = knockOnPost.textContent;
-            var knockDate = new Date(this.myDate).getDate();
-            if (this.CheckInDate) {
-                this.CheckInDate.push(knockDate);
-                localStorage.setItem("CheckInDate", JSON.stringify(this.CheckInDate));
-            }
-            else {
-                localStorage.setItem("CheckInDate", JSON.stringify(new Array(knockDate)));
-            }
+            knockOnPos.textContent = document.getElementById('position').textContent.substr(7);
             str = "打卡成功！";
             this.presentToast(str);
         }
@@ -395,21 +395,17 @@ var ContactPageComponent = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('bmap'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */]) === "function" && _a || Object)
     ], ContactPageComponent.prototype, "mapElement", void 0);
     ContactPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'page-contact',
             providers: [__WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */]],template:/*ion-inline-start:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar color="blue">\n\n    <ion-item color="blue">\n\n      <button ion-button menuToggle icon-only left>\n\n        <ion-icon name=\'menu\'></ion-icon>\n\n      </button>\n\n      <ion-title></ion-title>\n\n      <button ion-button item-end small (click)="presentPopover($event)">日历</button>\n\n      <button ion-button item-end small (click)="presentPopover($event)">地图</button>\n\n    </ion-item>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-icon name="pin" item-start color="danger" small></ion-icon>\n\n      <h2 id="position">您当前的位置：获取中...</h2>\n\n    </ion-item>\n\n      <div id="bmap" #bmap></div>\n\n    <ion-item id="knock-on">\n\n      <span class="knock-icon">上</span>\n\n      <span class="knock-time"></span>\n\n      <span>(上班时间8:00)</span>\n\n      <p class="knock-pos"></p>\n\n    </ion-item>\n\n    <ion-item id="knock-off">\n\n      <span class="knock-icon">下</span>\n\n      <span class="knock-time"></span>\n\n      <span>(下班时间17:00)</span>\n\n      <p class="knock-pos"></p>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <div id="check-in" (click)="ampmChoose($event)">\n\n    <span>打卡<br/>{{ myDate | date:\'HH:mm:ss\' }}</span>\n\n    <!--<span></span>-->\n\n  </div>\n\n</ion-content>\n\n\n\n<!--用户中心-->\n\n<ion-menu [content]="usercenter">\n\n  <ion-header>\n\n    <ion-navbar color="blue">\n\n      <ion-title>用户中心</ion-title>\n\n    </ion-navbar>\n\n  </ion-header>\n\n\n\n  <ion-content id="ucenter-header">\n\n    <ion-card>\n\n      <ion-item>\n\n        <ion-avatar item-start>\n\n          <img src="assets/img/icon/user.png" id="avator">\n\n        </ion-avatar>\n\n        <h2 id="show-ucname">未登录</h2>\n\n        <p id="show-uename"></p>\n\n      </ion-item>\n\n\n\n      <ion-card-content>\n\n      </ion-card-content>\n\n\n\n      <ion-row>\n\n          <button ion-button block clear small full (click)="goToLogin($event)">\n\n            <div>登 录</div>\n\n          </button>\n\n      </ion-row>\n\n    </ion-card>\n\n\n\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav #usercenter [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\work\ASUS EasyWork\src\pages\contact\contact.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* PopoverController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common__["d" /* DatePipe */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */]) === "function" && _g || Object])
     ], ContactPageComponent);
     return ContactPageComponent;
+    var _a, _b, _c, _d, _e, _f, _g;
 }()); //export class end
 
 //# sourceMappingURL=contact.js.map
@@ -540,7 +536,6 @@ var Login = (function () {
     }
     Login.prototype.login = function () {
         var _this = this;
-        console.log(this.uwid + ',' + this.upwd);
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
@@ -552,18 +547,19 @@ var Login = (function () {
                 }
             }
         };
-        xhr.open('POST', 'http://192.168.2.6/login.php', true);
+        xhr.open('POST', 'http://192.168.2.7/login.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.send("uwid=" + this.uwid + "&upwd=" + this.upwd);
         var doResponse = function (xhr) {
             console.log('开始处理响应消息');
-            var result = JSON.parse(xhr.responseText);
+            var result = xhr.responseText;
             console.dir(result);
             if (result !== null) {
-                localStorage.setItem("uwid", result.uwid);
-                localStorage.setItem("upwd", result.upwd);
-                document.getElementById('show-ucname').innerHTML = result.ucname;
-                document.getElementById('show-uename').innerHTML = result.uename;
+                localStorage.setItem("currentUser", result);
+                var currentUser = JSON.parse(localStorage.getItem("currentUser"));
+                //localStorage.setItem("upwd",result.upwd);
+                document.getElementById('show-ucname').innerHTML = currentUser["ucname"];
+                document.getElementById('show-uename').innerHTML = currentUser["uename"];
                 document.getElementById('avator').setAttribute("src", "assets/img/icon/asus.png");
                 _this.presentToast("登陆成功");
                 _this.goBack();
