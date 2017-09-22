@@ -16,16 +16,16 @@ create table asus_checkIn(
   cid int primary key auto_increment,
   cwid varchar(32),
   ccname varchar(32),
-  cdate varchar(128),
-  cintime bigint,
+  cdate varchar(32),
+  cintime varchar(32),
   cinpos varchar(128),
-  cofftime bigint,
+  cofftime varchar(32),
   coffpos varchar(128),
   chour varchar(32)
 );
 
 insert into asus_user values(
-1,'aa','123','robin1_wang','王斌',''
+1,'aa','123','robin1_wang','王斌','MIS'
 );
 
 

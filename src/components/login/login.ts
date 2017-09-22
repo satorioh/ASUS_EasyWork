@@ -40,7 +40,7 @@ export class Login {
         }
       }
     };
-    xhr.open('POST','http://192.168.1.3/login.php',true);
+    xhr.open('POST','http://192.168.2.7/login.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`uwid=${this.uwid}&upwd=${this.upwd}`);
 
@@ -51,10 +51,10 @@ export class Login {
       if(result!==null){
         localStorage.setItem("currentUser",result);
         let currentUser = JSON.parse(localStorage.getItem("currentUser"));
-        //localStorage.setItem("upwd",result.upwd);
         document.getElementById('show-ucname').innerHTML=currentUser["ucname"];
         document.getElementById('show-uename').innerHTML=currentUser["uename"];
         document.getElementById('avator').setAttribute("src","assets/img/icon/asus.png");
+        document.getElementById('login-status').innerHTML="退出";
         this.presentToast("登陆成功");
         this.goBack();
       }else{

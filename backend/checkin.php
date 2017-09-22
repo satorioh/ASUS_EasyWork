@@ -12,28 +12,34 @@ mysqli_query($link,$sql);
 foreach($data as $p){
   $cwid = $p -> cwid;
   $ccname = $p -> ccname;
-  $cdate = $p -> cdate;
-  $cintime = $p -> cintime;
   $cinpos = $p -> cinpos;
-  $cofftime = $p -> cofftime;
   $coffpos = $p -> coffpos;
-  $chour = $p -> chour;
 }
 
+$cdate = date_create();
+$cdate = date_format($cdate,"Y-m-d");
 $sql = "select * from asus_checkin where cwid='$cwid' and cdate='$cdate'";
 $result = mysqli_query($link,$sql);
 $res = mysqli_fetch_assoc($result);
 $cid = $res['cid'];
 if($cid){
+  $cofftimeOri = date_create();
+  $cofftime = date_format($cofftimeOri,"H:i:s");
+  $cintime = $res['cintime'];
+  $cintime = date_create($cintime);
+  $chour = date_diff($cintime,$cofftimeOri);
+  $chour = $chour->format("%h小时%i分钟");
   $sql = "update asus_checkin set cofftime='$cofftime', coffpos='$coffpos', chour='$chour' where cid='$cid'";
   $result = mysqli_query($link,$sql);
 }else{
-  $sql = "insert into asus_checkin values(NULL,'$cwid','$ccname','$cdate','$cintime','$cinpos','$cofftime','$coffpos','$chour')";
+  $cintime = date_create();
+  $cintime = date_format($cintime,"H:i:s");
+  $sql = "insert into asus_checkin values(NULL,'$cwid','$ccname','$cdate','$cintime','$cinpos','','','')";
   $result = mysqli_query($link,$sql);
   $id = mysqli_insert_id($link);
 }
 
-  $sql = "select cdate from asus_checkin where cwid = '$cwid'";
+  $sql = "select * from asus_checkin where cdate = '$cdate'";
   $result = mysqli_query($link,$sql);
-  $list = mysqli_fetch_all($result,MYSQLI_ASSOC);
+  $list = mysqli_fetch_assoc($result);
   echo json_encode($list);

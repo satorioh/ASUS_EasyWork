@@ -24,12 +24,8 @@ export class ContactPageComponent implements OnInit {
   checkInData = {
     cwid:'',
     ccname:'',
-    cdate:'',
-    cintime: 0,
     cinpos: '',
-    cofftime: 0,
-    coffpos: '',
-    chour:''
+    coffpos: ''
   };
 
   constructor(private navCtrl: NavController,
@@ -43,10 +39,12 @@ export class ContactPageComponent implements OnInit {
   ngOnInit() {
     this.platform.ready().then(() => {
       this.ionViewCanEnter();
-      this.loadMap();
       setInterval(() => {
         this.myDate = Date.now();
       }, 1000);
+      this.loadMap();
+      this.checkInfoInit();
+      this.userLoginCheck();
     })
   }
 
@@ -110,20 +108,44 @@ export class ContactPageComponent implements OnInit {
     toast.present();
   }
 
-  ampmChoose() {
-    let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
-    console.log(time);
-    if (time <= 12) {
-      this.setCheckData('cintime', 'cinpos');
-      this.xhrSend();
-      this.showCheckInfo('knock-on');
-    } else {
-      this.setCheckData('cofftime', 'coffpos');
-      this.checkInData.chour = ((this.checkInData.cofftime - this.checkInData.cintime)/(1000*3600)).toFixed(1);
-      this.xhrSend();
-      this.showCheckInfo('knock-off');
+  ampmChoose=()=> {
+    if(localStorage.getItem("currentUser")){
+      let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
+      //console.log(time);
+      if (time <= 12) {
+        this.setCheckData('cinpos');
+        this.xhrSend();
+        this.showCheckInfo('knock-on');
+      } else {
+        this.setCheckData('coffpos');
+        this.xhrSend();
+        this.showCheckInfo('knock-off');
+      }
+    }else{
+      this.goToLogin();
     }
-  }
+
+  };
+
+  checkInfoInit=()=>{
+    let today = this.datePipe.transform(Date.now(), 'yyyy-MM-dd');
+    console.log(today);
+    if(localStorage["currentCheck"]){
+      let currentCheck = JSON.parse(localStorage["currentCheck"]);
+      if(today==currentCheck.cdate){
+        document.querySelector(`#knock-on span.knock-time`).textContent = "打卡时间" + currentCheck.cintime;
+        document.querySelector(`#knock-on p.knock-pos`).textContent = currentCheck.cinpos;
+        document.querySelector(`#knock-off span.knock-time`).textContent = "打卡时间" + currentCheck.cofftime;
+        document.querySelector(`#knock-off p.knock-pos`).textContent = currentCheck.coffpos;
+      }else{
+        localStorage.removeItem("currentCheck");
+      }
+    }else{
+      return;
+    }
+
+
+  };
 
   showCheckInfo(knockType) {
     let knockTime = document.querySelector(`#${knockType} span.knock-time`);
@@ -141,14 +163,19 @@ export class ContactPageComponent implements OnInit {
     }
   }
 
-  setCheckData =(checkTime,checkPos)=>{
+  setCheckData =(checkPos)=>{
     let currentUser = JSON.parse(localStorage.getItem("currentUser"));
     this.checkInData.cwid = currentUser.uwid;
     this.checkInData.ccname = currentUser.ucname;
-    this.checkInData.cdate = new Date(this.myDate).toDateString();
-    this.checkInData[checkTime] = this.myDate;
     this.checkInData[checkPos] = document.getElementById('position').textContent.substr(7);
 };
+
+  showUserInfo = (ucname,uename,img,loginstatus) =>{
+    document.getElementById('show-ucname').innerHTML=ucname;
+    document.getElementById('show-uename').innerHTML=uename;
+    document.getElementById('avator').setAttribute("src",img);
+    document.getElementById('login-status').innerHTML=loginstatus;
+  };
 
   xhrSend=()=>{
     let arr=[];
@@ -164,19 +191,40 @@ export class ContactPageComponent implements OnInit {
         }
       }
     };
-    xhr.open('POST','http://192.168.1.3/checkin.php',true);
+    xhr.open('POST','http://192.168.2.7/checkin.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`checkInData=${data}`);
 
     let doResponse=(xhr)=>{
       console.log('开始处理响应消息');
-      let result = JSON.parse(xhr.responseText);
-      console.dir(result);
+      localStorage.setItem("currentCheck",xhr.responseText);
+      console.dir(JSON.parse(localStorage["currentCheck"]));
     }
   };
 
-  goToLogin(e) {
+  goToLogin() {
     this.navCtrl.push(Login);
+  }
+
+  logout=()=>{
+    let loginStatus = document.getElementById('login-status').innerHTML;
+    if(loginStatus=="退出"){
+      localStorage.removeItem("currentUser");
+      this.showUserInfo("未登录","","assets/img/icon/user.png","登录");
+    }else if(loginStatus=="登录"){
+      this.goToLogin();
+    }
+
+  };
+
+  userLoginCheck=()=>{
+    if(localStorage.getItem("currentUser")){
+      let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+      let avator = "assets/img/icon/asus.png";
+      this.showUserInfo(currentUser["ucname"],currentUser["uename"],avator,"退出");
+    }else{
+      this.goToLogin();
+    }
   }
 
 
