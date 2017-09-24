@@ -11,6 +11,7 @@ export class Calendar {
   viewTitle: string;
   selectedDay = new Date();
   lockSwipeToPrev:boolean;
+  lockSwipes:boolean;
 
   calendar = {
     mode: 'month',
@@ -25,7 +26,7 @@ export class Calendar {
   ngOnInit() {
     this.platform.ready().then(() => {
       this.lockSwipeToPrev = true;
-
+      //this.lockSwipes = true;
     })
   }
 
@@ -33,22 +34,58 @@ export class Calendar {
     console.log(title);
     let eventText = document.getElementsByClassName('no-events-label')[0];
     eventText.innerHTML = title;
-
   }
+
   onTimeSelected(ev){
     console.dir(ev);
-    let selected = new Date(ev.selectedTime);
-    let selectedDate = selected.getDate();
-    let tbody = document.querySelector(".monthview-datetable>tbody");
-    let tds = tbody.querySelectorAll("td:not(.text-muted)");
-    //console.dir(tds);
-    for(let i=0,len=tds.length;i<len;i++){
-      let td = <HTMLElement><any>tds[i];
-      if(td.innerText==selectedDate.toString()){
-          td.setAttribute("class","hook");
-      }
-    }
+    let str = ev.selectedTime.toString();
+    str = str.substring(0,str.indexOf(" GMT"));
+    console.log(str);
+    this.dateSend(str);
   }
+
+  dateSend=(str)=>{
+    let data=str;
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    let cwid = currentUser["uwid"];
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if(xhr.readyState===4){
+        if(xhr.status ===200){
+          doResponse(xhr);
+        }else{
+          alert("响应完成但有问题");
+        }
+      }
+    };
+    xhr.open('POST','http://192.168.1.2/calendarDate.php',true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send(`calendarDate=${data}&cwid=${cwid}`);
+
+    let doResponse=(xhr)=>{
+      console.log('开始查询签到记录');
+      //console.dir(JSON.parse(xhr.responseText));
+      let monthCheckData = JSON.parse(xhr.responseText);
+      let arr = [];
+      monthCheckData.forEach(function (item) {
+        let d = new Date(item["cdate"]).getDate();
+        arr.push(d);
+      });
+      console.log(arr);
+      let tbody = document.querySelector(".monthview-datetable>tbody");
+      let tds = tbody.querySelectorAll("td:not(.text-muted)");
+      console.dir(tds);
+      arr.forEach(function (item) {
+        for(let i=0,len=tds.length;i<len;i++){
+          let td = <HTMLElement><any>tds[i];
+          if(td.innerText==item.toString()){
+            td.setAttribute("class","hook");
+          }
+        }
+      });
+
+    }
+  };
   close() {
     this.viewCtrl.dismiss();
   }

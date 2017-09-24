@@ -40,12 +40,12 @@ export class Login {
         }
       }
     };
-    xhr.open('POST','http://192.168.2.7/login.php',true);
+    xhr.open('POST','http://192.168.1.2/login.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`uwid=${this.uwid}&upwd=${this.upwd}`);
 
     let doResponse=(xhr)=>{
-      console.log('开始处理响应消息');
+      console.log('开始接收服务器用户信息');
       let result = xhr.responseText;
       console.dir(result);
       if(result!==null){
@@ -55,7 +55,7 @@ export class Login {
         document.getElementById('show-uename').innerHTML=currentUser["uename"];
         document.getElementById('avator').setAttribute("src","assets/img/icon/asus.png");
         document.getElementById('login-status').innerHTML="退出";
-        this.presentToast("登陆成功");
+        this.presentToast("登录成功");
         this.goBack();
       }else{
         this.presentToast("用户名或密码错误");

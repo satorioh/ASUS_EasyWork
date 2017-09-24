@@ -111,14 +111,14 @@ export class ContactPageComponent implements OnInit {
   ampmChoose=()=> {
     if(localStorage.getItem("currentUser")){
       let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
-      //console.log(time);
+      console.log(time);
       if (time <= 12) {
         this.setCheckData('cinpos');
-        this.xhrSend();
+        //this.xhrSend();
         this.showCheckInfo('knock-on');
       } else {
         this.setCheckData('coffpos');
-        this.xhrSend();
+        //this.xhrSend();
         this.showCheckInfo('knock-off');
       }
     }else{
@@ -133,10 +133,15 @@ export class ContactPageComponent implements OnInit {
     if(localStorage["currentCheck"]){
       let currentCheck = JSON.parse(localStorage["currentCheck"]);
       if(today==currentCheck.cdate){
-        document.querySelector(`#knock-on span.knock-time`).textContent = "打卡时间" + currentCheck.cintime;
-        document.querySelector(`#knock-on p.knock-pos`).textContent = currentCheck.cinpos;
-        document.querySelector(`#knock-off span.knock-time`).textContent = "打卡时间" + currentCheck.cofftime;
-        document.querySelector(`#knock-off p.knock-pos`).textContent = currentCheck.coffpos;
+        if(currentCheck.cintime){
+          document.querySelector(`#knock-on span.knock-time`).textContent = "打卡时间" + currentCheck.cintime;
+          document.querySelector(`#knock-on p.knock-pos`).textContent = currentCheck.cinpos;
+        }
+        if(currentCheck.cofftime){
+          document.querySelector(`#knock-off span.knock-time`).textContent = "打卡时间" + currentCheck.cofftime;
+          document.querySelector(`#knock-off p.knock-pos`).textContent = currentCheck.coffpos;
+        }
+
       }else{
         localStorage.removeItem("currentCheck");
       }
@@ -147,10 +152,12 @@ export class ContactPageComponent implements OnInit {
 
   };
 
-  showCheckInfo(knockType) {
+  showCheckInfo=(knockType)=> {
     let knockTime = document.querySelector(`#${knockType} span.knock-time`);
     let knockPos = document.querySelector(`#${knockType} p.knock-pos`);
     let str = '';
+    console.log(knockType);
+    console.log(knockTime.textContent);
     if (knockTime.textContent) {
       str = "亲，不要重复打卡哦";
       this.presentToast(str);
@@ -158,10 +165,11 @@ export class ContactPageComponent implements OnInit {
     } else {
       knockTime.textContent = "打卡时间" + this.datePipe.transform(this.myDate, 'HH:mm:ss');
       knockPos.textContent = document.getElementById('position').textContent.substr(7);
+      this.xhrSend();
       str = "打卡成功！";
       this.presentToast(str);
     }
-  }
+  };
 
   setCheckData =(checkPos)=>{
     let currentUser = JSON.parse(localStorage.getItem("currentUser"));
@@ -191,12 +199,12 @@ export class ContactPageComponent implements OnInit {
         }
       }
     };
-    xhr.open('POST','http://192.168.2.7/checkin.php',true);
+    xhr.open('POST','http://192.168.1.2/checkin.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`checkInData=${data}`);
 
     let doResponse=(xhr)=>{
-      console.log('开始处理响应消息');
+      console.log('开始接收服务器打卡信息');
       localStorage.setItem("currentCheck",xhr.responseText);
       console.dir(JSON.parse(localStorage["currentCheck"]));
     }
