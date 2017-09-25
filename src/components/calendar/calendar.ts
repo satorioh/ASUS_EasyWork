@@ -12,6 +12,7 @@ export class Calendar {
   selectedDay = new Date();
   lockSwipeToPrev:boolean;
   lockSwipes:boolean;
+  strDate:string;
 
   calendar = {
     mode: 'month',
@@ -25,7 +26,7 @@ export class Calendar {
 
   ngOnInit() {
     this.platform.ready().then(() => {
-      this.lockSwipeToPrev = true;
+      //this.lockSwipeToPrev = true;
       //this.lockSwipes = true;
     })
   }
@@ -40,12 +41,12 @@ export class Calendar {
     console.dir(ev);
     let str = ev.selectedTime.toString();
     str = str.substring(0,str.indexOf(" GMT"));
-    console.log(str);
-    this.dateSend(str);
+    this.strDate = str;
+    console.log(this.strDate);
   }
 
-  dateSend=(str)=>{
-    let data=str;
+  dateSend=()=>{
+    let data=this.strDate;
     let currentUser = JSON.parse(localStorage.getItem("currentUser"));
     let cwid = currentUser["uwid"];
     var xhr = new XMLHttpRequest();
@@ -58,7 +59,7 @@ export class Calendar {
         }
       }
     };
-    xhr.open('POST','http://192.168.1.2/calendarDate.php',true);
+    xhr.open('POST','http://192.168.2.7/calendarDate.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`calendarDate=${data}&cwid=${cwid}`);
 
@@ -72,7 +73,9 @@ export class Calendar {
         arr.push(d);
       });
       console.log(arr);
-      let tbody = document.querySelector(".monthview-datetable>tbody");
+      //let tbody = document.querySelector("[data-swiper-slide-index='2'] .monthview-datetable>tbody");
+      let tbody = document.querySelector(".swiper-slide-active");
+      console.dir(tbody);
       let tds = tbody.querySelectorAll("td:not(.text-muted)");
       console.dir(tds);
       arr.forEach(function (item) {
