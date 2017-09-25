@@ -199,7 +199,7 @@ export class ContactPageComponent implements OnInit {
         }
       }
     };
-    xhr.open('POST','http://192.168.2.7/checkin.php',true);
+    xhr.open('POST','http://192.168.1.5/checkin.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`checkInData=${data}`);
 

@@ -40,7 +40,7 @@ export class Login {
         }
       }
     };
-    xhr.open('POST','http://192.168.2.7/login.php',true);
+    xhr.open('POST','http://192.168.1.5/login.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`uwid=${this.uwid}&upwd=${this.upwd}`);
 
@@ -48,7 +48,9 @@ export class Login {
       console.log('开始接收服务器用户信息');
       let result = xhr.responseText;
       console.dir(result);
-      if(result!==null){
+      if(JSON.parse(result)==null){
+        this.presentToast("工号或密码错误");
+      }else{
         localStorage.setItem("currentUser",result);
         let currentUser = JSON.parse(localStorage.getItem("currentUser"));
         document.getElementById('show-ucname').innerHTML=currentUser["ucname"];
@@ -57,8 +59,6 @@ export class Login {
         document.getElementById('login-status').innerHTML="退出";
         this.presentToast("登录成功");
         this.goBack();
-      }else{
-        this.presentToast("用户名或密码错误");
       }
     }
   }

@@ -38,7 +38,7 @@ export class Calendar {
   }
 
   onTimeSelected(ev){
-    console.dir(ev);
+    //console.dir(ev);
     let str = ev.selectedTime.toString();
     str = str.substring(0,str.indexOf(" GMT"));
     this.strDate = str;
@@ -59,7 +59,7 @@ export class Calendar {
         }
       }
     };
-    xhr.open('POST','http://192.168.2.7/calendarDate.php',true);
+    xhr.open('POST','http://192.168.1.5/calendarDate.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`calendarDate=${data}&cwid=${cwid}`);
 
@@ -73,7 +73,6 @@ export class Calendar {
         arr.push(d);
       });
       console.log(arr);
-      //let tbody = document.querySelector("[data-swiper-slide-index='2'] .monthview-datetable>tbody");
       let tbody = document.querySelector(".swiper-slide-active");
       console.dir(tbody);
       let tds = tbody.querySelectorAll("td:not(.text-muted)");
