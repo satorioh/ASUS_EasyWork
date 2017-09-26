@@ -52,7 +52,6 @@ export class PopOver implements OnInit{
             //document.getElementById('position').textContent = address;
           });
         } else {
-          alert(JSON.stringify(result));
           alert("确保网络已连接，并在设置-应用-ASUS EasyWork-权限中开启位置信息权限，以正常使用定位功能");
         }
       },//function success
