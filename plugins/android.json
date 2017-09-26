@@ -46,6 +46,9 @@
         },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.asus.easywork"
+        },
+        "cordova-plugin-android-permissions": {
+            "PACKAGE_NAME": "com.asus.easywork"
         }
     },
     "dependent_plugins": {

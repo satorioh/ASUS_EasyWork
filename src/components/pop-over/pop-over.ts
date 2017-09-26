@@ -1,5 +1,6 @@
 import {Component, ViewChild, ElementRef,OnInit} from '@angular/core';
 import {ViewController, Platform} from 'ionic-angular';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
 
 declare var BMap;
 declare var baidu_location: any;
@@ -13,12 +14,18 @@ export class PopOver implements OnInit{
 
   constructor(
     public viewCtrl: ViewController,
-    public platform: Platform
+    public platform: Platform,
+    private androidPermissions: AndroidPermissions
   ) {}
 
   ngOnInit() {
     this.platform.ready().then(() => {
-      this.loadMap();
+      //Android 6.0 动态获取定位权限
+      this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_COARSE_LOCATION).then(
+        success=>this.loadMap(),
+        error=>alert("定位权限获取失败")
+      );
+
     })
   }
   loadMap() {

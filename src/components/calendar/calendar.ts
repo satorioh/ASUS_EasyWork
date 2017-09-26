@@ -65,7 +65,6 @@ export class Calendar {
 
     let doResponse=(xhr)=>{
       console.log('开始查询签到记录');
-      //console.dir(JSON.parse(xhr.responseText));
       let monthCheckData = JSON.parse(xhr.responseText);
       let arr = [];
       monthCheckData.forEach(function (item) {

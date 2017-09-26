@@ -6,7 +6,8 @@ import {DatePipe} from '@angular/common';
 import {ToastController} from 'ionic-angular';
 import {Network} from '@ionic-native/network';
 import {Login} from '../../components/login/login';
-import {Calendar} from '../../components/calendar/calendar'
+import {Calendar} from '../../components/calendar/calendar';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
 
 declare var BMap;
 declare var baidu_location: any;
@@ -33,7 +34,9 @@ export class ContactPageComponent implements OnInit {
               public popoverCtrl: PopoverController,
               private datePipe: DatePipe,
               public toastCtrl: ToastController,
-              private network: Network) {
+              private network: Network,
+              private androidPermissions: AndroidPermissions
+  ) {
   }
 
   ngOnInit() {
@@ -42,7 +45,10 @@ export class ContactPageComponent implements OnInit {
       setInterval(() => {
         this.myDate = Date.now();
       }, 1000);
-      this.loadMap();
+      this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_COARSE_LOCATION).then(
+        success=>this.loadMap(),
+        error=>alert("定位权限获取失败")
+      );
       this.checkInfoInit();
       this.userLoginCheck();
     })

@@ -19,6 +19,7 @@
     "@angular/http": "4.3.6",
     "@angular/platform-browser": "4.3.6",
     "@angular/platform-browser-dynamic": "4.3.6",
+    "@ionic-native/android-permissions": "^4.2.1",
     "@ionic-native/app-availability": "4.2.0",
     "@ionic-native/core": "4.2.0",
     "@ionic-native/device": "4.2.0",

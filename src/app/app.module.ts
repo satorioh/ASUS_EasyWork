@@ -31,6 +31,7 @@ import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
 import { NgCalendarModule  } from 'ionic2-calendar';
 import { Network } from '@ionic-native/network';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { Network } from '@ionic-native/network';
     AppDataService,
     LoadingController,
     Network,
+    AndroidPermissions,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
