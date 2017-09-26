@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 
 //自定义组件
 import { AboutPageComponent } from '../pages/about/about';
+import { SafePipe } from '../pages/about/about';
 import { ContactPageComponent } from '../pages/contact/contact';
 import { HomePageComponent } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -35,6 +36,7 @@ import { Network } from '@ionic-native/network';
   declarations: [
     MyApp,
     AboutPageComponent,
+    SafePipe,
     ContactPageComponent,
     HomePageComponent,
     TabsPage,

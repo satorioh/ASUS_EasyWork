@@ -28,9 +28,6 @@
         "cordova-plugin-appavailability": {
             "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
         },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
-        },
         "com.lampa.startapp": {
             "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
         },
@@ -42,9 +39,6 @@
         },
         "cordova-plugin-file-opener2": {
             "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
-        },
-        "cordova-plugin-themeablebrowser": {
-            "PACKAGE_NAME": "com.asus.easywork"
         },
         "hewz.plugins.baidu-location": {
             "API_KEY": "YG0GuiCFojifNGPR8zqN24us5IvIm8gg",

@@ -42,15 +42,6 @@ module.exports = [
         ]
     },
     {
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
-        ]
-    },
-    {
         "id": "com.lampa.startapp.startapp",
         "file": "plugins/com.lampa.startapp/www/startApp.js",
         "pluginId": "com.lampa.startapp",
@@ -256,14 +247,6 @@ module.exports = [
         ]
     },
     {
-        "id": "cordova-plugin-themeablebrowser.themeablebrowser",
-        "file": "plugins/cordova-plugin-themeablebrowser/www/themeablebrowser.js",
-        "pluginId": "cordova-plugin-themeablebrowser",
-        "clobbers": [
-            "cordova.ThemeableBrowser"
-        ]
-    },
-    {
         "id": "hewz.plugins.baidu-location.baidu_location",
         "file": "plugins/hewz.plugins.baidu-location/www/baidu_location.js",
         "pluginId": "hewz.plugins.baidu-location",
@@ -299,13 +282,11 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.1",
     "ionic-plugin-keyboard": "2.2.1",
     "cordova-plugin-appavailability": "0.4.2",
-    "cordova-plugin-inappbrowser": "1.7.0",
     "com.lampa.startapp": "0.1.4",
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-file": "4.3.3",
     "cordova-plugin-file-transfer": "1.6.3",
     "cordova-plugin-file-opener2": "2.0.15",
-    "cordova-plugin-themeablebrowser": "0.2.17",
     "hewz.plugins.baidu-location": "1.2.0",
     "cordova-plugin-network-information": "1.3.3"
 };

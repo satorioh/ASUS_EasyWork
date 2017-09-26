@@ -55,14 +55,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-inappbrowser": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-inappbrowser@1.7.0"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "com.lampa.startapp": {
         "source": {
             "type": "registry",
@@ -99,14 +91,6 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-file-opener2"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-themeablebrowser": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-themeablebrowser"
         },
         "is_top_level": true,
         "variables": {}
