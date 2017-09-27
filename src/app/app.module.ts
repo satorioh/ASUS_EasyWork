@@ -16,7 +16,6 @@ import { AppDataService } from './appData.service';
 import { AppItemComponent } from '../pages/home/appItem.component';
 import { ProgressBarComponent } from './progressBar.component';
 import { SlideShowComponent } from './slideShow.component';
-import { PopOver } from '../components/pop-over/pop-over';
 import { Login } from '../components/login/login';
 import { Calendar } from '../components/calendar/calendar';
 
@@ -45,7 +44,6 @@ import { AndroidPermissions } from '@ionic-native/android-permissions';
     AppItemComponent,
     ProgressBarComponent,
     SlideShowComponent,
-    PopOver,
     Login,
     Calendar
   ],
@@ -62,7 +60,6 @@ import { AndroidPermissions } from '@ionic-native/android-permissions';
     AboutPageComponent,
     ContactPageComponent,
     AppDetailComponent,
-    PopOver,
     Login,
     Calendar
   ],

@@ -1,7 +1,6 @@
 import {Component, ViewChild, ElementRef, OnInit} from '@angular/core';
 import {NavController, Platform} from 'ionic-angular';
 import {PopoverController} from 'ionic-angular';
-import {PopOver} from '../../components/pop-over/pop-over';
 import {DatePipe} from '@angular/common';
 import {ToastController} from 'ionic-angular';
 import {Network} from '@ionic-native/network';
@@ -41,29 +40,28 @@ export class ContactPageComponent implements OnInit {
 
   ngOnInit() {
     this.platform.ready().then(() => {
-      this.ionViewCanEnter();
       setInterval(() => {
         this.myDate = Date.now();
       }, 1000);
-      this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_COARSE_LOCATION).then(
-        success=>this.loadMap(),
-        error=>alert("定位权限获取失败")
-      );
+
+        this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_COARSE_LOCATION).then(
+          success=>this.loadMap(),
+          error=>alert("定位权限获取失败")
+        );
       this.checkInfoInit();
       this.userLoginCheck();
     })
   }
 
-  ionViewCanEnter() {
+  networkCheck=()=>{
     if (this.network.type == "none") {
-      alert("请先连接网络");
       return false;
-    } else {
+    }else{
       return true;
     }
-  }
+  };
 
-  loadMap() {
+  loadMap=()=>{
     //初始化地图
     let map = new BMap.Map(this.mapElement.nativeElement);
 
@@ -88,21 +86,13 @@ export class ContactPageComponent implements OnInit {
       function (err) {
         document.getElementById('position').textContent = err + "定位失败，请重试";
       });
-  }
+  };
 
   presentPopover(e) {
-    if (e.target.textContent == "地图") {
-      let popover = this.popoverCtrl.create(PopOver);
-      popover.present({
-        ev: e
-      });
-    } else if (e.target.textContent == "日历") {
-      let popover = this.popoverCtrl.create(Calendar);
-      popover.present({
-        ev: e
-      });
-    }
-
+    let popover = this.popoverCtrl.create(Calendar);
+    popover.present({
+      ev: e
+    });
   }
 
   presentToast(str) {
@@ -115,22 +105,25 @@ export class ContactPageComponent implements OnInit {
   }
 
   ampmChoose=()=> {
-    if(localStorage.getItem("currentUser")){
-      let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
-      console.log(time);
-      if (time <= 12) {
-        this.setCheckData('cinpos');
-        //this.xhrSend();
-        this.showCheckInfo('knock-on');
-      } else {
-        this.setCheckData('coffpos');
-        //this.xhrSend();
-        this.showCheckInfo('knock-off');
+    if(this.networkCheck()){
+      if(localStorage.getItem("currentUser")){
+        let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
+        console.log(time);
+        if (time <= 12) {
+          this.setCheckData('cinpos');
+          //this.xhrSend();
+          this.showCheckInfo('knock-on');
+        } else {
+          this.setCheckData('coffpos');
+          //this.xhrSend();
+          this.showCheckInfo('knock-off');
+        }
+      }else{
+        this.goToLogin();
       }
     }else{
-      this.goToLogin();
+      this.presentToast("网络未连接");
     }
-
   };
 
   checkInfoInit=()=>{
@@ -165,7 +158,7 @@ export class ContactPageComponent implements OnInit {
     console.log(knockType);
     console.log(knockTime.textContent);
     if (knockTime.textContent) {
-      str = "亲，不要重复打卡哦";
+      str = "请不要重复打卡";
       this.presentToast(str);
       return;
     } else {
@@ -205,7 +198,7 @@ export class ContactPageComponent implements OnInit {
         }
       }
     };
-    xhr.open('POST','http://192.168.1.4/checkin.php',true);
+    xhr.open('POST','http://192.168.2.7/checkin.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`checkInData=${data}`);
 
