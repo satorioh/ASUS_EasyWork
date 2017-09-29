@@ -1,7 +1,7 @@
 set names utf8;
-drop database if exists asus_easywork;
-create database asus_easywork charset=utf8;
-use asus_easywork;
+drop database if exists easywork_asus_c;
+create database easywork_asus_c charset=utf8;
+use easywork_asus_c;
 
 create table asus_user(
   uid int primary key auto_increment,
@@ -12,7 +12,7 @@ create table asus_user(
   udept varchar(128)
 );
 
-create table asus_checkIn(
+create table asus_checkin(
   cid int primary key auto_increment,
   cwid varchar(32),
   ccname varchar(32),
@@ -25,7 +25,7 @@ create table asus_checkIn(
 );
 
 insert into asus_user values(
-1,'aa','123','robin1_wang','王斌','MIS'
+1,'AH1100288','680e25a56ebb4faeab0ad9dcb3e29735','Robin1_Wang','王斌','MIS'
 );
 
 

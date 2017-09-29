@@ -198,12 +198,13 @@ export class ContactPageComponent implements OnInit {
         }
       }
     };
-    xhr.open('POST','http://192.168.2.7/checkin.php',true);
+    xhr.open('POST','http://221.224.163.13/checkin.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`checkInData=${data}`);
 
     let doResponse=(xhr)=>{
       console.log('开始接收服务器打卡信息');
+      console.dir(xhr.responseText);
       localStorage.setItem("currentCheck",xhr.responseText);
       console.dir(JSON.parse(localStorage["currentCheck"]));
     }

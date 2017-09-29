@@ -52,7 +52,7 @@ export class ProgressBarComponent implements OnInit {
   downloadApp(e) {
     //console.log(e);
     const fileTransfer: TransferObject = this.transfer.create();
-    const url = encodeURI('http://221.224.163.10:9443/temp/' + this.app.packageName + '.apk');
+    const url = encodeURI('http://221.224.163.13/apk/' + this.app.packageName + '.apk');
     let fileURL: string;
     fileTransfer.onProgress((ProgressEvent) => {//download progress listener
       let percent = ProgressEvent.loaded / ProgressEvent.total * 100;

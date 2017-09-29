@@ -59,7 +59,7 @@ export class Calendar {
         }
       }
     };
-    xhr.open('POST','http://192.168.2.7/calendarDate.php',true);
+    xhr.open('POST','http://221.224.163.13/calendarDate.php',true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(`calendarDate=${data}&cwid=${cwid}`);
 
