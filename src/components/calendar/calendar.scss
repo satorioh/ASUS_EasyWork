@@ -1,0 +1,12 @@
+page-calendar {
+  button.close{
+    position: absolute;
+    z-index: 99;
+  }
+  button#askCheckInfo {
+    margin-top:-10%;
+  }
+  .hook {
+    background: #488aff !important;
+  }
+}

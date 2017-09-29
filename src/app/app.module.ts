@@ -1,5 +1,5 @@
 //核心组件
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 
 //自定义组件
 import { AboutPageComponent } from '../pages/about/about';
+import { SafePipe } from '../pages/about/about';
 import { ContactPageComponent } from '../pages/contact/contact';
 import { HomePageComponent } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -15,6 +16,9 @@ import { AppDataService } from './appData.service';
 import { AppItemComponent } from '../pages/home/appItem.component';
 import { ProgressBarComponent } from './progressBar.component';
 import { SlideShowComponent } from './slideShow.component';
+import { Login } from '../components/login/login';
+import { Calendar } from '../components/calendar/calendar';
+
 
 //第三方组件
 import { StatusBar } from '@ionic-native/status-bar';
@@ -24,21 +28,28 @@ import { Device  } from '@ionic-native/device';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
+import { NgCalendarModule  } from 'ionic2-calendar';
+import { Network } from '@ionic-native/network';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
 
 @NgModule({
   declarations: [
     MyApp,
     AboutPageComponent,
+    SafePipe,
     ContactPageComponent,
     HomePageComponent,
     TabsPage,
     AppDetailComponent,
     AppItemComponent,
     ProgressBarComponent,
-    SlideShowComponent
+    SlideShowComponent,
+    Login,
+    Calendar
   ],
   imports: [
     BrowserModule,
+    NgCalendarModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -48,7 +59,9 @@ import { FileOpener } from '@ionic-native/file-opener';
     HomePageComponent,
     AboutPageComponent,
     ContactPageComponent,
-    AppDetailComponent
+    AppDetailComponent,
+    Login,
+    Calendar
   ],
   providers: [
     StatusBar,
@@ -61,6 +74,8 @@ import { FileOpener } from '@ionic-native/file-opener';
     FileOpener,
     AppDataService,
     LoadingController,
+    Network,
+    AndroidPermissions,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -55,14 +55,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-inappbrowser": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-inappbrowser@1.7.0"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "com.lampa.startapp": {
         "source": {
             "type": "registry",
@@ -103,10 +95,29 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-themeablebrowser": {
+    "hewz.plugins.baidu-location": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hewz/cordova-baidu-location",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "API_KEY": "YG0GuiCFojifNGPR8zqN24us5IvIm8gg"
+        }
+    },
+    "cordova-plugin-network-information": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-themeablebrowser"
+            "id": "cordova-plugin-network-information"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-android-permissions": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-android-permissions"
         },
         "is_top_level": true,
         "variables": {}

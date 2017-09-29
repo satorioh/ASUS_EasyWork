@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="blue">
+    <ion-title>登录</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content id="ucenter-content">
+  <ion-list inset>
+    <ion-item>
+      <ion-label>工号</ion-label>
+      <ion-input type="text" [(ngModel)]="uwid"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>OA密码</ion-label>
+      <ion-input type="password" [(ngModel)]="upwd"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <button ion-button color="blue" block id="loginBt" (click)="login($event)">登录</button>
+  </div>
+</ion-content>

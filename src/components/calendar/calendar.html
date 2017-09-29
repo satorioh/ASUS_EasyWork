@@ -1,0 +1,14 @@
+<button ion-button icon-only clear color="dark" class="close" (click)="close()">
+  <ion-icon name="close-circle"></ion-icon>
+</button>
+<calendar [eventSource]="eventSource"
+          [calendarMode]="calendar.mode"
+          [currentDate]="calendar.currentDate"
+          [lockSwipeToPrev]="lockSwipeToPrev"
+          [lockSwipes]="lockSwipes"
+          (onTitleChanged)="onViewTitleChanged($event)"
+          (onTimeSelected)="onTimeSelected($event)"
+          step="30"
+          class="calendar">
+</calendar>
+<button ion-button clear block color="primary" id="askCheckInfo" (click)="dateSend()">查询当月签到记录</button>

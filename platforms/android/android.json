@@ -33,10 +33,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"startApp\"><param name=\"android-package\" value=\"com.lampa.startapp.startApp\" /></feature>",
                             "count": 1
                         },
@@ -57,7 +53,15 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"ThemeableBrowser\"><param name=\"android-package\" value=\"com.initialxy.cordova.themeablebrowser.ThemeableBrowser\" /></feature>",
+                            "xml": "<feature name=\"BaiduLocation\"><param name=\"android-package\" value=\"com.hewz.plugins.baidu.BaiduLocation\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Permissions\"><param name=\"android-package\" value=\"com.android.plugins.Permissions\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -68,16 +72,56 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 2
+                            "count": 3
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\" />",
                             "count": 1
                         }
                     ],
                     "/manifest/application": [
                         {
                             "xml": "<provider android:authorities=\"com.ionicframework.asuseasywork901784.opener.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"io.github.pwlin.cordova.plugins.fileopener2.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/opener_paths\" /></provider>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:enabled=\"true\" android:name=\"com.baidu.location.f\" android:process=\":remote\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"com.baidu.lbsapi.API_KEY\" android:value=\"YG0GuiCFojifNGPR8zqN24us5IvIm8gg\" />",
                             "count": 1
                         }
                     ]
@@ -107,9 +151,6 @@
         "cordova-plugin-appavailability": {
             "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
         },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
-        },
         "com.lampa.startapp": {
             "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
         },
@@ -125,7 +166,14 @@
         "cordova-plugin-file-opener2": {
             "PACKAGE_NAME": "com.ionicframework.asuseasywork901784"
         },
-        "cordova-plugin-themeablebrowser": {
+        "hewz.plugins.baidu-location": {
+            "API_KEY": "YG0GuiCFojifNGPR8zqN24us5IvIm8gg",
+            "PACKAGE_NAME": "com.asus.easywork"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.asus.easywork"
+        },
+        "cordova-plugin-android-permissions": {
             "PACKAGE_NAME": "com.asus.easywork"
         }
     },
@@ -170,15 +218,6 @@
             "pluginId": "cordova-plugin-appavailability",
             "clobbers": [
                 "appAvailability"
-            ]
-        },
-        {
-            "id": "cordova-plugin-inappbrowser.inappbrowser",
-            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-            "pluginId": "cordova-plugin-inappbrowser",
-            "clobbers": [
-                "cordova.InAppBrowser.open",
-                "window.open"
             ]
         },
         {
@@ -387,11 +426,36 @@
             ]
         },
         {
-            "id": "cordova-plugin-themeablebrowser.themeablebrowser",
-            "file": "plugins/cordova-plugin-themeablebrowser/www/themeablebrowser.js",
-            "pluginId": "cordova-plugin-themeablebrowser",
+            "id": "hewz.plugins.baidu-location.baidu_location",
+            "file": "plugins/hewz.plugins.baidu-location/www/baidu_location.js",
+            "pluginId": "hewz.plugins.baidu-location",
             "clobbers": [
-                "cordova.ThemeableBrowser"
+                "baidu_location"
+            ]
+        },
+        {
+            "id": "cordova-plugin-network-information.network",
+            "file": "plugins/cordova-plugin-network-information/www/network.js",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "id": "cordova-plugin-network-information.Connection",
+            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "Connection"
+            ]
+        },
+        {
+            "id": "cordova-plugin-android-permissions.Permissions",
+            "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+            "pluginId": "cordova-plugin-android-permissions",
+            "clobbers": [
+                "cordova.plugins.permissions"
             ]
         }
     ],
@@ -403,12 +467,13 @@
         "cordova-plugin-whitelist": "1.3.1",
         "ionic-plugin-keyboard": "2.2.1",
         "cordova-plugin-appavailability": "0.4.2",
-        "cordova-plugin-inappbrowser": "1.7.0",
         "com.lampa.startapp": "0.1.4",
         "cordova-plugin-compat": "1.1.0",
         "cordova-plugin-file": "4.3.3",
         "cordova-plugin-file-transfer": "1.6.3",
         "cordova-plugin-file-opener2": "2.0.15",
-        "cordova-plugin-themeablebrowser": "0.2.17"
+        "hewz.plugins.baidu-location": "1.2.0",
+        "cordova-plugin-network-information": "1.3.3",
+        "cordova-plugin-android-permissions": "1.0.0"
     }
 }

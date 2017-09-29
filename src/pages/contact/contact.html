@@ -1,11 +1,71 @@
 <ion-header>
   <ion-navbar color="blue">
-    <ion-title>
-      Contact
-    </ion-title>
+    <ion-item color="blue">
+      <button ion-button menuToggle icon-only left>
+        <ion-icon name='menu'></ion-icon>
+      </button>
+      <ion-title></ion-title>
+      <button ion-button item-end small (click)="presentPopover($event)">签到日历</button>
+      <!--<button ion-button item-end small (click)="presentPopover($event)">地图</button>-->
+    </ion-item>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  
+  <ion-list>
+    <ion-item>
+      <ion-icon name="pin" item-start color="danger" small></ion-icon>
+      <h2 id="position">您当前的位置：获取中...</h2>
+    </ion-item>
+      <div id="bmap" #bmap></div>
+    <ion-item id="knock-on">
+      <span class="knock-icon">上</span>
+      <span class="knock-time"></span>
+      <span>(上班时间8:00)</span>
+      <p class="knock-pos"></p>
+    </ion-item>
+    <ion-item id="knock-off">
+      <span class="knock-icon">下</span>
+      <span class="knock-time"></span>
+      <span>(下班时间17:00)</span>
+      <p class="knock-pos"></p>
+    </ion-item>
+  </ion-list>
+
+  <div id="check-in" (click)="ampmChoose($event)">
+    <span>打卡<br/>{{ myDate | date:'HH:mm:ss' }}</span>
+    <!--<span></span>-->
+  </div>
 </ion-content>
+
+<!--用户中心-->
+<ion-menu [content]="usercenter">
+  <ion-header>
+    <ion-navbar color="blue">
+      <ion-title>用户中心</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content id="ucenter-header">
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/icon/user.png" id="avator">
+        </ion-avatar>
+        <h2 id="show-ucname">未登录</h2>
+        <p id="show-uename"></p>
+      </ion-item>
+
+      <ion-card-content>
+      </ion-card-content>
+
+      <ion-row>
+          <button ion-button block clear small full (click)="logout()">
+            <div id="login-status"></div>
+          </button>
+      </ion-row>
+    </ion-card>
+
+  </ion-content>
+</ion-menu>
+<ion-nav #usercenter [root]="rootPage"></ion-nav>

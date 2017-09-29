@@ -1,6 +1,9 @@
 app-detail {
-  ion-thumbnail.detailPageIcon img {
+  ion-label, ion-thumbnail.detailPageIcon img{
     margin: 0 auto;
+  }
+  ion-item {
+    padding-left: 0 !important;
   }
   h2 {
     text-align: center;
