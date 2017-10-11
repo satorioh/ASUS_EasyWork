@@ -107,22 +107,26 @@ export class ContactPageComponent implements OnInit {
   ampmChoose=()=> {
     if(this.networkCheck()){
       if(localStorage.getItem("currentUser")){
-        let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
-        console.log(time);
-        if (time <= 12) {
-          this.setCheckData('cinpos');
-          //this.xhrSend();
-          this.showCheckInfo('knock-on');
-        } else {
-          this.setCheckData('coffpos');
-          //this.xhrSend();
-          this.showCheckInfo('knock-off');
+        let posTxt = document.getElementById('position').textContent;
+        console.log(posTxt.length);
+        if(posTxt.length>15){
+          let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
+          if (time <= 12) {
+            this.setCheckData('cinpos');
+            this.showCheckInfo('knock-on');//上午打卡
+          } else {
+            this.setCheckData('coffpos');
+            this.showCheckInfo('knock-off');//下午打卡
+          }
+        }else{
+          this.presentToast("获取定位中，请稍后");//等待显示定位信息
+          return;
         }
       }else{
-        this.goToLogin();
+        this.goToLogin();//localstorage中没有currentUser信息
       }
     }else{
-      this.presentToast("网络未连接");
+      this.presentToast("网络未连接");//用户未联网
     }
   };
 
