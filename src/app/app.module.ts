@@ -31,6 +31,7 @@ import { FileOpener } from '@ionic-native/file-opener';
 import { NgCalendarModule  } from 'ionic2-calendar';
 import { Network } from '@ionic-native/network';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
+import {Md5} from "ts-md5/dist/md5";
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { AndroidPermissions } from '@ionic-native/android-permissions';
     LoadingController,
     Network,
     AndroidPermissions,
+    Md5,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

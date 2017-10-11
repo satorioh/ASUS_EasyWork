@@ -2,7 +2,7 @@
 header("Content-Type:application/json;charset=utf-8");
 
 $uwid = $_REQUEST['uwid'];
-$upwd = md5($_REQUEST['upwd']);
+$upwd = $_REQUEST['upwd'];
 
 include('config.php');
 $link = mysqli_connect($db_url,$db_user,$db_pwd,$db_name,$db_port);
