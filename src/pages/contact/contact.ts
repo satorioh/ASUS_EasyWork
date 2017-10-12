@@ -80,7 +80,8 @@ export class ContactPageComponent implements OnInit {
             document.getElementById('position').textContent = address;
           });
         } else {
-          alert("确保网络已连接，并在设置-应用-ASUS EasyWork-权限中开启位置信息权限，以正常使用定位功能");
+          document.getElementById('position').textContent = "您当前的位置：获取失败";
+          alert("确保网络已连接，并在设置-应用-ASUS EasyWork-权限中允许定位权限，然后重启app再试");
         }
       },//function success
       function (err) {
