@@ -7,7 +7,7 @@
     <access origin="*" />
     <allow-navigation href="*" />
     <allow-navigation href="http://*/*" />
-  <allow-navigation href="https://*/*"/>
+    <allow-navigation href="https://*/*"/>
     <allow-navigation href="file://*/*" />
     <allow-intent href="*" />
     <allow-navigation href="http://ionic.local/*" />
@@ -28,6 +28,7 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <platform name="android">
+        <preference name="loadUrlTimeoutValue" value="700000" />
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
