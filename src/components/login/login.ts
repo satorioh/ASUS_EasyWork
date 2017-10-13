@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {ToastController} from 'ionic-angular';
 import {Network} from '@ionic-native/network';
+import {Md5} from "ts-md5/dist/md5";
 
 @Component({
   selector: 'login',
@@ -53,7 +54,7 @@ export class Login {
       };
       xhr.open('POST','http://221.224.163.13/login.php',true);
       xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-      xhr.send(`uwid=${this.uwid}&upwd=${this.upwd}`);
+      xhr.send(`uwid=${this.uwid}&upwd=${Md5.hashStr(this.upwd)}`);
 
       let doResponse=(xhr)=>{
         console.log('开始接收服务器用户信息');
