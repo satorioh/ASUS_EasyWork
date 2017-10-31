@@ -32,7 +32,7 @@ export class Signup {
   presentToast = (str) =>{
     let toast = this.toastCtrl.create({
       message: str,
-      duration: 2000,
+      duration: 3000,
       position: 'top'
     });
     toast.present();
@@ -59,18 +59,15 @@ export class Signup {
         let doResponse=(xhr)=>{
           console.log('开始接收服务器用户信息');
           let result = xhr.responseText;
-          console.dir(result);
-          if(JSON.parse(result)==null){
-            this.presentToast("工号或密码错误");
-          }else{
-            localStorage.setItem("currentUser",result);
-            let currentUser = JSON.parse(localStorage.getItem("currentUser"));
-            document.getElementById('show-ucname').innerHTML=currentUser["ucname"];
-            document.getElementById('show-uename').innerHTML=currentUser["uename"];
-            document.getElementById('avator').setAttribute("src","assets/img/icon/asus.png");
-            document.getElementById('login-status').innerHTML="退出";
-            this.presentToast("登录成功");
+          console.log(result);
+          if(result=="registered"){
+            this.presentToast("该工号已注册过账户，请直接登录");
             this.goBack();
+          }else if(result=="success"){
+            this.presentToast("注册成功，已为您跳转登录页面");
+            this.goBack();
+          }else{
+            this.presentToast("注册失败，请确认工号是否正确，并重试")
           }
         }
       }

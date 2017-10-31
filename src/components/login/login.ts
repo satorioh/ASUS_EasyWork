@@ -78,11 +78,11 @@ export class Login {
       this.presentToast("网络未连接");
     }
 
-  }
+  };
   toSignPage=()=> {
     this.navCtrl.push(Signup);
   };
   forgetPwd=()=> {
-    alert("修改密码请联系：Robin1_Wang(42055)");
+    alert("修改/忘记密码请联系：Robin1_Wang(Tel:42055)");
   }
 }

@@ -12,7 +12,7 @@
     </ion-item>
     <ion-item>
       <ion-label>app密码</ion-label>
-      <ion-input type="password" [(ngModel)]="upwd"></ion-input>
+      <ion-input type="password" placeholder="首次使用请先注册" [(ngModel)]="upwd"></ion-input>
     </ion-item>
   </ion-list>
   <div padding>
@@ -20,6 +20,6 @@
   </div>
   <ion-item>
     <button ion-button  clear  item-start (click)="toSignPage($event)">注册</button>
-    <button ion-button  clear  item-end (click)="forgetPwd($event)">忘记密码</button>
+    <button ion-button  clear  item-end (click)="forgetPwd($event)">修改/忘记密码</button>
   </ion-item>
 </ion-content>
