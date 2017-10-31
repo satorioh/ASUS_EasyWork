@@ -3,6 +3,7 @@ import {NavController} from 'ionic-angular';
 import {ToastController} from 'ionic-angular';
 import {Network} from '@ionic-native/network';
 import {Md5} from "ts-md5/dist/md5";
+import {Signup} from "../signup/signup";
 
 @Component({
   selector: 'login',
@@ -78,6 +79,10 @@ export class Login {
     }
 
   }
-
-
+  toSignPage=()=> {
+    this.navCtrl.push(Signup);
+  };
+  forgetPwd=()=> {
+    alert("修改密码请联系：Robin1_Wang(42055)");
+  }
 }

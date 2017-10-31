@@ -17,6 +17,7 @@ import { AppItemComponent } from '../pages/home/appItem.component';
 import { ProgressBarComponent } from './progressBar.component';
 import { SlideShowComponent } from './slideShow.component';
 import { Login } from '../components/login/login';
+import { Signup } from '../components/signup/signup';
 import { Calendar } from '../components/calendar/calendar';
 
 
@@ -46,6 +47,7 @@ import {Md5} from "ts-md5/dist/md5";
     ProgressBarComponent,
     SlideShowComponent,
     Login,
+    Signup,
     Calendar
   ],
   imports: [
@@ -62,6 +64,7 @@ import {Md5} from "ts-md5/dist/md5";
     ContactPageComponent,
     AppDetailComponent,
     Login,
+    Signup,
     Calendar
   ],
   providers: [

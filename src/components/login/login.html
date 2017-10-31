@@ -11,11 +11,15 @@
       <ion-input type="text" [(ngModel)]="uwid"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>OA密码</ion-label>
+      <ion-label>app密码</ion-label>
       <ion-input type="password" [(ngModel)]="upwd"></ion-input>
     </ion-item>
   </ion-list>
   <div padding>
     <button ion-button color="blue" block id="loginBt" (click)="login($event)">登录</button>
   </div>
+  <ion-item>
+    <button ion-button  clear  item-start (click)="toSignPage($event)">注册</button>
+    <button ion-button  clear  item-end (click)="forgetPwd($event)">忘记密码</button>
+  </ion-item>
 </ion-content>
