@@ -27,6 +27,8 @@ export class ContactPageComponent implements OnInit {
     cinpos: '',
     coffpos: ''
   };
+  ampm:string;
+  cpos:string;
 
   constructor(private navCtrl: NavController,
               public platform: Platform,
@@ -35,8 +37,7 @@ export class ContactPageComponent implements OnInit {
               public toastCtrl: ToastController,
               private network: Network,
               private androidPermissions: AndroidPermissions
-  ) {
-  }
+  ) {}
 
   ngOnInit() {
     this.platform.ready().then(() => {
@@ -59,6 +60,15 @@ export class ContactPageComponent implements OnInit {
     }else{
       return true;
     }
+  };
+
+  selectAmPm=(value)=>{
+    this.ampm = value;//用户选择了上班或下班的radio button
+    this.cpos = this.ampm == "knock-on" ? "cinpos" : "coffpos";
+    console.log(this.ampm);
+    console.log(this.cpos);
+    let msg = this.ampm == "knock-on" ? "您已选择上班打卡，请点击下方蓝色按钮进行打卡" : "您已选择下班打卡，请点击下方蓝色按钮进行打卡";
+    this.presentToast(msg);
   };
 
   loadMap=()=>{
@@ -109,15 +119,13 @@ export class ContactPageComponent implements OnInit {
     if(this.networkCheck()){
       if(localStorage.getItem("currentUser")){
         let posTxt = document.getElementById('position').textContent;
-        console.log(posTxt.length);
         if(posTxt.length>15){
-          let time = parseInt(this.datePipe.transform(this.myDate, 'HH'));
-          if (time <= 12) {
-            this.setCheckData('cinpos');
-            this.showCheckInfo('knock-on');//上午打卡
+          if (!this.ampm) {
+            this.presentToast("请选择上班还是下班打卡");//用户未选择上班还是下班
+            return;
           } else {
-            this.setCheckData('coffpos');
-            this.showCheckInfo('knock-off');//下午打卡
+            this.setCheckData(this.cpos);
+            this.showCheckInfo(this.ampm);
           }
         }else{
           this.presentToast("获取定位中，请稍后");//等待显示定位信息
@@ -239,7 +247,6 @@ export class ContactPageComponent implements OnInit {
       this.goToLogin();
     }
   }
-
 
 }//export class end
 
