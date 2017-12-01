@@ -3,6 +3,7 @@ import {NavController} from 'ionic-angular';
 import {ToastController} from 'ionic-angular';
 import {Network} from '@ionic-native/network';
 import {Md5} from "ts-md5/dist/md5";
+import {Signup} from "../signup/signup";
 
 @Component({
   selector: 'login',
@@ -77,7 +78,11 @@ export class Login {
       this.presentToast("网络未连接");
     }
 
+  };
+  toSignPage=()=> {
+    this.navCtrl.push(Signup);
+  };
+  forgetPwd=()=> {
+    alert("修改/忘记密码请联系：Robin1_Wang(Tel:42055)");
   }
-
-
 }

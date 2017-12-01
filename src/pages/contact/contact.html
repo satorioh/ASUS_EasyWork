@@ -12,23 +12,31 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list radio-group (ionChange)="selectAmPm($event)">
     <ion-item>
       <ion-icon name="pin" item-start color="danger" small></ion-icon>
       <h2 id="position">您当前的位置：获取中...</h2>
     </ion-item>
       <div id="bmap" #bmap></div>
+
     <ion-item id="knock-on">
-      <span class="knock-icon">上</span>
-      <span class="knock-time"></span>
-      <span>(上班时间8:00)</span>
-      <p class="knock-pos"></p>
+      <ion-label>
+        <span class="knock-icon">上</span>
+        <span class="knock-time"></span>
+        <span>(上班时间8:00)</span>
+        <p class="knock-pos"></p>
+      </ion-label>
+      <ion-radio color="blue" value="knock-on"></ion-radio>
     </ion-item>
+
     <ion-item id="knock-off">
-      <span class="knock-icon">下</span>
-      <span class="knock-time"></span>
-      <span>(下班时间17:00)</span>
-      <p class="knock-pos"></p>
+      <ion-label>
+        <span class="knock-icon">下</span>
+        <span class="knock-time"></span>
+        <span>(下班时间17:00)</span>
+        <p class="knock-pos"></p>
+      </ion-label>
+      <ion-radio color="blue" value="knock-off"></ion-radio>
     </ion-item>
   </ion-list>
 
@@ -61,7 +69,7 @@
 
       <ion-row>
           <button ion-button block clear small full (click)="logout()">
-            <div id="login-status"></div>
+            <div id="login-status">登录</div>
           </button>
       </ion-row>
     </ion-card>
